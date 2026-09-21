@@ -1,0 +1,4865 @@
+[
+  {
+    "session_id": "6e150b52-2416-4306-a7a6-c2fd6c819bf5",
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "timestamp": "2026-09-09T14:18:41+00:00"
+  },
+  {
+    "session_id": "73f2d98b-67e2-4f85-9260-9c0b5eaf7cb0",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "timestamp": "2026-09-09T14:18:41+00:00"
+  },
+  {
+    "session_id": "0fea2798-64c7-48d2-9658-717909a49802",
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "timestamp": "2026-09-09T14:24:41+00:00"
+  },
+  {
+    "session_id": "6d269600-a907-46ce-8ec2-0ca888367895",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "timestamp": "2026-09-09T14:24:41+00:00"
+  },
+  {
+    "session_id": "513f316f-4592-450c-a947-ceaf03bb004c",
+    "user_id": "33afcac0-1923-464f-bbe7-1575afbd3189",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 76.0,
+    "stars": 2,
+    "stars_label": "2/3 Stars",
+    "performance_level": "Great Effort",
+    "feedback_message": "Very well done! Consistent practice keeps neural pathways active.",
+    "duration_seconds": 28.0,
+    "moves_count": 9,
+    "mistakes_count": 2,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "timestamp": "2026-09-09T17:29:49+00:00"
+  },
+  {
+    "session_id": "86448a42-2109-415e-b262-86eb9f4b4881",
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 2
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T17:35:10+00:00"
+  },
+  {
+    "session_id": "f58dca3a-034e-4b6e-9118-d9b554170361",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 2
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T17:35:10+00:00"
+  },
+  {
+    "session_id": "8f387d63-3ba2-4bfe-a5c1-214f3e7d2221",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 3
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T17:35:37+00:00"
+  },
+  {
+    "session_id": "bb6771b9-d4fb-4373-ae14-4b147c1c9c05",
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 3
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T17:35:37+00:00"
+  },
+  {
+    "session_id": "9cf92d1a-34b5-432f-b6e9-de19393049e6",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency",
+        "improving longitudinal performance"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "improving",
+        "past_sessions_count": 4
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T17:35:37+00:00"
+  },
+  {
+    "session_id": "f98dc58d-1051-4ee2-aeeb-f47b51cd6e99",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T17:39:10+00:00"
+  },
+  {
+    "session_id": "ed9a25e5-884b-44e2-a1c2-5aaf173779ec",
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 4
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T17:39:10+00:00"
+  },
+  {
+    "session_id": "f62ed783-5b30-48d5-a88c-695aff357050",
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency",
+        "improving longitudinal performance"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "improving",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T17:39:10+00:00"
+  },
+  {
+    "session_id": "5f20a7c0-1be0-4eea-a6ba-7b3912d428e5",
+    "user_id": "guest_user",
+    "game_id": "sequence_recall",
+    "game_title": "Sequence Recall",
+    "cognitive_domain": "WORKING_MEMORY",
+    "domain_label": "Working Memory & Concentration",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 18.0,
+    "moves_count": 6,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T17:39:48+00:00"
+  },
+  {
+    "session_id": "619e96e0-6244-42ac-936c-19499bca5b4b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T19:08:11+00:00"
+  },
+  {
+    "session_id": "3f9ddc69-0e76-4e2e-96d2-e0cc2e424a19",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T19:08:11+00:00"
+  },
+  {
+    "session_id": "ed5507ae-d4f2-4c2a-97df-22db4b94547e",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T19:28:08+00:00"
+  },
+  {
+    "session_id": "f69363a4-f976-4305-92cd-27dcc7ebb845",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "declining",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T19:28:08+00:00"
+  },
+  {
+    "session_id": "0f9b049e-3341-4046-b72d-1180016a8d1c",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:13:19+00:00"
+  },
+  {
+    "session_id": "f71b17da-c4ad-42cf-a44f-1d4b745c9275",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:13:19+00:00"
+  },
+  {
+    "session_id": "c9d78873-edf6-4067-aa6f-cae64a7e1f7e",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:13:19+00:00"
+  },
+  {
+    "session_id": "ac1ea0f3-a284-49ac-a2a5-c01cbd08382c",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:20:41+00:00"
+  },
+  {
+    "session_id": "78282b92-d2ab-41a5-9600-b1ef61f0adb8",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:20:41+00:00"
+  },
+  {
+    "session_id": "eb6df2a4-10b1-46e2-a336-49c970bca2f0",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency",
+        "improving longitudinal performance"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "improving",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:20:41+00:00"
+  },
+  {
+    "session_id": "77e6f026-907f-4fe7-8102-4c6d6060d00c",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:21:04+00:00"
+  },
+  {
+    "session_id": "04807610-e04f-44c1-8308-e29442c1b553",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:21:04+00:00"
+  },
+  {
+    "session_id": "e9044c5d-1e0e-4b8f-ace8-f516298b9425",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:21:05+00:00"
+  },
+  {
+    "session_id": "fae6f2f1-8cc7-41a1-b450-c66703f648f5",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:24:35+00:00"
+  },
+  {
+    "session_id": "bfb698c7-7239-47ad-935c-0c65400af4a5",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:24:35+00:00"
+  },
+  {
+    "session_id": "45b17890-11b6-4ff1-bf35-f3208375a557",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:24:36+00:00"
+  },
+  {
+    "session_id": "6ef240bf-2873-40a6-b08f-c33e63e3f457",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:27:31+00:00"
+  },
+  {
+    "session_id": "d26ea78b-fdc2-4c59-bf6a-b7c1019a606b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:27:31+00:00"
+  },
+  {
+    "session_id": "8f78ff2b-219b-4d4a-838f-cdd0bbf0a3e7",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:27:31+00:00"
+  },
+  {
+    "session_id": "496eae6a-b34a-4ca9-b600-677ddb307810",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-09T20:35:34+00:00"
+  },
+  {
+    "session_id": "2b43ad2a-bb62-43e1-b3ec-1ed7b3610a18",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:35:34+00:00"
+  },
+  {
+    "session_id": "23dc4e24-aec5-47cc-954d-a3b128418133",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-09T20:35:34+00:00"
+  },
+  {
+    "session_id": "5bd7e0de-1842-48ac-90f9-cbadb2ea42f7",
+    "client_action_id": "eb92af03-2711-4549-9922-a04f19fc920c",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "sequence_recall",
+    "game_title": "Sequence Recall",
+    "cognitive_domain": "WORKING_MEMORY",
+    "domain_label": "Working Memory & Concentration",
+    "difficulty_level": 1,
+    "score": 88.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 20.0,
+    "moves_count": 5,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        5.206,
+        1.513,
+        1.558,
+        1.107,
+        1.202
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.6,
+        "response_time": 2.12,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.2,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.84,
+        "latency_drift": -0.616,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:58:20+00:00"
+  },
+  {
+    "session_id": "d90b56d3-cee6-4e24-a112-6e66987daa72",
+    "client_action_id": "f1112fbf-eedb-415f-9cdc-0751ef813ce4",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "object_recognition",
+    "game_title": "Object Recognition",
+    "cognitive_domain": "SEMANTIC_MEMORY",
+    "domain_label": "Visual & Semantic Recognition",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 17.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        8.795,
+        2.886,
+        2.522
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 4.73,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.929,
+        "latency_drift": 0.0,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:58:45+00:00"
+  },
+  {
+    "session_id": "f411528b-928a-4de9-b6b2-73389b4ec8fa",
+    "client_action_id": "d2a7f9e7-4aec-45c3-bb29-67de29dbeb70",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "pattern_completion",
+    "game_title": "Pattern Completion",
+    "cognitive_domain": "EXECUTIVE_REASONING",
+    "domain_label": "Executive Function & Patterns",
+    "difficulty_level": 1,
+    "score": 76.0,
+    "stars": 2,
+    "stars_label": "2/3 Stars",
+    "performance_level": "Great Effort",
+    "feedback_message": "Very well done! Consistent practice keeps neural pathways active.",
+    "duration_seconds": 26.0,
+    "moves_count": 5,
+    "mistakes_count": 2,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        6.295,
+        8.603,
+        2.073,
+        4.276,
+        2.047
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.6,
+        "response_time": 4.66,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.4,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.614,
+        "latency_drift": -0.624,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-09T20:59:20+00:00"
+  },
+  {
+    "session_id": "f0191d08-e9a2-44ce-aa87-5c2c6f9dfd10",
+    "client_action_id": "afc5052a-8beb-49b1-801e-5024126e6de7",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 88.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 19.0,
+    "moves_count": 6,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        7.051,
+        2.714,
+        1.343,
+        4.114,
+        1.279,
+        0.888
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "reinforcing foundational level",
+        "supportive practice pacing"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.5,
+        "response_time": 2.9,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.167,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.867,
+        "latency_drift": -0.435,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Retaining Level 1 to provide supportive and accessible practice."
+    },
+    "timestamp": "2026-09-09T20:59:43+00:00"
+  },
+  {
+    "session_id": "a474750c-b788-445b-8a21-8649d9de388f",
+    "client_action_id": "97de1947-0132-4d94-9af1-c408b842e510",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "object_recognition",
+    "game_title": "Object Recognition",
+    "cognitive_domain": "SEMANTIC_MEMORY",
+    "domain_label": "Visual & Semantic Recognition",
+    "difficulty_level": 1,
+    "score": 76.0,
+    "stars": 2,
+    "stars_label": "2/3 Stars",
+    "performance_level": "Great Effort",
+    "feedback_message": "Very well done! Consistent practice keeps neural pathways active.",
+    "duration_seconds": 30.0,
+    "moves_count": 5,
+    "mistakes_count": 2,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        2.131,
+        3.386,
+        1.566,
+        10,
+        1.913
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.6,
+        "response_time": 3.8,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.4,
+        "completion_rate": 1.0,
+        "fatigue_detected": true,
+        "session_quality": 0.363,
+        "latency_drift": 0.629,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 1
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-10T03:43:14+00:00"
+  },
+  {
+    "session_id": "0e4888d4-279d-435c-8b85-83d9c5a951b4",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-10T18:12:46+00:00"
+  },
+  {
+    "session_id": "2c7091cc-e126-4eb5-b1a5-38442c8d963e",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-10T18:12:46+00:00"
+  },
+  {
+    "session_id": "35e74f0f-8d87-4d71-a54e-b8d6352499cd",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-10T18:12:46+00:00"
+  },
+  {
+    "session_id": "c64c412b-9f55-456b-be35-c7603fb381eb",
+    "client_action_id": "8ada72e5-79ae-4621-93b1-23d48115466b",
+    "user_id": "c3170c78-039d-47a7-8ce1-42a3572f0870",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 88.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 13.0,
+    "moves_count": 6,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        5.234,
+        1.28,
+        0.952,
+        1.779,
+        1.437,
+        1.063
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "reinforcing foundational level",
+        "supportive practice pacing"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 0.5,
+        "response_time": 1.96,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.167,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.867,
+        "latency_drift": -0.427,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 0
+      },
+      "clinical_rationale": "Retaining Level 1 to provide supportive and accessible practice."
+    },
+    "timestamp": "2026-09-10T21:20:10+00:00"
+  },
+  {
+    "session_id": "e821530f-9103-4720-91c5-b67fa32d60c4",
+    "client_action_id": "a233625d-b876-4cca-b8d7-aaf38e5588aa",
+    "user_id": "c3170c78-039d-47a7-8ce1-42a3572f0870",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 6.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        3.532,
+        1.435,
+        0.718
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 1.9,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 1
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 100% accuracy and low error rate (0%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-10T21:20:34+00:00"
+  },
+  {
+    "session_id": "dd9f4260-e866-4dd2-ab9b-0014daec7305",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-10T21:24:53+00:00"
+  },
+  {
+    "session_id": "f559273d-c068-4af6-a17c-f785f4b08ad4",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-10T21:24:53+00:00"
+  },
+  {
+    "session_id": "5f81bbdd-d941-4a40-892e-60239f0f9a86",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-10T21:24:53+00:00"
+  },
+  {
+    "session_id": "76c7ce3e-02ac-4003-9e56-3129532f581d",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-10T21:27:28+00:00"
+  },
+  {
+    "session_id": "6c95f74b-fdfb-40fc-bc1a-a3423100b8ef",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-10T21:27:28+00:00"
+  },
+  {
+    "session_id": "fdef20eb-c483-46d1-b9f3-949dd054e977",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-10T21:27:29+00:00"
+  },
+  {
+    "session_id": "99dffe37-3107-4082-bdce-64953e667579",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T15:28:53+00:00"
+  },
+  {
+    "session_id": "bc4e84ec-c2f6-41b9-a621-8706969935d8",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T15:28:56+00:00"
+  },
+  {
+    "session_id": "db76e7fe-cd47-4cea-9154-67e304f4b52f",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T15:28:57+00:00"
+  },
+  {
+    "session_id": "ef252e87-003c-4c3b-ae54-c5a5ec685a62",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T15:29:41+00:00"
+  },
+  {
+    "session_id": "1f3c373a-ceee-402f-b383-5d0a5479d5cc",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T15:29:45+00:00"
+  },
+  {
+    "session_id": "a3822313-1b22-4bb9-8ffa-72100747bfd4",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T15:29:45+00:00"
+  },
+  {
+    "session_id": "162ee5c6-87db-413f-b0e3-b78a65a6f478",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T15:53:29+00:00"
+  },
+  {
+    "session_id": "af740d57-f8ea-4937-b184-47ddf0ceb776",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T15:53:33+00:00"
+  },
+  {
+    "session_id": "b4979711-4ba8-475c-8fd6-5f06d36029c1",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T15:53:33+00:00"
+  },
+  {
+    "session_id": "adab89c2-08f7-4473-8fa1-642608a1554b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T15:57:59+00:00"
+  },
+  {
+    "session_id": "024656b9-1d61-48ef-a3fa-9a06368ed670",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T15:58:03+00:00"
+  },
+  {
+    "session_id": "a6e7ed77-dff4-4294-85ba-b47d6e22df69",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T15:58:03+00:00"
+  },
+  {
+    "session_id": "37704b2d-4de3-4108-9bf5-60b3d02f3d1a",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T16:25:32+00:00"
+  },
+  {
+    "session_id": "8917f591-a3f1-4ae0-8f8a-4c5d3dec90d0",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T16:25:36+00:00"
+  },
+  {
+    "session_id": "d8cb2f69-97a4-4c70-86a6-75c30740909a",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T16:25:36+00:00"
+  },
+  {
+    "session_id": "cb2157d4-979f-4ae0-8125-abb7def02a34",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T16:47:41+00:00"
+  },
+  {
+    "session_id": "464a6035-fcb0-4620-aa60-d89c26b1e288",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T16:47:44+00:00"
+  },
+  {
+    "session_id": "2e667045-9ada-4324-9410-1b0c94123728",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T16:47:44+00:00"
+  },
+  {
+    "session_id": "a51c185c-3e42-4007-88b2-5e08c03ba133",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:06:49+00:00"
+  },
+  {
+    "session_id": "1ba38faa-d741-43df-be29-4aadacc492d3",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:06:52+00:00"
+  },
+  {
+    "session_id": "458b3938-2ea4-4b49-87b3-f17cfdb6f90b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:06:53+00:00"
+  },
+  {
+    "session_id": "abaf8ef8-6adc-4561-a593-0c1afa951de6",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:11:40+00:00"
+  },
+  {
+    "session_id": "f2485538-f178-4d99-8b59-a455c2d5595b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:11:44+00:00"
+  },
+  {
+    "session_id": "2c4c9fa2-92ba-4945-8ae2-b3325732b5ab",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:11:44+00:00"
+  },
+  {
+    "session_id": "03b48f70-b6ac-4292-8396-f8bf41a74187",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:18:54+00:00"
+  },
+  {
+    "session_id": "60fdd36b-7575-4b51-90e8-dff0bef7f184",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:18:59+00:00"
+  },
+  {
+    "session_id": "0a179296-9920-4bad-8709-4584dc8d7f3e",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:18:59+00:00"
+  },
+  {
+    "session_id": "521104cf-963e-4ad8-9396-9748a162e58b",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:35:22+00:00"
+  },
+  {
+    "session_id": "bc4529b7-72b8-47a3-a341-b8dd1947f9e9",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:35:27+00:00"
+  },
+  {
+    "session_id": "402f8697-ff67-42a7-af0a-f6ab8ab1766a",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:35:27+00:00"
+  },
+  {
+    "session_id": "7e2a807b-7e68-4e48-b925-a322cae3bf1c",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:42:47+00:00"
+  },
+  {
+    "session_id": "499558d4-ba9a-4f6b-a2b0-802dd19b04a4",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:43:07+00:00"
+  },
+  {
+    "session_id": "a1f3e356-29f9-4b15-8ee7-0a0233a4be83",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:43:08+00:00"
+  },
+  {
+    "session_id": "39e7ad7b-3945-4793-9350-5acf1ac39af7",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T18:53:15+00:00"
+  },
+  {
+    "session_id": "db4ffeb8-a081-4e24-9f9f-2b494b886824",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T18:53:39+00:00"
+  },
+  {
+    "session_id": "9a41307e-eb89-4245-8f79-00538e1f043f",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T18:53:39+00:00"
+  },
+  {
+    "session_id": "de6d8cd3-b3ee-4ce5-80a8-974ea261114a",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T19:26:18+00:00"
+  },
+  {
+    "session_id": "5d4cc344-b044-4fc3-9eea-3c6c750b5f0a",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T19:26:39+00:00"
+  },
+  {
+    "session_id": "2eab60a7-9b74-4fe4-a6f9-3ac1ebb58e51",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T19:26:39+00:00"
+  },
+  {
+    "session_id": "d7ee24fa-5ecb-4097-acce-4d05349c518f",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T19:32:26+00:00"
+  },
+  {
+    "session_id": "84703495-0b58-48e6-a0b9-f015416fdf11",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T19:32:48+00:00"
+  },
+  {
+    "session_id": "19221c55-990c-4401-95b4-0c64816ead9f",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T19:32:49+00:00"
+  },
+  {
+    "session_id": "d96794b0-527d-47d7-9f7b-0c4860ca97fe",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T19:41:03+00:00"
+  },
+  {
+    "session_id": "c265eff2-2008-4f62-bf3d-f304e0d31162",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T19:41:35+00:00"
+  },
+  {
+    "session_id": "ba2c7dea-cc18-4222-83e1-be1001c53dca",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T19:41:35+00:00"
+  },
+  {
+    "session_id": "f0a99986-46e9-4ca2-91d7-9260bf64950c",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-18T20:56:32+00:00"
+  },
+  {
+    "session_id": "79a70c52-261b-469c-8416-0adc13b6c8d8",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-18T20:56:55+00:00"
+  },
+  {
+    "session_id": "77ec1866-4219-4bce-b8f8-0cdb097e4119",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-18T20:56:55+00:00"
+  },
+  {
+    "session_id": "a555d32f-c6ea-4c2a-9181-377287e00483",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 2,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 22.5,
+    "moves_count": 8,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 2,
+      "new_level": 3,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.95,
+        "response_time": 1.4,
+        "benchmark_response_time": 2.8,
+        "error_rate": 0.05,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 95% accuracy and low error rate (5%). Ready for level 3 stimulation."
+    },
+    "timestamp": "2026-09-19T01:12:06+00:00"
+  },
+  {
+    "session_id": "s_old",
+    "user_id": "test_alert_patient_99",
+    "game_id": "memory_match",
+    "score": 75,
+    "timestamp": "2026-09-14T01:12:31.038484+00:00"
+  },
+  {
+    "session_id": "6568aad7-fa69-42fa-b355-74aa212001df",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "daily_routine",
+    "game_title": "Daily Routine Recall",
+    "cognitive_domain": "PROCEDURAL_ORIENTATION",
+    "domain_label": "Daily Routine & Orientation",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 30.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {},
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 1,
+      "reason": [
+        "performance in optimal therapeutic zone",
+        "stable response time"
+      ],
+      "adjustment": "maintain",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 10.0,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.7,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
+    },
+    "timestamp": "2026-09-19T01:12:56+00:00"
+  },
+  {
+    "session_id": "5d488526-7903-4ad2-b75e-8acbd44c42d6",
+    "client_action_id": null,
+    "user_id": "guest_user",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "VISUOSPATIAL_MEMORY",
+    "domain_label": "Visuospatial & Memory",
+    "difficulty_level": 1,
+    "score": 90.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 25.5,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "pair_found_times": [
+        5.2,
+        12.1,
+        24.0
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 0.875,
+        "response_time": 3.19,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.125,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 0.9,
+        "latency_drift": 0.0,
+        "recent_trend": "stable",
+        "past_sessions_count": 5
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 88% accuracy and low error rate (12%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-19T01:12:56+00:00"
+  },
+  {
+    "session_id": "sess-sih-001",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 1,
+    "score": 85,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Good",
+    "feedback_message": "Strong memory performance.",
+    "duration_seconds": 45,
+    "moves_count": 8,
+    "mistakes_count": 1,
+    "completed": true,
+    "timestamp": "2026-09-12T01:14:05.834932+00:00"
+  },
+  {
+    "session_id": "sess-sih-002",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 1,
+    "score": 82,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Good",
+    "feedback_message": "Consistent visual recall.",
+    "duration_seconds": 48,
+    "moves_count": 9,
+    "mistakes_count": 1,
+    "completed": true,
+    "timestamp": "2026-09-13T01:14:05.834932+00:00"
+  },
+  {
+    "session_id": "sess-sih-003",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 1,
+    "score": 78,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Good",
+    "feedback_message": "Steady pacing.",
+    "duration_seconds": 52,
+    "moves_count": 10,
+    "mistakes_count": 2,
+    "completed": true,
+    "timestamp": "2026-09-14T01:14:05.834932+00:00"
+  },
+  {
+    "session_id": "sess-sih-004",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 2,
+    "score": 51,
+    "stars": 1,
+    "stars_label": "1/3 Stars",
+    "performance_level": "Needs Review",
+    "feedback_message": "Elevated hesitation latency.",
+    "duration_seconds": 88,
+    "moves_count": 16,
+    "mistakes_count": 5,
+    "completed": true,
+    "timestamp": "2026-09-17T01:14:05.834932+00:00"
+  },
+  {
+    "session_id": "sess-sih-005",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 2,
+    "score": 48,
+    "stars": 1,
+    "stars_label": "1/3 Stars",
+    "performance_level": "Needs Review",
+    "feedback_message": "Multiple mis-matches observed.",
+    "duration_seconds": 95,
+    "moves_count": 18,
+    "mistakes_count": 6,
+    "completed": true,
+    "timestamp": "2026-09-18T01:14:05.834932+00:00"
+  },
+  {
+    "session_id": "sess-sih-006",
+    "user_id": "sih-demo-patient-001",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 2,
+    "score": 46,
+    "stars": 1,
+    "stars_label": "1/3 Stars",
+    "performance_level": "Needs Review",
+    "feedback_message": "Consider Level 1 pacing.",
+    "duration_seconds": 102,
+    "moves_count": 20,
+    "mistakes_count": 7,
+    "completed": true,
+    "timestamp": "2026-09-19T01:14:04+00:00"
+  },
+  {
+    "session_id": "sess-sih-007",
+    "user_id": "sih-demo-patient-002",
+    "game_id": "memory_match",
+    "game_title": "Memory Match",
+    "cognitive_domain": "Visual Association & Working Memory",
+    "domain_label": "Visual Memory",
+    "difficulty_level": 1,
+    "score": 68,
+    "stars": 2,
+    "stars_label": "2/3 Stars",
+    "performance_level": "Moderate",
+    "feedback_message": "Routine session completed.",
+    "duration_seconds": 65,
+    "moves_count": 12,
+    "mistakes_count": 3,
+    "completed": true,
+    "timestamp": "2026-09-13T23:14:05.834932+00:00"
+  }
+]
