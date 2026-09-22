@@ -202,7 +202,7 @@ export default function CognitiveGamesHub({ setPage }) {
         >
           {t("gameHub", "Brain Games")} <span style={{ color: LIME }}>Hub.</span>
         </h1>
-        <p style={{ color: "#9ca3af", fontSize: 15, lineHeight: 1.6, maxWidth: 680 }}>
+        <p style={{ color: "#5C7382", fontSize: 16, lineHeight: 1.6, maxWidth: 680 }}>
           {t("onscreenInstruction", "Engaging, gentle brain-training games designed specifically for memory health and routine orientation.")}
         </p>
       </div>
@@ -234,10 +234,10 @@ export default function CognitiveGamesHub({ setPage }) {
               ⭐
             </div>
             <div>
-              <div style={{ fontSize: 12, color: "#9ca3af", fontWeight: 700, textTransform: "uppercase" }}>
+              <div style={{ fontSize: 13, color: "#5C7382", fontWeight: 700, textTransform: "uppercase" }}>
                 {t("score", "Total Stars")}
               </div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: "#fbbf24" }}>
+              <div style={{ fontSize: 28, fontWeight: 900, color: "#D97706" }}>
                 {stats.total_stars_earned || 0}
               </div>
             </div>
@@ -251,8 +251,8 @@ export default function CognitiveGamesHub({ setPage }) {
                 width: 48,
                 height: 48,
                 borderRadius: 14,
-                background: "rgba(96,165,250,0.15)",
-                border: "1px solid rgba(96,165,250,0.3)",
+                background: "rgba(42,143,138,0.12)",
+                border: "1px solid rgba(42,143,138,0.25)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -262,10 +262,10 @@ export default function CognitiveGamesHub({ setPage }) {
               🎮
             </div>
             <div>
-              <div style={{ fontSize: 12, color: "#9ca3af", fontWeight: 700, textTransform: "uppercase" }}>
+              <div style={{ fontSize: 13, color: "#5C7382", fontWeight: 700, textTransform: "uppercase" }}>
                 {t("level", "Sessions")}
               </div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: "#60a5fa" }}>
+              <div style={{ fontSize: 28, fontWeight: 900, color: "#2A8F8A" }}>
                 {stats.total_games_played || 0}
               </div>
             </div>
@@ -279,8 +279,8 @@ export default function CognitiveGamesHub({ setPage }) {
                 width: 48,
                 height: 48,
                 borderRadius: 14,
-                background: "rgba(239,68,68,0.15)",
-                border: "1px solid rgba(239,68,68,0.3)",
+                background: "rgba(239,68,68,0.12)",
+                border: "1px solid rgba(239,68,68,0.25)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -290,10 +290,10 @@ export default function CognitiveGamesHub({ setPage }) {
               🔥
             </div>
             <div>
-              <div style={{ fontSize: 12, color: "#9ca3af", fontWeight: 700, textTransform: "uppercase" }}>
+              <div style={{ fontSize: 13, color: "#5C7382", fontWeight: 700, textTransform: "uppercase" }}>
                 {t("highScore", "Active Streak")}
               </div>
-              <div style={{ fontSize: 28, fontWeight: 900, color: "#f87171" }}>
+              <div style={{ fontSize: 28, fontWeight: 900, color: "#DC2626" }}>
                 {stats.current_streak_days || 0} <span style={{ fontSize: 16 }}>Days</span>
               </div>
             </div>
@@ -329,8 +329,8 @@ export default function CognitiveGamesHub({ setPage }) {
                   borderRadius: 8,
                   background: `${game.color}18`,
                   border: `1px solid ${game.color}44`,
-                  color: game.color,
-                  fontSize: 11,
+                  color: game.color === "#34d399" ? "#0F766E" : game.color === "#f59e0b" ? "#B45309" : game.color,
+                  fontSize: 12,
                   fontWeight: 800,
                   marginBottom: 14,
                 }}
@@ -361,29 +361,31 @@ export default function CognitiveGamesHub({ setPage }) {
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 800,
-                      fontSize: 18,
+                      fontSize: 19,
                       color: "#1C2F3A",
                       margin: 0,
                     }}
                   >
                     {t(game.titleKey, game.title)}
                   </h3>
-                  <span style={{ fontSize: 12, color: "#9ca3af" }}>5 Difficulty Levels (Easy to Advance)</span>
+                  <span style={{ fontSize: 13, color: "#5C7382", fontWeight: 600 }}>5 Levels (Adaptive AI)</span>
                 </div>
               </div>
 
-              <p style={{ color: "#d1d5db", fontSize: 14, lineHeight: 1.5, marginBottom: 12 }}>
+              <p style={{ color: "#3D5563", fontSize: 15, lineHeight: 1.5, marginBottom: 12 }}>
                 {t(game.descKey, game.desc)}
               </p>
 
               <div
                 style={{
-                  background: "#FFFFFF",
-                  borderRadius: 10,
-                  padding: "8px 12px",
-                  fontSize: 12,
-                  color: "#9ca3af",
+                  background: "#F4F8F8",
+                  borderRadius: 12,
+                  padding: "10px 14px",
+                  fontSize: 13,
+                  color: "#3D5563",
+                  lineHeight: 1.4,
                   marginBottom: 20,
+                  border: "1px solid rgba(28,58,68,0.06)",
                 }}
               >
                 🧠 <strong style={{ color: "#1C2F3A" }}>Benefit:</strong> {game.benefit}
@@ -394,12 +396,12 @@ export default function CognitiveGamesHub({ setPage }) {
               onClick={() => setPage(game.page)}
               style={{
                 width: "100%",
-                padding: "12px 20px",
-                fontSize: 15,
+                padding: "13px 20px",
+                fontSize: 16,
                 fontWeight: 800,
-                background: game.color,
-                color: "#F6F3ED",
-                boxShadow: `0 6px 20px ${game.color}33`,
+                background: "#2A8F8A",
+                color: "#FFFFFF",
+                boxShadow: "0 6px 18px rgba(42,143,138,0.25)",
               }}
             >
               {t("playNow", "Play Game")} →

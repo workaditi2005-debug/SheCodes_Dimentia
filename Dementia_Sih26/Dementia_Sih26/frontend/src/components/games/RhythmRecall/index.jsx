@@ -84,7 +84,7 @@ export default function RhythmRecall({ setPage }) {
   // Render Preferences View
   if (view === "preferences") {
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8">
+      <div style={{ maxWidth: 1000, margin: "0 auto", padding: "20px 16px 48px" }}>
         <MusicPreferences
           onBack={handleBackToHome}
           onSaved={handleBackToHome}
@@ -96,7 +96,7 @@ export default function RhythmRecall({ setPage }) {
   // Render Session Summary View
   if (view === "summary" && sessionSummary) {
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8">
+      <div style={{ maxWidth: 800, margin: "0 auto", padding: "20px 16px 48px" }}>
         <SessionSummary
           sessionData={sessionSummary}
           onPlayAgain={() => handleSelectMode(selectedMode)}
@@ -111,22 +111,31 @@ export default function RhythmRecall({ setPage }) {
   if (view === "game") {
     if (loadingMusic) {
       return (
-        <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-6 text-center text-white">
-          <div className="w-16 h-16 border-4 border-[#2A8F8A] border-t-transparent rounded-full animate-spin mb-4" />
-          <h2 className="text-xl font-bold">Preparing Personalized Music Session...</h2>
-          <p className="text-slate-400 text-sm mt-2">Selecting songs based on regional and nostalgia preferences.</p>
+        <div style={{ minHeight: 400, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, textAlign: "center" }}>
+          <div style={{ width: 56, height: 56, border: "4px solid rgba(42,143,138,0.2)", borderTopColor: "#2A8F8A", borderRadius: "50%", animation: "spin 1s linear infinite", marginBottom: 20 }} />
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "#1C2F3A" }}>Preparing Personalized Music Session...</h2>
+          <p style={{ color: "#5C7382", fontSize: 16, marginTop: 8 }}>Selecting songs based on regional and nostalgia preferences.</p>
         </div>
       );
     }
 
     if (musicError && (!tracks || tracks.length === 0)) {
       return (
-        <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-6 text-center text-white space-y-4">
-          <div className="text-4xl">⚠️</div>
-          <h2 className="text-xl font-bold">{musicError}</h2>
+        <div style={{ minHeight: 400, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, textAlign: "center", gap: 16 }}>
+          <div style={{ fontSize: 48 }}>⚠️</div>
+          <h2 style={{ fontSize: 22, fontWeight: 800, color: "#1C2F3A" }}>{musicError}</h2>
           <button
             onClick={handleBackToHome}
-            className="px-6 py-3 bg-[#2A8F8A] text-slate-950 font-bold rounded-xl"
+            style={{
+              padding: "14px 28px",
+              background: "#2A8F8A",
+              color: "#FFFFFF",
+              fontWeight: 800,
+              fontSize: 16,
+              borderRadius: 14,
+              border: "none",
+              cursor: "pointer",
+            }}
           >
             Back to Music Hub
           </button>
@@ -135,7 +144,7 @@ export default function RhythmRecall({ setPage }) {
     }
 
     return (
-      <div className="min-h-screen bg-slate-950 text-slate-100">
+      <div style={{ maxWidth: 880, margin: "0 auto", padding: "16px 16px 48px" }}>
         {selectedMode === "recognition" && (
           <SongRecognition
             tracks={tracks}
@@ -156,27 +165,51 @@ export default function RhythmRecall({ setPage }) {
 
   // Default: Landing / Mode Select View
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8 space-y-6">
+    <div style={{ maxWidth: 1000, margin: "0 auto", padding: "16px 16px 48px" }}>
       {/* Top Header Bar */}
-      <div className="max-w-6xl mx-auto flex items-center justify-between border-b border-white/10 pb-4">
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(28,58,68,0.10)", paddingBottom: 16, marginBottom: 28 }}>
         <button
           onClick={handleBackToHub}
-          className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white bg-slate-900 border border-white/10 px-4 py-2 rounded-xl transition-all"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            fontSize: 15,
+            fontWeight: 700,
+            color: "#1C2F3A",
+            background: "#FFFFFF",
+            border: "1.5px solid rgba(28,58,68,0.14)",
+            padding: "10px 18px",
+            borderRadius: 14,
+            cursor: "pointer",
+            boxShadow: "0 2px 6px rgba(28,47,58,0.04)",
+          }}
         >
           ← Back to Brain Games
         </button>
         <button
           onClick={() => setView("preferences")}
-          className="flex items-center gap-2 text-sm font-semibold text-[#2A8F8A] hover:bg-[#2A8F8A]/10 bg-slate-900 border border-[#2A8F8A]/30 px-4 py-2 rounded-xl transition-all"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            fontSize: 15,
+            fontWeight: 700,
+            color: "#1B6360",
+            background: "#FFFFFF",
+            border: "1.5px solid #2A8F8A",
+            padding: "10px 18px",
+            borderRadius: 14,
+            cursor: "pointer",
+            boxShadow: "0 2px 6px rgba(28,47,58,0.04)",
+          }}
         >
           ⚙️ Music Preferences
         </button>
       </div>
 
       {/* Main Home Grid */}
-      <div className="max-w-6xl mx-auto">
-        <RhythmRecallHome onSelectMode={handleSelectMode} />
-      </div>
+      <RhythmRecallHome onSelectMode={handleSelectMode} />
     </div>
   );
 }

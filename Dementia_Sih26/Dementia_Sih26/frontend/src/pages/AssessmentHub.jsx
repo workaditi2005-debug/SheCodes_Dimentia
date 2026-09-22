@@ -94,17 +94,18 @@ export default function AssessmentHub({ setPage }) {
       </div>
 
       {/* ── Disclaimer ── */}
-      <div style={{ background:"rgba(245,158,11,0.07)", border:"1px solid rgba(245,158,11,0.18)", borderRadius:14, padding:"14px 20px", marginBottom:20, display:"flex", gap:12, alignItems:"flex-start" }}>
-        <span style={{ fontSize:16, flexShrink:0 }}>⚠️</span>
-        <p style={{ color:"#f59e0b", fontSize:13, lineHeight:1.65, fontWeight:500 }}>
-          <strong>Screening tool only.</strong> NOT a medical diagnosis. Always consult a qualified neurologist for clinical evaluation.
+      <div style={{ background:"#FEF2F2", border:"1.5px solid #FCA5A5", borderRadius:14, padding:"16px 20px", marginBottom:20, display:"flex", gap:12, alignItems:"flex-start", boxShadow:"0 4px 14px rgba(220,38,38,0.06)" }}>
+        <span style={{ fontSize:18, color:"#DC2626", flexShrink:0 }}>⚠️</span>
+        <p style={{ color:"#991B1B", fontSize:13.5, lineHeight:1.65, fontWeight:500, margin:0 }}>
+          <strong style={{ fontWeight:800 }}>Screening tool only.</strong> NOT a medical diagnosis. Always consult a qualified neurologist for clinical evaluation.
         </p>
       </div>
 
       {/* ── Error ── */}
       {error && (
-        <div style={{ background:"rgba(232,64,64,0.08)", border:"1px solid rgba(232,64,64,0.25)", borderRadius:12, padding:16, marginBottom:16, color:"#ff7070", fontSize:13 }}>
-          ⚠️ {error}
+        <div style={{ background:"#FEF2F2", border:"1.5px solid #FCA5A5", borderRadius:12, padding:"14px 18px", marginBottom:16, color:"#991B1B", fontSize:13.5, fontWeight:700, display:"flex", gap:10, alignItems:"center" }}>
+          <span style={{ color:"#DC2626", fontSize:18 }}>⚠️</span>
+          <span>{error}</span>
         </div>
       )}
 

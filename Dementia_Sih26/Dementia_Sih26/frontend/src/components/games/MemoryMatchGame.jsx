@@ -270,13 +270,13 @@ export default function MemoryMatchGame({ setPage }) {
                 border: isCardMatched
                   ? "2px solid #10b981"
                   : isFlipped
-                  ? "2px solid rgba(255,255,255,0.4)"
-                  : "2px solid #E2EBEC",
+                  ? "2px solid rgba(42,143,138,0.4)"
+                  : "2px solid rgba(28,58,68,0.14)",
                 background: isCardMatched
-                  ? "rgba(16,185,129,0.18)"
+                  ? "rgba(16,185,129,0.14)"
                   : isFlipped
-                  ? "#E6EEEF"
-                  : "rgba(20,24,20,0.85)",
+                  ? "#FFFFFF"
+                  : "#F0F6F6",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -285,8 +285,8 @@ export default function MemoryMatchGame({ setPage }) {
                 transition: "all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)",
                 transform: isFlipped ? "scale(1.02)" : "scale(1)",
                 boxShadow: isCardMatched
-                  ? "0 0 24px rgba(16,185,129,0.35)"
-                  : "0 6px 16px rgba(0,0,0,0.4)",
+                  ? "0 0 20px rgba(16,185,129,0.25)"
+                  : "0 4px 14px rgba(28,47,58,0.06)",
                 padding: level >= 4 ? 6 : 10,
               }}
             >
@@ -302,9 +302,9 @@ export default function MemoryMatchGame({ setPage }) {
                   </span>
                   <span
                     style={{
-                      fontSize: level >= 4 ? 10 : level === 3 ? 11 : 12,
-                      fontWeight: 700,
-                      color: isCardMatched ? "#34d399" : "#e5e7eb",
+                      fontSize: level >= 4 ? 11 : level === 3 ? 12 : 13,
+                      fontWeight: 800,
+                      color: isCardMatched ? "#0F6B45" : "#1C2F3A",
                       textAlign: "center",
                       lineHeight: 1.2,
                     }}
@@ -318,11 +318,12 @@ export default function MemoryMatchGame({ setPage }) {
                     width: level >= 4 ? 30 : 38,
                     height: level >= 4 ? 30 : 38,
                     borderRadius: "50%",
-                    background: "rgba(28,58,68,0.09)",
+                    background: "rgba(42,143,138,0.12)",
+                    border: "1px solid rgba(42,143,138,0.25)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    color: "#9ca3af",
+                    color: "#2A8F8A",
                     fontSize: level >= 4 ? 16 : 20,
                     fontWeight: 900,
                   }}

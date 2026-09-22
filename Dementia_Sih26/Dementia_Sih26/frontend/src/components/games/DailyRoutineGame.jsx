@@ -227,7 +227,7 @@ export default function DailyRoutineGame({ setPage }) {
       <div style={{ width: "100%", maxWidth: 740, margin: "0 auto" }}>
         {/* Timeline Slots Row */}
         <div style={{ marginBottom: 32 }}>
-          <div style={{ fontSize: 14, color: "#9ca3af", fontWeight: 700, marginBottom: 14, textAlign: "center" }}>
+          <div style={{ fontSize: 16, color: "#5C7382", fontWeight: 700, marginBottom: 16, textAlign: "center" }}>
             Step Sequence (Morning → Night):
           </div>
 
@@ -246,18 +246,19 @@ export default function DailyRoutineGame({ setPage }) {
                   key={idx}
                   onClick={() => card && handleRemoveFromSlot(idx)}
                   style={{
-                    aspectRatio: "1 / 1.15",
+                    aspectRatio: "1 / 1.18",
                     borderRadius: 20,
-                    border: card ? "2px solid #fb923c" : "2px dashed rgba(28,58,68,0.20)",
-                    background: card ? "rgba(251,146,60,0.15)" : "#FFFFFF",
+                    border: card ? "2px solid #EA580C" : "2px dashed rgba(28,58,68,0.20)",
+                    background: card ? "rgba(234,88,12,0.08)" : "#FFFFFF",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
                     cursor: card ? "pointer" : "default",
                     transition: "all 0.2s ease",
-                    padding: 10,
+                    padding: 12,
                     position: "relative",
+                    boxShadow: "0 4px 14px rgba(28,47,58,0.05)",
                   }}
                 >
                   <span
@@ -267,7 +268,7 @@ export default function DailyRoutineGame({ setPage }) {
                       left: 10,
                       fontSize: 12,
                       fontWeight: 900,
-                      color: "#fb923c",
+                      color: "#C2410C",
                     }}
                   >
                     #{idx + 1}
@@ -278,21 +279,21 @@ export default function DailyRoutineGame({ setPage }) {
                       <span style={{ fontSize: 38, marginBottom: 4 }}>{card.icon}</span>
                       <span
                         style={{
-                          fontSize: 12,
+                          fontSize: 14,
                           fontWeight: 700,
                           color: "#1C2F3A",
                           textAlign: "center",
-                          lineHeight: 1.2,
+                          lineHeight: 1.25,
                         }}
                       >
                         {cardTitle}
                       </span>
-                      <span style={{ fontSize: 10, color: "#9ca3af", marginTop: 2 }}>
+                      <span style={{ fontSize: 12, color: "#5C7382", marginTop: 3, fontWeight: 600 }}>
                         {card.timeHint}
                       </span>
                     </>
                   ) : (
-                    <span style={{ fontSize: 13, color: "#6b7280", fontWeight: 600 }}>
+                    <span style={{ fontSize: 14, color: "#5C7382", fontWeight: 700 }}>
                       Step {idx + 1}
                     </span>
                   )}
@@ -304,7 +305,7 @@ export default function DailyRoutineGame({ setPage }) {
 
         {/* Available Cards Bank */}
         <div>
-          <div style={{ fontSize: 14, color: "#9ca3af", fontWeight: 700, marginBottom: 14, textAlign: "center" }}>
+          <div style={{ fontSize: 16, color: "#5C7382", fontWeight: 700, marginBottom: 16, textAlign: "center" }}>
             Tap the card that happens next:
           </div>
 
@@ -324,32 +325,32 @@ export default function DailyRoutineGame({ setPage }) {
                   key={card.id}
                   onClick={() => handleSelectCard(card)}
                   style={{
-                    width: 130,
+                    width: 135,
                     padding: "16px 12px",
                     borderRadius: 18,
-                    border: "1px solid rgba(28,58,68,0.18)",
-                    background: "rgba(28,58,68,0.09)",
+                    border: "1.5px solid rgba(28,58,68,0.14)",
+                    background: "#FFFFFF",
                     cursor: "pointer",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    boxShadow: "0 6px 18px rgba(0,0,0,0.4)",
-                    transition: "transform 0.15s ease",
+                    boxShadow: "0 6px 18px rgba(28,47,58,0.06)",
+                    transition: "all 0.15s ease",
                   }}
                 >
-                  <span style={{ fontSize: 40, marginBottom: 6 }}>{card.icon}</span>
+                  <span style={{ fontSize: 42, marginBottom: 6 }}>{card.icon}</span>
                   <span
                     style={{
-                      fontSize: 13,
+                      fontSize: 14,
                       fontWeight: 700,
                       color: "#1C2F3A",
                       textAlign: "center",
-                      lineHeight: 1.2,
+                      lineHeight: 1.25,
                     }}
                   >
                     {cardTitle}
                   </span>
-                  <span style={{ fontSize: 11, color: "#fb923c", fontWeight: 700, marginTop: 4 }}>
+                  <span style={{ fontSize: 12, color: "#C2410C", fontWeight: 800, marginTop: 5 }}>
                     {card.timeHint}
                   </span>
                 </button>

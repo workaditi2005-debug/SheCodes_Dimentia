@@ -118,7 +118,7 @@ export default function RhythmRecallHome({ onSelectMode }) {
         </h1>
         <p
           style={{
-            color: "#d1d5db",
+            color: "#5C7382",
             fontSize: "clamp(16px, 2.5vw, 20px)",
             lineHeight: 1.6,
             maxWidth: 560,
@@ -146,10 +146,11 @@ export default function RhythmRecallHome({ onSelectMode }) {
       <p
         style={{
           textAlign: "center",
-          color: "#6b7280",
-          fontSize: 14,
+          color: "#5C7382",
+          fontSize: 15,
           marginTop: 36,
           lineHeight: 1.6,
+          fontWeight: 600,
         }}
       >
         🎵 {t("rrFootnote", "All activities are optional. Go at your own pace.")}
@@ -159,12 +160,13 @@ export default function RhythmRecallHome({ onSelectMode }) {
 }
 
 function ModeCard({ mode, onSelect, t }) {
+  const btnColor = mode.id === "recognition" ? "#2A8F8A" : "#D946EF";
+
   return (
     <div
       style={{
-        background: "rgba(10,12,10,0.92)",
-        backdropFilter: "blur(24px)",
-        border: `1px solid ${mode.color}33`,
+        background: "#FFFFFF",
+        border: "1px solid rgba(28,58,68,0.12)",
         borderRadius: 24,
         padding: "36px 32px",
         display: "flex",
@@ -174,15 +176,16 @@ function ModeCard({ mode, onSelect, t }) {
         gap: 18,
         transition: "transform 0.2s ease, box-shadow 0.2s ease",
         position: "relative",
+        boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
         overflow: "hidden",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = "translateY(-4px)";
-        e.currentTarget.style.boxShadow = `0 20px 48px rgba(0,0,0,0.6), 0 0 32px ${mode.color}22`;
+        e.currentTarget.style.boxShadow = "0 16px 36px rgba(28,47,58,0.12)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.transform = "none";
-        e.currentTarget.style.boxShadow = "none";
+        e.currentTarget.style.boxShadow = "0 8px 24px rgba(28,47,58,0.06)";
       }}
     >
       {/* Icon */}
@@ -191,8 +194,8 @@ function ModeCard({ mode, onSelect, t }) {
           width: 88,
           height: 88,
           borderRadius: "50%",
-          background: `${mode.color}18`,
-          border: `2px solid ${mode.color}44`,
+          background: `${btnColor}15`,
+          border: `2px solid ${btnColor}33`,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -219,7 +222,7 @@ function ModeCard({ mode, onSelect, t }) {
       {/* Description */}
       <p
         style={{
-          color: "#d1d5db",
+          color: "#5C7382",
           fontSize: "clamp(15px, 2vw, 17px)",
           lineHeight: 1.6,
           margin: 0,
@@ -237,20 +240,20 @@ function ModeCard({ mode, onSelect, t }) {
           width: "100%",
           padding: "18px 24px",
           borderRadius: 16,
-          background: mode.color,
+          background: btnColor,
           border: "none",
-          color: "#F6F3ED",
+          color: "#FFFFFF",
           fontWeight: 900,
           fontSize: "clamp(16px, 2.5vw, 20px)",
           cursor: "pointer",
           transition: "all 0.15s ease",
-          boxShadow: `0 8px 24px ${mode.color}44`,
+          boxShadow: `0 8px 24px ${btnColor}33`,
           marginTop: 8,
           letterSpacing: 0.3,
         }}
-        onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.03)"; }}
+        onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.02)"; }}
         onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; }}
-        onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${mode.color}`; e.currentTarget.style.outlineOffset = "3px"; }}
+        onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${btnColor}`; e.currentTarget.style.outlineOffset = "3px"; }}
         onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
       >
         {t("rrStart", "START")} {mode.icon}

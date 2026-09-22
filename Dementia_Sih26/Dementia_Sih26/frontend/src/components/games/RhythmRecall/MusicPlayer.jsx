@@ -116,11 +116,12 @@ export default function MusicPlayer({
   return (
     <div
       style={{
-        background: "rgba(10,12,10,0.92)",
-        border: `1px solid ${accentColor}33`,
+        background: "#FFFFFF",
+        border: `1.5px solid ${accentColor}44`,
         borderRadius: 20,
-        padding: "20px 24px",
+        padding: "24px 28px",
         width: "100%",
+        boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
       }}
       role="region"
       aria-label="Music Player"
@@ -142,12 +143,12 @@ export default function MusicPlayer({
 
       {/* Track Info */}
       <div style={{ marginBottom: 16, textAlign: "center" }}>
-        <div style={{ fontSize: 32, marginBottom: 8 }}>🎵</div>
-        <div style={{ fontSize: 18, fontWeight: 800, color: "#1C2F3A", marginBottom: 4 }}>
+        <div style={{ fontSize: 36, marginBottom: 8 }}>🎵</div>
+        <div style={{ fontSize: 20, fontWeight: 800, color: "#1C2F3A", marginBottom: 4 }}>
           {title || "♪ Now Playing"}
         </div>
         {artist && (
-          <div style={{ fontSize: 14, color: "#9ca3af" }}>{artist}</div>
+          <div style={{ fontSize: 15, color: "#5C7382", fontWeight: 600 }}>{artist}</div>
         )}
       </div>
 
@@ -155,14 +156,15 @@ export default function MusicPlayer({
       {hasError && (
         <div
           style={{
-            background: "rgba(251,191,36,0.10)",
-            border: "1px solid rgba(251,191,36,0.30)",
+            background: "#FEF3C7",
+            border: "1px solid #FCD34D",
             borderRadius: 12,
             padding: "12px 16px",
             marginBottom: 16,
             textAlign: "center",
-            color: "#fbbf24",
+            color: "#92400E",
             fontSize: 15,
+            fontWeight: 600,
           }}
           role="alert"
         >
@@ -182,17 +184,17 @@ export default function MusicPlayer({
               height: 80,
               borderRadius: "50%",
               background: isPlaying
-                ? `rgba(42,143,138,0.15)`
+                ? `rgba(42,143,138,0.12)`
                 : accentColor,
               border: `3px solid ${accentColor}`,
-              color: isPlaying ? accentColor : "#F6F3ED",
+              color: isPlaying ? accentColor : "#FFFFFF",
               fontSize: 32,
               cursor: audioUrl && !isLoading ? "pointer" : "not-allowed",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               transition: "all 0.2s ease",
-              boxShadow: isPlaying ? `0 0 24px ${accentColor}44` : `0 6px 20px ${accentColor}44`,
+              boxShadow: `0 6px 20px ${accentColor}33`,
               opacity: !audioUrl ? 0.5 : 1,
             }}
           >
@@ -213,7 +215,7 @@ export default function MusicPlayer({
             aria-label="Playback position"
             style={{ width: "100%", accentColor, height: 6 }}
           />
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, color: "#9ca3af", marginTop: 4 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, color: "#5C7382", marginTop: 4, fontWeight: 600 }}>
             <span>{formatTime(currentTime)}</span>
             <span>{formatTime(duration)}</span>
           </div>

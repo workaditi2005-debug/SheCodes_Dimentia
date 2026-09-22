@@ -77,27 +77,16 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
       <div
         style={{
           width: "100%",
-          background: "linear-gradient(180deg, #181c16 0%, #0c0f0a 100%)",
-          border: `2px solid ${LIME}44`,
+          background: "#FFFFFF",
+          border: `1.5px solid rgba(28,58,68,0.12)`,
           borderRadius: 28,
           padding: "40px 32px 32px",
           textAlign: "center",
-          boxShadow: `0 24px 64px rgba(0,0,0,0.7), 0 0 50px ${LIME}18`,
+          boxShadow: "0 24px 64px rgba(28,47,58,0.08)",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* Top glow */}
-        <div
-          style={{
-            position: "absolute", top: -50, left: "50%", transform: "translateX(-50%)",
-            width: 200, height: 100,
-            background: `radial-gradient(circle, ${LIME}44 0%, transparent 70%)`,
-            pointerEvents: "none",
-          }}
-          aria-hidden="true"
-        />
-
         {/* Icon */}
         <div style={{ fontSize: 56, marginBottom: 12 }}>🎵</div>
 
@@ -121,7 +110,7 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
               key={i}
               style={{
                 fontSize: 48,
-                filter: i <= stars ? "drop-shadow(0 0 14px #fbbf24)" : "grayscale(100%) opacity(25%)",
+                filter: i <= stars ? "drop-shadow(0 2px 8px rgba(217,119,6,0.4))" : "grayscale(100%) opacity(25%)",
                 transform: i <= stars ? "scale(1.1)" : "scale(0.9)",
                 display: "inline-block",
               }}
@@ -136,9 +125,9 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
         <p
           style={{
             fontSize: "clamp(16px, 2.5vw, 20px)",
-            color: "#f3f4f6",
+            color: "#1C2F3A",
             lineHeight: 1.6,
-            fontWeight: 600,
+            fontWeight: 700,
             marginBottom: 24,
           }}
         >
@@ -159,14 +148,14 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
               icon="🎶"
               label={t("rrSongRecognition", "Song Recognition")}
               value={recognitionDisplay}
-              color={TEAL}
+              color="#0F766E"
             />
           )}
           <MetricTile
             icon="⏱"
             label={t("rrSessionDuration", "Session Duration")}
             value={`${durationMin} ${t("rrMin", "min")}`}
-            color={LIME}
+            color="#2A8F8A"
           />
         </div>
 
@@ -174,14 +163,14 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
         {moodEmojis && (
           <div
             style={{
-              background: "#FFFFFF",
-              border: "1px solid rgba(28,58,68,0.11)",
+              background: "#F4F8F8",
+              border: "1px solid rgba(28,58,68,0.08)",
               borderRadius: 14,
-              padding: "12px 16px",
+              padding: "14px 18px",
               marginBottom: 16,
             }}
           >
-            <div style={{ fontSize: 12, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 6 }}>
+            <div style={{ fontSize: 13, color: "#5C7382", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 6 }}>
               {t("rrMoodResponse", "Mood Response")}
             </div>
             <div style={{ fontSize: 32 }}>{moodEmojis}</div>
@@ -192,14 +181,14 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
         {memory_responses.length > 0 && (
           <div
             style={{
-              background: `${PINK}0A`,
-              border: `1px solid ${PINK}33`,
+              background: "#FDF2F8",
+              border: "1px solid rgba(217,70,239,0.25)",
               borderRadius: 14,
-              padding: "12px 16px",
+              padding: "14px 18px",
               marginBottom: 24,
             }}
           >
-            <div style={{ fontSize: 12, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 6 }}>
+            <div style={{ fontSize: 13, color: "#5C7382", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.8, marginBottom: 6 }}>
               {t("rrMemoryAssociation", "Memory Association")}
             </div>
             <div style={{ color: "#1C2F3A", fontWeight: 700, fontSize: 16 }}>
@@ -209,7 +198,7 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
         )}
 
         {/* Actions */}
-        <p style={{ color: "#9ca3af", fontSize: 16, marginBottom: 20 }}>
+        <p style={{ color: "#5C7382", fontSize: 16, fontWeight: 600, marginBottom: 20 }}>
           {t("rrPlayAgainQuestion", "Great job! Would you like to play another session?")}
         </p>
 
@@ -218,21 +207,20 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
             onClick={onPlayAgain}
             aria-label="Play another music session"
             style={{
-              padding: "20px 24px",
+              padding: "18px 24px",
               borderRadius: 18,
-              background: LIME,
+              background: "#2A8F8A",
               border: "none",
-              color: "#F6F3ED",
+              color: "#FFFFFF",
               fontWeight: 900,
               fontSize: "clamp(17px, 3vw, 22px)",
               cursor: "pointer",
-              boxShadow: `0 8px 28px ${LIME}44`,
+              boxShadow: "0 8px 24px rgba(42,143,138,0.25)",
               width: "100%",
+              transition: "transform 0.15s ease",
             }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.03)"; }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.02)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.transform = "none"; }}
-            onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${LIME}`; e.currentTarget.style.outlineOffset = "3px"; }}
-            onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
           >
             🎵 {t("rrPlayAgain", "PLAY AGAIN")}
           </button>
@@ -243,16 +231,15 @@ export default function SessionSummary({ sessionData, onPlayAgain, onHome, onBac
             style={{
               padding: "16px 24px",
               borderRadius: 16,
-              background: "transparent",
-              border: "1px solid rgba(28,58,68,0.18)",
-              color: "#9ca3af",
-              fontWeight: 700,
+              background: "#FFFFFF",
+              border: "1.5px solid rgba(28,58,68,0.14)",
+              color: "#1C2F3A",
+              fontWeight: 800,
               fontSize: "clamp(15px, 2.5vw, 19px)",
               cursor: "pointer",
               width: "100%",
+              boxShadow: "0 2px 8px rgba(28,47,58,0.04)",
             }}
-            onFocus={(e) => { e.currentTarget.style.outline = "3px solid #9ca3af"; e.currentTarget.style.outlineOffset = "3px"; }}
-            onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
           >
             ✓ {t("rrDone", "DONE — Back to Menu")}
           </button>
@@ -266,18 +253,18 @@ function MetricTile({ icon, label, value, color }) {
   return (
     <div
       style={{
-        background: "#FFFFFF",
-        border: "1px solid rgba(28,58,68,0.11)",
+        background: "#F4F8F8",
+        border: "1px solid rgba(28,58,68,0.08)",
         borderRadius: 14,
         padding: "14px 10px",
         textAlign: "center",
       }}
     >
-      <div style={{ fontSize: 22, marginBottom: 4 }} aria-hidden="true">{icon}</div>
-      <div style={{ fontSize: 11, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>
+      <div style={{ fontSize: 24, marginBottom: 4 }} aria-hidden="true">{icon}</div>
+      <div style={{ fontSize: 12, color: "#5C7382", fontWeight: 700, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 6 }}>
         {label}
       </div>
-      <div style={{ fontSize: 18, fontWeight: 900, color }} aria-label={`${label}: ${value}`}>
+      <div style={{ fontSize: 20, fontWeight: 900, color }} aria-label={`${label}: ${value}`}>
         {value}
       </div>
     </div>

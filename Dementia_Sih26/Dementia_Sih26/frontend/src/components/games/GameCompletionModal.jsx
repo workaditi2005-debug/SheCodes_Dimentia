@@ -28,9 +28,9 @@ export default function GameCompletionModal({
         position: "fixed",
         inset: 0,
         zIndex: 999,
-        background: "rgba(0,0,0,0.82)",
-        backdropFilter: "blur(16px)",
-        WebkitBackdropFilter: "blur(16px)",
+        background: "rgba(28,47,58,0.45)",
+        backdropFilter: "blur(12px)",
+        WebkitBackdropFilter: "blur(12px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -42,12 +42,12 @@ export default function GameCompletionModal({
         style={{
           width: "100%",
           maxWidth: 520,
-          background: "linear-gradient(180deg, #181c16 0%, #0c0f0a 100%)",
-          border: `2px solid ${LIME}55`,
+          background: "#FFFFFF",
+          border: `1.5px solid rgba(28,58,68,0.12)`,
           borderRadius: 28,
           padding: "36px 28px",
           textAlign: "center",
-          boxShadow: `0 24px 64px rgba(0,0,0,0.8), 0 0 50px ${LIME}22`,
+          boxShadow: `0 24px 64px rgba(28,47,58,0.18), 0 0 40px rgba(42,143,138,0.12)`,
           position: "relative",
           overflow: "hidden",
         }}
@@ -59,10 +59,10 @@ export default function GameCompletionModal({
             top: -60,
             left: "50%",
             transform: "translateX(-50%)",
-            width: 220,
+            width: 240,
             height: 120,
-            background: `radial-gradient(circle, ${LIME}44 0%, transparent 70%)`,
-            pointerEvents:"none",
+            background: `radial-gradient(circle, rgba(42,143,138,0.18) 0%, transparent 70%)`,
+            pointerEvents: "none",
           }}
         />
 
@@ -73,11 +73,11 @@ export default function GameCompletionModal({
               display: "inline-block",
               padding: "4px 14px",
               borderRadius: 99,
-              background: "rgba(28,58,68,0.09)",
-              border: "1px solid rgba(28,58,68,0.15)",
+              background: "rgba(42,143,138,0.10)",
+              border: `1px solid rgba(42,143,138,0.25)`,
               fontSize: 12,
-              fontWeight: 700,
-              color: "#3AA89F",
+              fontWeight: 800,
+              color: LIME,
               letterSpacing: 0.5,
               marginBottom: 12,
             }}
@@ -98,7 +98,7 @@ export default function GameCompletionModal({
         >
           Session Completed!
         </h2>
-        <p style={{ color: "#9ca3af", fontSize: 15, marginBottom: 20 }}>
+        <p style={{ color: "#5C7382", fontSize: 15, marginBottom: 20, fontWeight: 500 }}>
           {gameTitle}
         </p>
 
@@ -121,7 +121,7 @@ export default function GameCompletionModal({
                   fontSize: 48,
                   filter: isFilled
                     ? "drop-shadow(0 0 16px #fbbf24)"
-                    : "grayscale(100%) opacity(30%)",
+                    : "grayscale(100%) opacity(25%)",
                   transform: isFilled ? "scale(1.1)" : "scale(0.9)",
                   transition: "all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
                   display: "inline-block",
@@ -136,8 +136,8 @@ export default function GameCompletionModal({
         {/* Encouraging Feedback Message */}
         <div
           style={{
-            background: "#FFFFFF",
-            border: "1px solid rgba(28,58,68,0.11)",
+            background: "#F7FAF9",
+            border: "1px solid rgba(28,58,68,0.10)",
             borderRadius: 16,
             padding: "16px 20px",
             marginBottom: 24,
@@ -146,9 +146,10 @@ export default function GameCompletionModal({
           <p
             style={{
               fontSize: 16,
-              color: "#f3f4f6",
+              color: "#1C2F3A",
               lineHeight: 1.5,
-              fontWeight: 500,
+              fontWeight: 600,
+              margin: 0,
             }}
           >
             {result.feedback_message || "Wonderful job! Regular cognitive stimulation helps maintain mental sharpness."}
@@ -166,13 +167,13 @@ export default function GameCompletionModal({
         >
           <div
             style={{
-              background: "#FFFFFF",
-              border: "1px solid rgba(28,58,68,0.09)",
+              background: "#F8FAFA",
+              border: "1px solid rgba(28,58,68,0.10)",
               borderRadius: 14,
               padding: "12px 8px",
             }}
           >
-            <div style={{ fontSize: 11, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>
+            <div style={{ fontSize: 11, color: "#5C7382", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4, fontWeight: 700 }}>
               Score
             </div>
             <div style={{ fontSize: 22, fontWeight: 900, color: LIME }}>
@@ -182,32 +183,32 @@ export default function GameCompletionModal({
 
           <div
             style={{
-              background: "#FFFFFF",
-              border: "1px solid rgba(28,58,68,0.09)",
+              background: "#F8FAFA",
+              border: "1px solid rgba(28,58,68,0.10)",
               borderRadius: 14,
               padding: "12px 8px",
             }}
           >
-            <div style={{ fontSize: 11, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>
+            <div style={{ fontSize: 11, color: "#5C7382", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4, fontWeight: 700 }}>
               Duration
             </div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#60a5fa" }}>
+            <div style={{ fontSize: 22, fontWeight: 900, color: "#3A7CA5" }}>
               {timeSec}s
             </div>
           </div>
 
           <div
             style={{
-              background: "#FFFFFF",
-              border: "1px solid rgba(28,58,68,0.09)",
+              background: "#F8FAFA",
+              border: "1px solid rgba(28,58,68,0.10)",
               borderRadius: 14,
               padding: "12px 8px",
             }}
           >
-            <div style={{ fontSize: 11, color: "#9ca3af", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4 }}>
+            <div style={{ fontSize: 11, color: "#5C7382", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 4, fontWeight: 700 }}>
               Rating
             </div>
-            <div style={{ fontSize: 20, fontWeight: 900, color: "#fbbf24" }}>
+            <div style={{ fontSize: 20, fontWeight: 900, color: "#C4842A" }}>
               {stars}/3 Stars
             </div>
           </div>
@@ -217,7 +218,7 @@ export default function GameCompletionModal({
         {result.adaptive_difficulty && (
           <div
             style={{
-              background: "rgba(42,143,138,0.05)",
+              background: "rgba(42,143,138,0.06)",
               border: "1px solid rgba(42,143,138,0.22)",
               borderRadius: 18,
               padding: "16px 18px",
@@ -228,7 +229,7 @@ export default function GameCompletionModal({
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <span style={{ fontSize: 16 }}>🧠</span>
-                <span style={{ fontSize: 13, fontWeight: 800, color: LIME, textTransform: "uppercase", letterSpacing: 0.6 }}>
+                <span style={{ fontSize: 12, fontWeight: 800, color: LIME, textTransform: "uppercase", letterSpacing: 0.6 }}>
                   Adaptive Engine Recommendation
                 </span>
               </div>
@@ -240,16 +241,16 @@ export default function GameCompletionModal({
                   borderRadius: 99,
                   background:
                     result.adaptive_difficulty.adjustment === "increase"
-                      ? "rgba(52,211,153,0.2)"
+                      ? "rgba(47,158,122,0.15)"
                       : result.adaptive_difficulty.adjustment === "decrease"
-                      ? "rgba(96,165,250,0.2)"
-                      : "rgba(245,158,11,0.2)",
+                      ? "rgba(58,124,165,0.15)"
+                      : "rgba(196,132,42,0.15)",
                   color:
                     result.adaptive_difficulty.adjustment === "increase"
-                      ? "#34d399"
+                      ? "#2F9E7A"
                       : result.adaptive_difficulty.adjustment === "decrease"
-                      ? "#60a5fa"
-                      : "#f59e0b",
+                      ? "#3A7CA5"
+                      : "#C4842A",
                   border: "1px solid currentColor",
                 }}
               >
@@ -267,13 +268,13 @@ export default function GameCompletionModal({
                       display: "inline-flex",
                       alignItems: "center",
                       gap: 4,
-                      fontSize: 11,
-                      fontWeight: 600,
+                      fontSize: 12,
+                      fontWeight: 700,
                       color: "#1C2F3A",
-                      background: "#F0F5F5",
+                      background: "#FFFFFF",
                       border: "1px solid rgba(28,58,68,0.15)",
-                      borderRadius: 6,
-                      padding: "3px 8px",
+                      borderRadius: 8,
+                      padding: "4px 10px",
                     }}
                   >
                     ✓ {r}
@@ -283,7 +284,7 @@ export default function GameCompletionModal({
             )}
 
             {result.adaptive_difficulty.clinical_rationale && (
-              <div style={{ fontSize: 11, color: "#9ca3af", marginTop: 8, fontStyle: "italic" }}>
+              <div style={{ fontSize: 12, color: "#5C7382", marginTop: 8, fontStyle: "italic" }}>
                 {result.adaptive_difficulty.clinical_rationale}
               </div>
             )}
@@ -304,15 +305,15 @@ export default function GameCompletionModal({
                   borderRadius: 16,
                   background: LIME,
                   border: "none",
-                  color: "#F6F3ED",
+                  color: "#FFFFFF",
                   fontWeight: 800,
                   fontSize: 15,
                   cursor: "pointer",
-                  boxShadow: `0 8px 24px ${LIME}44`,
+                  boxShadow: `0 4px 16px rgba(42,143,138,0.3)`,
                   transition: "transform 0.15s ease",
                 }}
               >
-                Play Level {result.adaptive_difficulty.new_level} (Recommended) 🚀
+                Play Level {result.adaptive_difficulty.new_level} 🚀
               </button>
               <button
                 onClick={() => {
@@ -322,7 +323,7 @@ export default function GameCompletionModal({
                   flex: 0.9,
                   padding: "16px 12px",
                   borderRadius: 16,
-                  background: "rgba(28,58,68,0.11)",
+                  background: "#FFFFFF",
                   border: "1px solid rgba(28,58,68,0.18)",
                   color: "#1C2F3A",
                   fontWeight: 700,
@@ -345,11 +346,11 @@ export default function GameCompletionModal({
                 borderRadius: 16,
                 background: LIME,
                 border: "none",
-                color: "#F6F3ED",
+                color: "#FFFFFF",
                 fontWeight: 800,
                 fontSize: 16,
                 cursor: "pointer",
-                boxShadow: `0 8px 24px ${LIME}44`,
+                boxShadow: `0 4px 16px rgba(42,143,138,0.3)`,
                 transition: "transform 0.15s ease",
               }}
             >
@@ -365,11 +366,11 @@ export default function GameCompletionModal({
               borderRadius: 14,
               background: "transparent",
               border: "1px solid rgba(28,58,68,0.15)",
-              color: "#9ca3af",
-              fontWeight: 600,
+              color: "#5C7382",
+              fontWeight: 700,
               fontSize: 14,
               cursor: "pointer",
-              transition: "color 0.15s ease",
+              transition: "all 0.15s ease",
             }}
           >
             ← Back to Brain Games

@@ -562,5 +562,27 @@
     "date": "2026-09-19",
     "timestamp": "2026-09-19T01:13:33+00:00",
     "client_action_id": null
+  },
+  {
+    "id": "c23b6360-c0de-4a89-ab4c-f4f2b13bf474",
+    "user_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "type": "adherence",
+    "category": "medicine",
+    "title": "Morning Blood Pressure Pill",
+    "status": "completed",
+    "date": "2026-09-22",
+    "timestamp": "2026-09-22T18:19:58+00:00",
+    "client_action_id": null
+  },
+  {
+    "id": "77e5ea43-754e-4958-a06b-922feb54eddc",
+    "user_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "type": "adherence",
+    "category": "hydration",
+    "title": "Mid-Morning Water Intake",
+    "status": "completed",
+    "date": "2026-09-22",
+    "timestamp": "2026-09-22T18:19:59+00:00",
+    "client_action_id": null
   }
 ]

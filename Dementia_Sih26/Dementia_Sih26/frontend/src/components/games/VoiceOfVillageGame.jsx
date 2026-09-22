@@ -361,13 +361,11 @@ export default function VoiceOfVillageGame({ setPage }) {
       <div
         style={{
           background: "#FFFFFF",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          border: "1px solid rgba(28,58,68,0.11)",
+          border: "1px solid rgba(28,58,68,0.12)",
           borderRadius: 22,
           padding: "20px 24px",
           marginBottom: 16,
-          boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+          boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
         }}
       >
         <div
@@ -394,7 +392,7 @@ export default function VoiceOfVillageGame({ setPage }) {
             >
               <span>🌾</span> {t("voiceVillageTitle", "Voice of the Village")}
             </h1>
-            <p style={{ margin: 0, color: "#9ca3af", fontSize: 14 }}>
+            <p style={{ margin: 0, color: "#5C7382", fontSize: 14 }}>
               {t("voiceVillageDesc", "Listen to short everyday village stories and recall simple details.")}
             </p>
           </div>
@@ -403,10 +401,10 @@ export default function VoiceOfVillageGame({ setPage }) {
           <div
             style={{
               display: "inline-flex",
-              background: "rgba(0,0,0,0.5)",
+              background: "#F0F5F5",
               padding: 4,
               borderRadius: 14,
-              border: "1px solid rgba(28,58,68,0.11)",
+              border: "1px solid rgba(28,58,68,0.12)",
               gap: 4,
             }}
           >
@@ -428,8 +426,8 @@ export default function VoiceOfVillageGame({ setPage }) {
                     borderRadius: 10,
                     border: "none",
                     background: isActive ? EMERALD : "transparent",
-                    color: isActive ? "#F6F3ED" : "#9ca3af",
-                    fontWeight: isActive ? 800 : 600,
+                    color: isActive ? "#FFFFFF" : "#3D5563",
+                    fontWeight: isActive ? 800 : 700,
                     fontSize: 12,
                     cursor: "pointer",
                     transition: "all 0.15s ease",
@@ -439,7 +437,7 @@ export default function VoiceOfVillageGame({ setPage }) {
                   }}
                 >
                   <span>Lvl {lvl}</span>
-                  <span style={{ fontSize: 10, opacity: isActive ? 0.9 : 0.6 }}>({label})</span>
+                  <span style={{ fontSize: 10, opacity: isActive ? 0.95 : 0.7 }}>({label})</span>
                 </button>
               );
             })}
@@ -458,7 +456,7 @@ export default function VoiceOfVillageGame({ setPage }) {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            <span style={{ fontSize: 13, color: "#9ca3af", fontWeight: 700 }}>Story Progress:</span>
+            <span style={{ fontSize: 13, color: "#5C7382", fontWeight: 700 }}>Story Progress:</span>
             {stories.map((_, i) => (
               <span
                 key={i}
@@ -471,14 +469,14 @@ export default function VoiceOfVillageGame({ setPage }) {
                       ? EMERALD
                       : i === roundIndex
                       ? LIME
-                      : "#E2EBEC",
+                      : "rgba(28,58,68,0.12)",
                   transition: "all 0.2s ease",
                 }}
               />
             ))}
           </div>
-          <span style={{ fontSize: 13, color: "#9ca3af" }}>
-            Round <strong>{roundIndex + 1}</strong> of <strong>{stories.length || 3}</strong>
+          <span style={{ fontSize: 13, color: "#5C7382" }}>
+            Round <strong style={{ color: "#1C2F3A" }}>{roundIndex + 1}</strong> of <strong style={{ color: "#1C2F3A" }}>{stories.length || 3}</strong>
           </span>
         </div>
       </div>
@@ -487,33 +485,43 @@ export default function VoiceOfVillageGame({ setPage }) {
       {phase !== "completed" ? (
         <div
           style={{
-            background: "rgba(10,12,10,0.92)",
-            backdropFilter: "blur(24px)",
-            WebkitBackdropFilter: "blur(24px)",
+            background: "#FFFFFF",
             border: "1px solid rgba(28,58,68,0.12)",
             borderRadius: 24,
-            padding: "32px 28px",
+            padding: "36px 28px",
             minHeight: 440,
-            boxShadow: "0 12px 40px rgba(0,0,0,0.6)",
+            boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
+            position: "relative",
+            overflow: "hidden",
           }}
         >
+          {/* Top subtle shine */}
+          <div style={{ position: "absolute", top: 0, left: "10%", right: "10%", height: 1, background: "linear-gradient(90deg, transparent, #DCE7E8, transparent)", pointerEvents: "none" }} />
+          {/* Subtle bottom-right teal glow */}
+          <div style={{
+            position: "absolute", bottom: 0, right: 0,
+            width: "55%", height: "50%",
+            background: `radial-gradient(ellipse 80% 80% at 90% 110%, ${EMERALD}15 0%, transparent 70%)`,
+            pointerEvents: "none",
+          }} />
+
           {/* Story Theme Icon */}
           <div
             style={{
-              width: 64,
-              height: 64,
+              width: 68,
+              height: 68,
               borderRadius: 20,
               background: "rgba(16,185,129,0.12)",
-              border: `1px solid ${EMERALD}44`,
+              border: `1.5px solid ${EMERALD}44`,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: 32,
+              fontSize: 34,
               marginBottom: 18,
             }}
           >
@@ -526,13 +534,13 @@ export default function VoiceOfVillageGame({ setPage }) {
               display: "inline-flex",
               alignItems: "center",
               gap: 8,
-              padding: "6px 16px",
+              padding: "8px 18px",
               borderRadius: 99,
-              background: isSpeakingNarration ? "rgba(42,143,138,0.15)" : "#F0F5F5",
-              border: `1px solid ${isSpeakingNarration ? LIME : "rgba(255,255,255,0.1)"}`,
-              color: isSpeakingNarration ? LIME : "#cbd5e1",
+              background: isSpeakingNarration ? "rgba(42,143,138,0.12)" : "#F0F5F5",
+              border: `1px solid ${isSpeakingNarration ? LIME : "rgba(28,58,68,0.12)"}`,
+              color: isSpeakingNarration ? LIME : "#3D5563",
               fontSize: 14,
-              fontWeight: 700,
+              fontWeight: 800,
               marginBottom: 20,
             }}
           >
@@ -545,18 +553,18 @@ export default function VoiceOfVillageGame({ setPage }) {
             style={{
               maxWidth: 680,
               marginBottom: 24,
-              background: "#FFFFFF",
-              border: "1px solid rgba(28,58,68,0.09)",
+              background: "#F8FAFA",
+              border: "1px solid rgba(28,58,68,0.12)",
               borderRadius: 18,
-              padding: "20px 24px",
+              padding: "22px 28px",
             }}
           >
             <p
               style={{
-                fontSize: "clamp(19px, 2.4vw, 24px)",
+                fontSize: "clamp(20px, 2.5vw, 25px)",
                 color: "#1C2F3A",
                 lineHeight: 1.6,
-                fontWeight: 600,
+                fontWeight: 700,
                 margin: 0,
               }}
             >
@@ -568,9 +576,9 @@ export default function VoiceOfVillageGame({ setPage }) {
           <div style={{ maxWidth: 680, marginBottom: 24 }}>
             <h2
               style={{
-                fontSize: "clamp(18px, 2.2vw, 22px)",
-                fontWeight: 800,
-                color: LIME,
+                fontSize: "clamp(20px, 2.4vw, 24px)",
+                fontWeight: 900,
+                color: "#1C2F3A",
                 margin: 0,
                 lineHeight: 1.4,
               }}
@@ -589,22 +597,22 @@ export default function VoiceOfVillageGame({ setPage }) {
                 gap: 10,
                 padding: "12px 28px",
                 borderRadius: 999,
-                background: "rgba(28,58,68,0.11)",
-                border: `1px solid ${EMERALD}55`,
+                background: "#FFFFFF",
+                border: `1.5px solid ${EMERALD}66`,
                 color: "#1C2F3A",
                 fontSize: 16,
                 fontWeight: 800,
                 cursor: "pointer",
                 transition: "all 0.15s ease",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+                boxShadow: "0 4px 14px rgba(28,47,58,0.06)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = `${EMERALD}22`;
+                e.currentTarget.style.background = `${EMERALD}15`;
                 e.currentTarget.style.borderColor = EMERALD;
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "#EAF1F2";
-                e.currentTarget.style.borderColor = `${EMERALD}55`;
+                e.currentTarget.style.background = "#FFFFFF";
+                e.currentTarget.style.borderColor = `${EMERALD}66`;
               }}
             >
               <span style={{ fontSize: 20 }}>🔊</span>
@@ -612,7 +620,7 @@ export default function VoiceOfVillageGame({ setPage }) {
             </button>
           </div>
 
-          {/* ── Large Elderly-Friendly Answer Choices ── */}
+          {/* ── Large Elderly-Friendly Answer Choices with Strong Contrast ── */}
           <div
             style={{
               width: "100%",
@@ -628,19 +636,19 @@ export default function VoiceOfVillageGame({ setPage }) {
               const isSelected = selectedOptionId === option.id;
               const isOptionCorrect = option.correct;
 
-              let btnBg = "#F0F5F5";
-              let btnBorder = "rgba(28,58,68,0.18)";
-              let btnColor = "#f8fafc";
+              let btnBg = "#FFFFFF";
+              let btnBorder = "rgba(28,58,68,0.20)";
+              let btnColor = "#1C2F3A"; // Crisp dark navy text for elderly readability
 
               if (phase === "feedback") {
                 if (isOptionCorrect) {
-                  btnBg = "rgba(16,185,129,0.25)";
-                  btnBorder = EMERALD;
-                  btnColor = "#6ee7b7";
+                  btnBg = "rgba(16,185,129,0.16)";
+                  btnBorder = "#10B981";
+                  btnColor = "#0F6B45";
                 } else if (isSelected && !isOptionCorrect) {
-                  btnBg = "rgba(239,68,68,0.2)";
-                  btnBorder = "#ef4444";
-                  btnColor = "#fca5a5";
+                  btnBg = "rgba(239,68,68,0.14)";
+                  btnBorder = "#EF4444";
+                  btnColor = "#991B1B";
                 }
               }
 
@@ -651,24 +659,24 @@ export default function VoiceOfVillageGame({ setPage }) {
                   disabled={phase === "narrating" || phase === "feedback"}
                   style={{
                     padding: "20px 24px",
-                    minHeight: 70,
+                    minHeight: 74,
                     borderRadius: 18,
                     background: btnBg,
                     border: `2px solid ${btnBorder}`,
                     color: btnColor,
-                    fontSize: "clamp(18px, 2.2vw, 22px)",
+                    fontSize: "clamp(20px, 2.3vw, 24px)",
                     fontWeight: 800,
                     cursor: phase === "answering" ? "pointer" : "default",
                     transition: "all 0.15s ease",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    boxShadow: isSelected ? `0 0 20px ${EMERALD}44` : "0 6px 16px rgba(0,0,0,0.3)",
+                    boxShadow: isSelected ? `0 0 16px ${EMERALD}33` : "0 4px 14px rgba(28,47,58,0.06)",
                     opacity: phase === "narrating" ? 0.7 : 1,
                   }}
                   onMouseEnter={(e) => {
                     if (phase === "answering") {
-                      e.currentTarget.style.background = "#E2EBEC";
+                      e.currentTarget.style.background = "#E7F4F3";
                       e.currentTarget.style.borderColor = EMERALD;
                     }
                   }}
@@ -692,10 +700,10 @@ export default function VoiceOfVillageGame({ setPage }) {
                 marginTop: 10,
                 padding: "12px 24px",
                 borderRadius: 14,
-                background: isCorrect ? "rgba(16,185,129,0.15)" : "rgba(245,158,11,0.15)",
-                border: `1px solid ${isCorrect ? EMERALD : "#f59e0b"}`,
-                color: isCorrect ? "#6ee7b7" : "#fde68a",
-                fontSize: 17,
+                background: isCorrect ? "rgba(16,185,129,0.14)" : "rgba(245,158,11,0.14)",
+                border: `1.5px solid ${isCorrect ? EMERALD : "#f59e0b"}`,
+                color: isCorrect ? "#0F6B45" : "#92400E",
+                fontSize: 18,
                 fontWeight: 800,
                 display: "inline-flex",
                 alignItems: "center",
@@ -708,17 +716,15 @@ export default function VoiceOfVillageGame({ setPage }) {
           )}
         </div>
       ) : (
-        /* ── Completion Reward View ── */
+        /* ── Completion Reward View (Light Healthcare Theme) ── */
         <div
           style={{
-            background: "rgba(10,12,10,0.95)",
-            backdropFilter: "blur(24px)",
-            WebkitBackdropFilter: "blur(24px)",
-            border: "1px solid rgba(42,143,138,0.3)",
+            background: "#FFFFFF",
+            border: "1px solid rgba(28,58,68,0.12)",
             borderRadius: 24,
-            padding: "40px 32px",
+            padding: "44px 32px",
             minHeight: 440,
-            boxShadow: "0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(42,143,138,0.15)",
+            boxShadow: "0 12px 36px rgba(28,47,58,0.08)",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -726,7 +732,7 @@ export default function VoiceOfVillageGame({ setPage }) {
             textAlign: "center",
           }}
         >
-          <div style={{ fontSize: 54, marginBottom: 14 }}>⭐</div>
+          <div style={{ fontSize: 56, marginBottom: 14 }}>⭐</div>
 
           <h2
             style={{
@@ -739,7 +745,7 @@ export default function VoiceOfVillageGame({ setPage }) {
             {t("wellDoneActivity", "Well done!")}
           </h2>
 
-          <p style={{ color: "#9ca3af", fontSize: 16, maxWidth: 500, margin: "0 0 24px", lineHeight: 1.5 }}>
+          <p style={{ color: "#5C7382", fontSize: 16, maxWidth: 500, margin: "0 0 24px", lineHeight: 1.5 }}>
             {t("completedTodayActivity", "You completed today's activity.")}
           </p>
 
@@ -748,21 +754,21 @@ export default function VoiceOfVillageGame({ setPage }) {
             style={{
               display: "flex",
               justifyContent: "center",
-              gap: 24,
+              gap: 20,
               marginBottom: 28,
               flexWrap: "wrap",
             }}
           >
             <div
               style={{
-                background: "#FFFFFF",
-                border: "1px solid rgba(28,58,68,0.11)",
+                background: "#F8FAFA",
+                border: "1px solid rgba(28,58,68,0.12)",
                 borderRadius: 16,
                 padding: "16px 24px",
                 minWidth: 120,
               }}
             >
-              <div style={{ fontSize: 12, color: "#9ca3af", textTransform: "uppercase", fontWeight: 700 }}>
+              <div style={{ fontSize: 12, color: "#5C7382", textTransform: "uppercase", fontWeight: 700 }}>
                 Score
               </div>
               <div style={{ fontSize: 28, fontWeight: 900, color: LIME, marginTop: 4 }}>
@@ -772,14 +778,14 @@ export default function VoiceOfVillageGame({ setPage }) {
 
             <div
               style={{
-                background: "#FFFFFF",
-                border: "1px solid rgba(28,58,68,0.11)",
+                background: "#F8FAFA",
+                border: "1px solid rgba(28,58,68,0.12)",
                 borderRadius: 16,
                 padding: "16px 24px",
                 minWidth: 120,
               }}
             >
-              <div style={{ fontSize: 12, color: "#9ca3af", textTransform: "uppercase", fontWeight: 700 }}>
+              <div style={{ fontSize: 12, color: "#5C7382", textTransform: "uppercase", fontWeight: 700 }}>
                 Stars
               </div>
               <div style={{ fontSize: 24, fontWeight: 900, color: "#fbbf24", marginTop: 4 }}>
@@ -789,17 +795,17 @@ export default function VoiceOfVillageGame({ setPage }) {
 
             <div
               style={{
-                background: "#FFFFFF",
-                border: "1px solid rgba(28,58,68,0.11)",
+                background: "#F8FAFA",
+                border: "1px solid rgba(28,58,68,0.12)",
                 borderRadius: 16,
                 padding: "16px 24px",
                 minWidth: 120,
               }}
             >
-              <div style={{ fontSize: 12, color: "#9ca3af", textTransform: "uppercase", fontWeight: 700 }}>
+              <div style={{ fontSize: 12, color: "#5C7382", textTransform: "uppercase", fontWeight: 700 }}>
                 Level
               </div>
-              <div style={{ fontSize: 24, fontWeight: 900, color: "#60a5fa", marginTop: 4 }}>
+              <div style={{ fontSize: 24, fontWeight: 900, color: "#3A7CA5", marginTop: 4 }}>
                 Level {level}
               </div>
             </div>
@@ -816,7 +822,7 @@ export default function VoiceOfVillageGame({ setPage }) {
                 maxWidth: 520,
                 marginBottom: 32,
                 fontSize: 14,
-                color: "#e2e8f0",
+                color: "#1C2F3A",
                 lineHeight: 1.5,
               }}
             >
@@ -838,12 +844,12 @@ export default function VoiceOfVillageGame({ setPage }) {
                 padding: "14px 28px",
                 borderRadius: 14,
                 background: EMERALD,
-                color: "#F6F3ED",
+                color: "#FFFFFF",
                 fontSize: 16,
                 fontWeight: 900,
                 border: "none",
                 cursor: "pointer",
-                boxShadow: `0 6px 20px ${EMERALD}44`,
+                boxShadow: `0 4px 16px ${EMERALD}44`,
               }}
             >
               ↻ {t("playAgain", "Play Again")}
@@ -858,7 +864,7 @@ export default function VoiceOfVillageGame({ setPage }) {
               style={{
                 padding: "14px 24px",
                 borderRadius: 14,
-                background: "rgba(28,58,68,0.09)",
+                background: "#FFFFFF",
                 border: "1px solid rgba(28,58,68,0.18)",
                 color: "#1C2F3A",
                 fontSize: 15,

@@ -190,12 +190,12 @@ export default function PatternCompletionGame({ setPage }) {
     >
       <div style={{ width: "100%", maxWidth: 640, margin: "0 auto", textAlign: "center" }}>
         {/* Round Counter */}
-        <div style={{ marginBottom: 18, color: "#9ca3af", fontSize: 13, fontWeight: 700 }}>
+        <div style={{ marginBottom: 18, color: "#5C7382", fontSize: 14, fontWeight: 700 }}>
           Puzzle {currentRound + 1} of {totalRounds}
         </div>
 
         {/* Prompt */}
-        <h3 style={{ fontSize: 20, color: "#1C2F3A", fontWeight: 800, marginBottom: 24 }}>
+        <h3 style={{ fontSize: 22, color: "#1C2F3A", fontWeight: 800, marginBottom: 24 }}>
           {puzzle.prompt[lang] || puzzle.prompt.en}
         </h3>
 
@@ -221,19 +221,18 @@ export default function PatternCompletionGame({ setPage }) {
                   height: 76,
                   borderRadius: 20,
                   border: isTarget
-                    ? "2px dashed #a78bfa"
-                    : "1px solid rgba(28,58,68,0.18)",
+                    ? "2.5px dashed #7C3AED"
+                    : "1.5px solid rgba(28,58,68,0.14)",
                   background: isTarget
-                    ? "rgba(167,139,250,0.15)"
-                    : "#F4F8F8",
+                    ? "rgba(124,58,237,0.08)"
+                    : "#FFFFFF",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   fontSize: isTarget ? 34 : 38,
-                  fontWeight: isTarget ? 900 : 400,
-                  color: isTarget ? "#a78bfa" : "#fff",
-                  boxShadow: isTarget ? "0 0 20px rgba(167,139,250,0.3)" : "none",
-                  animation: isTarget ? "pulse-dot 2s infinite" : "none",
+                  fontWeight: isTarget ? 900 : 600,
+                  color: isTarget ? "#7C3AED" : "#1C2F3A",
+                  boxShadow: isTarget ? "0 0 16px rgba(124,58,237,0.2)" : "0 4px 14px rgba(28,47,58,0.05)",
                 }}
               >
                 {isTarget && selectedIdx !== null && feedbackState === "correct"
@@ -246,7 +245,7 @@ export default function PatternCompletionGame({ setPage }) {
 
         {/* Option Selection Grid */}
         <div style={{ marginBottom: 12 }}>
-          <div style={{ fontSize: 14, color: "#9ca3af", fontWeight: 700, marginBottom: 14 }}>
+          <div style={{ fontSize: 16, color: "#5C7382", fontWeight: 700, marginBottom: 16 }}>
             Choose the matching piece:
           </div>
 
@@ -274,30 +273,32 @@ export default function PatternCompletionGame({ setPage }) {
                     padding: "20px 14px",
                     borderRadius: 20,
                     border: isCorrect
-                      ? "2px solid #10b981"
+                      ? "2px solid #0F6B45"
                       : isWrong
-                      ? "2px solid #ef4444"
-                      : "2px solid #E2EBEC",
+                      ? "2px solid #991B1B"
+                      : "1.5px solid rgba(28,58,68,0.14)",
                     background: isCorrect
-                      ? "rgba(16,185,129,0.2)"
+                      ? "#DCFCE7"
                       : isWrong
-                      ? "rgba(239,68,68,0.2)"
-                      : "#F0F5F5",
+                      ? "#FEE2E2"
+                      : "#FFFFFF",
                     cursor: feedbackState === null ? "pointer" : "default",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    gap: 8,
-                    transition: "all 0.2s ease",
-                    boxShadow: "0 8px 20px rgba(0,0,0,0.4)",
+                    gap: 10,
+                    transition: "all 0.15s ease",
+                    boxShadow: isCorrect || isWrong
+                      ? "none"
+                      : "0 4px 14px rgba(28,47,58,0.05)",
                   }}
                 >
-                  <span style={{ fontSize: 44 }}>{opt.icon}</span>
+                  <span style={{ fontSize: 46 }}>{opt.icon}</span>
                   <span
                     style={{
-                      fontSize: 13,
+                      fontSize: 15,
                       fontWeight: 700,
-                      color: isCorrect ? "#10b981" : isWrong ? "#ef4444" : "#e5e7eb",
+                      color: isCorrect ? "#0F6B45" : isWrong ? "#991B1B" : "#1C2F3A",
                     }}
                   >
                     {optLabel}

@@ -4,6 +4,11 @@ import { useI18n } from "../i18n/LanguageContext";
 import { speak, playSelectSound } from "../utils/voice";
 import { registerVoiceContext } from "../utils/voiceDispatcher";
 import { useVoicePageAnnouncer } from "../hooks/useVoicePageAnnouncer";
+import { DarkCard, Btn, Badge } from "../components/RiskDashboard";
+
+const LIME = "#2A8F8A";
+const GRN  = "#2F9E7A";
+const AMB  = "#C4842A";
 
 export default function DailyCare() {
   const { t, language } = useI18n();
@@ -33,11 +38,11 @@ export default function DailyCare() {
     setReminders(list => list.map(r => r.id === id ? { ...r, status: nextStatus } : r));
 
     if (nextStatus === "completed") {
-      const msg = `✓ Marked "${title}" complete.`;
+      const msg = `Marked "${title}" complete.`;
       setToastMsg({ text: msg, isDone: true });
       speak(t("reminderDone", "Reminder marked complete."), language);
     } else {
-      const msg = `↩ Marked "${title}" pending (unmarked).`;
+      const msg = `Marked "${title}" pending (unmarked).`;
       setToastMsg({ text: msg, isDone: false });
       speak(t("reminderUnmarked", "Reminder unmarked."), language);
     }
@@ -57,6 +62,7 @@ export default function DailyCare() {
 
   const completedCount = reminders.filter(r => r.status === "completed").length;
   const pendingReminders = reminders.filter(r => r.status !== "completed");
+  const completionPct = reminders.length > 0 ? Math.round((completedCount / reminders.length) * 100) : 0;
 
   // ── Voice: Register daily care context ────────────────────────────────
   useEffect(() => {
@@ -123,178 +129,299 @@ export default function DailyCare() {
 
   useVoicePageAnnouncer(null, careAnnouncement);
 
+  const todayDateString = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+
   return (
-    <main style={{ maxWidth: 960, margin: "0 auto", padding: "40px 24px", color: "#1C2F3A", fontFamily: "'DM Sans', sans-serif" }}>
-      {/* Banner */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12, marginBottom: 28 }}>
-        <div>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(42,143,138,0.12)", border: "1px solid rgba(42,143,138,0.3)", borderRadius: 999, padding: "4px 12px", fontSize: 11, fontWeight: 700, color: "#2A8F8A", marginBottom: 8, textTransform: "uppercase", letterSpacing: 1 }}>
-            <span>🌿</span> Indigenous Assam Culturally Rooted · SIH PS 26003
+    <div style={{ maxWidth: 980, margin: "0 auto", paddingBottom: 48, color: "#1C2F3A", fontFamily: "'DM Sans', sans-serif" }}>
+      {/* ── Banner Header ── */}
+      <div style={{ marginBottom: 28 }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "rgba(42,143,138,0.10)", border: `1px solid ${LIME}33`, borderRadius: 99, padding: "5px 14px", marginBottom: 12, fontSize: 11, fontWeight: 700, color: LIME, letterSpacing: 1.5, textTransform: "uppercase" }}>
+          <span>🌿</span> Daily Care Center • Dementia Support
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 14 }}>
+          <div>
+            <h1 style={{ fontWeight: 900, fontSize: "clamp(28px, 4vw, 42px)", margin: "0 0 8px", color: "#1C2F3A", letterSpacing: "-1px" }}>
+              {t("dailyCare", "Daily Care Center")}
+            </h1>
+            <p style={{ color: "#5C7382", fontSize: 16, margin: 0, maxWidth: 640, lineHeight: 1.5 }}>
+              Today is <strong>{todayDateString}</strong>. Reminders and familiar memory items stay readily accessible.
+            </p>
           </div>
-          <h1 style={{ fontFamily: "'Instrument Serif', serif", fontSize: 36, margin: "4px 0 8px", color: "#1C2F3A" }}>{t("dailyCare")}</h1>
-          <p style={{ color: "#5C7382", fontSize: 18, margin: 0, maxWidth: 640 }}>
-            {t("offlineCare")} Reminders and familiar personal memory items remain securely cached locally for continuous elder support.
-          </p>
+          {reminders.length > 0 && (
+            <div style={{ background: "#FFFFFF", padding: "10px 18px", borderRadius: 16, border: "1px solid rgba(28,58,68,0.12)", boxShadow: "0 4px 14px rgba(28,47,58,0.05)" }}>
+              <span style={{ fontSize: 13, color: "#5C7382", fontWeight: 600 }}>Daily Progress: </span>
+              <strong style={{ fontSize: 16, color: completedCount === reminders.length ? GRN : LIME }}>
+                {completedCount} / {reminders.length} Done
+              </strong>
+            </div>
+          )}
         </div>
       </div>
 
+      {/* Toast Alert */}
       {toastMsg && (
         <div style={{
-          background: toastMsg.isDone ? "rgba(34,197,94,0.18)" : "rgba(245,158,11,0.18)",
-          border: `1px solid ${toastMsg.isDone ? "rgba(34,197,94,0.4)" : "rgba(245,158,11,0.4)"}`,
-          color: toastMsg.isDone ? "#1F6B4A" : "#8A5A12",
-          borderRadius: 12,
-          padding: "12px 18px",
-          marginBottom: 20,
+          background: toastMsg.isDone ? "rgba(47,158,122,0.12)" : "rgba(196,132,42,0.12)",
+          border: `1px solid ${toastMsg.isDone ? "rgba(47,158,122,0.35)" : "rgba(196,132,42,0.35)"}`,
+          color: toastMsg.isDone ? "#1E6B4F" : "#875614",
+          borderRadius: 14,
+          padding: "14px 20px",
+          marginBottom: 24,
           display: "flex",
           alignItems: "center",
-          gap: 10,
-          fontSize: 13,
+          gap: 12,
+          fontSize: 15,
           fontWeight: 700,
-          animation: "slide-up 0.3s ease"
+          animation: "slide-up 0.3s ease",
+          boxShadow: "0 6px 18px rgba(28,47,58,0.06)",
         }}>
-          <span>{toastMsg.isDone ? "✓" : "↩"}</span> {toastMsg.text}
+          <span style={{ fontSize: 18 }}>{toastMsg.isDone ? "✓" : "↩"}</span>
+          <span>{toastMsg.text}</span>
         </div>
       )}
 
-      {/* Section 1: Medicine & Daily Reminders */}
-      <section style={{ marginBottom: 40 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-          <h2 style={{ fontSize: 20, fontWeight: 800, margin: 0, display: "flex", alignItems: "center", gap: 8 }}>
-            <span>⏰</span> {t("reminders")}
-          </h2>
-          <span style={{ fontSize: 12, color: completedCount === reminders.length && reminders.length > 0 ? "#2A8F8A" : "#94a3b8", fontWeight: 700 }}>
-            {completedCount} / {reminders.length} {t("completed")}
-          </span>
-        </div>
+      {/* ── Summary Progress Bar Card ── */}
+      {reminders.length > 0 && (
+        <DarkCard style={{ padding: "20px 24px", marginBottom: 32 }} hover={false}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+            <span style={{ fontSize: 12, color: "#5C7382", fontWeight: 700, letterSpacing: 0.8, textTransform: "uppercase" }}>
+              Today's Care Completion
+            </span>
+            <span style={{ fontSize: 14, fontWeight: 900, color: completedCount === reminders.length ? GRN : LIME }}>
+              {completionPct}% Complete
+            </span>
+          </div>
+          <div style={{ height: 8, borderRadius: 4, background: "rgba(28,58,68,0.10)", overflow: "hidden" }}>
+            <div style={{ height: "100%", width: `${completionPct}%`, background: `linear-gradient(90deg, ${LIME}, #1F716D)`, borderRadius: 4, transition: "width 0.4s ease" }} />
+          </div>
+          {completedCount === reminders.length && reminders.length > 0 && (
+            <div style={{ marginTop: 10, fontSize: 13, color: GRN, fontWeight: 700, display: "flex", alignItems: "center", gap: 6 }}>
+              <span>✓</span> Great job! All scheduled daily items and medications are checked off for today.
+            </div>
+          )}
+        </DarkCard>
+      )}
 
-        <div style={{ display: "grid", gap: 14 }}>
-          {reminders.map(r => {
-            const isDone = r.status === "completed";
-            return (
-              <article
-                key={r.id}
-                style={{
-                  background: isDone ? "#F0F7F4" : "#FFFFFF",
-                  border: `1px solid ${isDone ? "rgba(74,222,128,0.3)" : "rgba(28,58,68,0.11)"}`,
-                  borderRadius: 16,
-                  padding: "20px 22px",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  gap: 16,
-                  transition: "all 0.2s ease",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
-                }}
-              >
-                <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: isDone ? "rgba(74,222,128,0.15)" : "rgba(42,143,138,0.12)", border: `1px solid ${isDone ? "#4ade8055" : "#2A8F8A44"}`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, flexShrink: 0 }}>
-                    {r.title.toLowerCase().includes("donepezil") || r.title.toLowerCase().includes("medicine") ? "💊" : "💧"}
-                  </div>
-                  <div>
-                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                      <span style={{ color: "#2A8F8A", fontSize: 12, fontWeight: 700, letterSpacing: 0.5 }}>{r.scheduled_time}</span>
-                      <span style={{ color: "#5C7382", fontSize: 11 }}>•</span>
-                      <strong style={{ fontSize: 16, color: "#1C2F3A", textDecoration: isDone ? "line-through" : "none", opacity: isDone ? 0.75 : 1 }}>{r.title}</strong>
-                    </div>
-                    <div style={{ color: "#5C7382", fontSize: 13, marginTop: 4 }}>{r.description}</div>
-                  </div>
-                </div>
-
-                <div>
-                  <button
-                    onClick={() => handleToggle(r.id, r.title, r.status)}
-                    title={isDone ? "Click to unmark as pending" : "Click to mark as complete"}
-                    style={{
-                      background: isDone ? "rgba(34,197,94,0.15)" : "#2A8F8A",
-                      border: `1px solid ${isDone ? "rgba(34,197,94,0.4)" : "none"}`,
-                      color: isDone ? "#86efac" : "#1C2F3A",
-                      borderRadius: 12,
-                      padding: "9px 16px",
-                      fontWeight: 800,
-                      fontSize: 12.5,
-                      cursor: "pointer",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 6,
-                      boxShadow: isDone ? "none" : "0 0 16px rgba(42,143,138,0.3)",
-                      transition: "all 0.2s",
-                    }}
-                    onMouseEnter={e => {
-                      if (isDone) {
-                        e.currentTarget.style.background = "rgba(239,68,68,0.2)";
-                        e.currentTarget.style.borderColor = "rgba(239,68,68,0.4)";
-                        e.currentTarget.style.color = "#fca5a5";
-                      } else {
-                        e.currentTarget.style.background = "#3AA89F";
-                        e.currentTarget.style.transform = "scale(1.03)";
-                      }
-                    }}
-                    onMouseLeave={e => {
-                      if (isDone) {
-                        e.currentTarget.style.background = "rgba(34,197,94,0.15)";
-                        e.currentTarget.style.borderColor = "rgba(34,197,94,0.4)";
-                        e.currentTarget.style.color = "#86efac";
-                      } else {
-                        e.currentTarget.style.background = "#2A8F8A";
-                        e.currentTarget.style.transform = "none";
-                      }
-                    }}
-                  >
-                    {isDone ? `✓ ${t("completed")} (Unmark)` : t("complete")}
-                  </button>
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* Section 2: Personal Memory Bank */}
-      <section style={{ marginTop: 40 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+      {/* ── Section 1: Routine & Medicines ── */}
+      <section style={{ marginBottom: 44 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18 }}>
           <div>
-            <h2 style={{ fontSize: 20, fontWeight: 800, margin: 0, display: "flex", alignItems: "center", gap: 8 }}>
-              <span>🧠</span> {t("memories")} (Personal Memory Bank)
+            <h2 style={{ fontSize: 22, fontWeight: 900, color: "#1C2F3A", margin: 0, display: "flex", alignItems: "center", gap: 10 }}>
+              <span>⏰</span> {t("reminders", "Today's Routine & Medications")}
             </h2>
-            <p style={{ color: "#5C7382", fontSize: 13, margin: "4px 0 0" }}>
-              Personalized anchors rooted in local Assamese culture to promote emotional comfort and associative recall.
+            <p style={{ color: "#5C7382", fontSize: 14, margin: "4px 0 0" }}>
+              Tap any item to check it off. Voice commands like <em>"Mark done"</em> are also supported.
             </p>
           </div>
-          <span style={{ fontSize: 12, color: "#2A8F8A", background: "rgba(42,143,138,0.08)", padding: "4px 10px", borderRadius: 8, border: "1px solid rgba(42,143,138,0.2)" }}>
-            {memories.length} Anchors Loaded
+          <span style={{ fontSize: 12, fontWeight: 700, color: LIME, background: `${LIME}14`, padding: "4px 12px", borderRadius: 20, border: `1px solid ${LIME}30` }}>
+            {pendingReminders.length} Pending
           </span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
-          {memories.map(m => (
-            <article
-              key={m.id}
-              style={{
-                background: "#FFFFFF",
-                border: "1px solid rgba(28,58,68,0.11)",
-                borderRadius: 18,
-                padding: 22,
-                position: "relative",
-                overflow: "hidden",
-                boxShadow: "0 10px 30px rgba(0,0,0,0.35)",
-              }}
-            >
-              <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, #2A8F8A, transparent)" }} />
-              <div style={{ fontSize: 38, marginBottom: 12, filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.5))" }}>
-                {m.image_emoji || "🌸"}
-              </div>
-              <div style={{ display: "inline-block", fontSize: 10, fontWeight: 800, textTransform: "uppercase", color: "#2A8F8A", background: "rgba(42,143,138,0.1)", padding: "3px 8px", borderRadius: 6, marginBottom: 8, letterSpacing: 0.5 }}>
-                {m.category || "Memory Anchor"}
-              </div>
-              <div style={{ fontSize: 17, fontWeight: 800, color: "#1C2F3A", marginBottom: 6 }}>{m.name}</div>
-              <div style={{ color: "#3D5563", fontSize: 13, lineHeight: 1.5 }}>
-                {m.relationship_or_context}
-              </div>
-            </article>
-          ))}
-        </div>
+        {reminders.length === 0 ? (
+          <DarkCard style={{ padding: "40px 24px", textAlign: "center" }} hover={false}>
+            <div style={{ fontSize: 40, marginBottom: 12 }}>💊</div>
+            <h3 style={{ fontWeight: 800, fontSize: 18, color: "#1C2F3A", marginBottom: 6 }}>No Reminders Scheduled</h3>
+            <p style={{ color: "#5C7382", fontSize: 14, margin: 0 }}>You have no routine tasks or medicines recorded right now.</p>
+          </DarkCard>
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            {reminders.map(r => {
+              const isDone = r.status === "completed";
+              const isMed = r.title.toLowerCase().includes("donepezil") ||
+                            r.title.toLowerCase().includes("medicine") ||
+                            r.title.toLowerCase().includes("tablet") ||
+                            r.title.toLowerCase().includes("dose");
+
+              return (
+                <div
+                  key={r.id}
+                  style={{
+                    background: isDone ? "#F2F8F6" : "#FFFFFF",
+                    border: `1.5px solid ${isDone ? "rgba(47,158,122,0.35)" : "rgba(28,58,68,0.12)"}`,
+                    borderRadius: 20,
+                    padding: "20px 24px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    gap: 16,
+                    transition: "all 0.2s ease",
+                    boxShadow: isDone ? "none" : "0 8px 24px rgba(28,47,58,0.06)",
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+                    {/* Icon Container */}
+                    <div style={{
+                      width: 52,
+                      height: 52,
+                      borderRadius: 16,
+                      background: isDone ? "rgba(47,158,122,0.14)" : isMed ? "rgba(42,143,138,0.12)" : "rgba(96,165,250,0.12)",
+                      border: `1px solid ${isDone ? "rgba(47,158,122,0.35)" : isMed ? `${LIME}33` : "rgba(96,165,250,0.3)"}`,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: 26,
+                      flexShrink: 0,
+                    }}>
+                      {isMed ? "💊" : "💧"}
+                    </div>
+
+                    {/* Content */}
+                    <div>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", marginBottom: 4 }}>
+                        <span style={{
+                          color: isDone ? GRN : LIME,
+                          background: isDone ? "rgba(47,158,122,0.12)" : "rgba(42,143,138,0.10)",
+                          border: `1px solid ${isDone ? "rgba(47,158,122,0.25)" : `${LIME}30`}`,
+                          padding: "2px 10px",
+                          borderRadius: 20,
+                          fontSize: 12,
+                          fontWeight: 800,
+                          letterSpacing: 0.5,
+                        }}>
+                          {r.scheduled_time || "Scheduled"}
+                        </span>
+                        {isDone && (
+                          <span style={{ fontSize: 12, color: GRN, fontWeight: 700 }}>
+                            ✓ Done
+                          </span>
+                        )}
+                      </div>
+
+                      <div style={{
+                        fontSize: 18,
+                        fontWeight: 800,
+                        color: isDone ? "#5C7382" : "#1C2F3A",
+                        textDecoration: isDone ? "line-through" : "none",
+                        lineHeight: 1.3,
+                      }}>
+                        {r.title}
+                      </div>
+
+                      {r.description && (
+                        <div style={{ color: "#5C7382", fontSize: 14, marginTop: 4, lineHeight: 1.4 }}>
+                          {r.description}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Large Action Toggle Button */}
+                  <div style={{ flexShrink: 0 }}>
+                    <button
+                      onClick={() => handleToggle(r.id, r.title, r.status)}
+                      title={isDone ? "Click to unmark as pending" : "Click to mark as complete"}
+                      style={{
+                        padding: "12px 22px",
+                        borderRadius: 14,
+                        border: isDone ? "1.5px solid rgba(47,158,122,0.4)" : "none",
+                        background: isDone ? "rgba(47,158,122,0.14)" : `linear-gradient(135deg, ${LIME}, #1F716D)`,
+                        color: isDone ? "#1E6B4F" : "#FFFFFF",
+                        fontWeight: 800,
+                        fontSize: 14,
+                        cursor: "pointer",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 8,
+                        boxShadow: isDone ? "none" : "0 4px 16px rgba(42,143,138,0.25)",
+                        transition: "all 0.2s ease",
+                      }}
+                      onMouseEnter={e => {
+                        if (isDone) {
+                          e.currentTarget.style.background = "rgba(196,92,92,0.12)";
+                          e.currentTarget.style.borderColor = "rgba(196,92,92,0.35)";
+                          e.currentTarget.style.color = "#991B1B";
+                        } else {
+                          e.currentTarget.style.opacity = "0.92";
+                          e.currentTarget.style.transform = "scale(1.02)";
+                        }
+                      }}
+                      onMouseLeave={e => {
+                        if (isDone) {
+                          e.currentTarget.style.background = "rgba(47,158,122,0.14)";
+                          e.currentTarget.style.borderColor = "rgba(47,158,122,0.4)";
+                          e.currentTarget.style.color = "#1E6B4F";
+                        } else {
+                          e.currentTarget.style.opacity = "1";
+                          e.currentTarget.style.transform = "none";
+                        }
+                      }}
+                    >
+                      <span>{isDone ? "✓" : "○"}</span>
+                      <span>{isDone ? "Completed (Undo)" : "Mark Done"}</span>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </section>
-    </main>
+
+      {/* ── Section 2: Personal Memory Anchors ── */}
+      <section>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18 }}>
+          <div>
+            <h2 style={{ fontSize: 22, fontWeight: 900, color: "#1C2F3A", margin: 0, display: "flex", alignItems: "center", gap: 10 }}>
+              <span>🧠</span> {t("memories", "Personal Memory Anchors")}
+            </h2>
+            <p style={{ color: "#5C7382", fontSize: 14, margin: "4px 0 0" }}>
+              Familiar people, places, and cultural anchors to reinforce memory and emotional security.
+            </p>
+          </div>
+          <span style={{ fontSize: 12, fontWeight: 700, color: LIME, background: `${LIME}14`, padding: "4px 12px", borderRadius: 20, border: `1px solid ${LIME}30` }}>
+            {memories.length} Anchors
+          </span>
+        </div>
+
+        {memories.length === 0 ? (
+          <DarkCard style={{ padding: "40px 24px", textAlign: "center" }} hover={false}>
+            <div style={{ fontSize: 40, marginBottom: 12 }}>🌸</div>
+            <h3 style={{ fontWeight: 800, fontSize: 18, color: "#1C2F3A", marginBottom: 6 }}>Memory Bank Ready</h3>
+            <p style={{ color: "#5C7382", fontSize: 14, margin: 0 }}>Your caregiver can add meaningful photos, names, and familiar prompts.</p>
+          </DarkCard>
+        ) : (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 18 }}>
+            {memories.map(m => (
+              <DarkCard key={m.id} style={{ padding: "24px 22px" }} hover={true}>
+                <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 14 }}>
+                  <div style={{
+                    width: 56,
+                    height: 56,
+                    borderRadius: 16,
+                    background: "rgba(42,143,138,0.08)",
+                    border: "1px solid rgba(42,143,138,0.2)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: 32,
+                    flexShrink: 0,
+                  }}>
+                    {m.image_emoji || "🌸"}
+                  </div>
+                  <div>
+                    <div style={{ display: "inline-block", fontSize: 10, fontWeight: 800, textTransform: "uppercase", color: LIME, background: `${LIME}14`, padding: "2px 8px", borderRadius: 6, marginBottom: 4, letterSpacing: 0.5 }}>
+                      {m.category || "Memory Anchor"}
+                    </div>
+                    <div style={{ fontSize: 18, fontWeight: 900, color: "#1C2F3A", lineHeight: 1.2 }}>
+                      {m.name}
+                    </div>
+                  </div>
+                </div>
+
+                <div style={{ color: "#3D5563", fontSize: 14, lineHeight: 1.5, background: "#F7FAF9", padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(28,58,68,0.08)" }}>
+                  {m.relationship_or_context}
+                </div>
+              </DarkCard>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
   );
 }
