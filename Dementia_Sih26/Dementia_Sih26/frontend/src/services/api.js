@@ -179,6 +179,41 @@ export const getCarePatientDashboard = patientId => request("GET", `/dashboard/p
 export const getCaregiverAlerts = patientId => request("GET", `/dashboard/patient/${patientId}/alerts`, null, true);
 export const reviewCaregiverAlert = (patientId, alertId, status = "reviewed") =>
   request("POST", `/dashboard/patient/${patientId}/alerts/${alertId}/review`, { status }, true);
+export const setPatientActivityLevel = (patientId, activityLevel, notes = null) =>
+  request("POST", `/dashboard/patient/${patientId}/activity-level`, { activity_level: Number(activityLevel), notes }, true);
+export const getMyActivityLevel = () =>
+  request("GET", "/dashboard/my-activity-level", null, true);
+
+// ── Caregiver-Patient Email Linking ──────────────────────────────────────────
+export const linkPatientByEmail = email =>
+  request("POST", "/caregivers/link-patient-by-email", { email: email.trim().toLowerCase() }, true);
+export const getCaregiverSentRequests = () =>
+  request("GET", "/caregivers/my-sent-requests", null, true);
+export const getMyCaregivers = () =>
+  request("GET", "/caregivers/my-caregivers", null, true);
+// NOTE: backend expects "accept" or "decline" (not "approve")
+export const respondToCaregiverRequest = (relationshipId, action) =>
+  request("POST", "/caregivers/respond-link-request", { relationship_id: relationshipId, action }, true);
+
+// ── Doctor-Caregiver Connection ───────────────────────────────────────────────
+/** Doctor sends a connection request to a caregiver by email */
+export const connectCaregiverByEmail = email =>
+  request("POST", "/doctor-caregiver/connect-caregiver", { email: email.trim().toLowerCase() }, true);
+/** Doctor views all connected + pending caregivers */
+export const getDoctorCaregivers = () =>
+  request("GET", "/doctor-caregiver/my-caregivers", null, true);
+/** Doctor views pending sent caregiver requests */
+export const getDoctorSentCaregiverRequests = () =>
+  request("GET", "/doctor-caregiver/my-sent-requests", null, true);
+/** Caregiver views pending doctor connection requests */
+export const getCaregiverDoctorRequests = () =>
+  request("GET", "/doctor-caregiver/my-doctor-requests", null, true);
+/** Caregiver accepts or declines a doctor request */
+export const respondToDoctorRequest = (relationshipId, action) =>
+  request("POST", "/doctor-caregiver/respond-doctor-request", { relationship_id: relationshipId, action }, true);
+/** Caregiver views their connected doctors */
+export const getCaregiverConnectedDoctors = () =>
+  request("GET", "/doctor-caregiver/connected-doctors", null, true);
 
 export async function getGameHistory() {
   const token = getToken();

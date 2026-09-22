@@ -8,7 +8,7 @@ import {
   playMatchSound,
   playGentleMissSound,
 } from "../../utils/gameAudio";
-import { submitGameSession, getGameRecommendation } from "../../services/api";
+import { submitGameSession, getGameRecommendation, getUser } from "../../services/api";
 
 function buildCards(pairCount) {
   const chosen = CULTURAL_ITEMS.slice(0, pairCount);
@@ -34,6 +34,8 @@ function getPairCount(lvl) {
 
 export default function MemoryMatchGame({ setPage }) {
   const { lang } = useI18n();
+  const user = getUser();
+  const isLevel3 = user?.activity_level === 3;
   const [level, setLevel] = useState(1);
   const pairCount = getPairCount(level);
 
@@ -221,10 +223,10 @@ export default function MemoryMatchGame({ setPage }) {
   return (
     <GameShell
       gameId="memory_match"
-      title="Memory Match"
+      title={isLevel3 ? "Simplified Memory Match" : "Memory Match"}
       domainLabel="Visuospatial & Memory"
       accentColor="#34d399"
-      instructionText="Tap two cards to find matching pairs of traditional North Eastern and everyday items."
+      instructionText={isLevel3 ? "Tap two cards to find gentle matching pairs of familiar everyday items." : "Tap two cards to find matching pairs of traditional North Eastern and everyday items."}
       difficultyLevel={level}
       onDifficultyChange={(lvl) => setLevel(lvl)}
       timerSeconds={timer}

@@ -25,6 +25,15 @@ class CaregiverRevokeRequest(BaseModel):
     caregiver_id: str = Field(..., min_length=1, max_length=100, description="Caregiver user ID to revoke access for")
 
 
+class LinkPatientByEmailRequest(BaseModel):
+    email: str = Field(..., min_length=3, max_length=150, description="Patient email address")
+
+
+class RespondLinkRequest(BaseModel):
+    relationship_id: str = Field(..., min_length=1, max_length=100, description="Relationship ID")
+    action: str = Field(..., description="'accept' or 'decline'")
+
+
 @router.get("/my-caregivers", response_model=Dict[str, Any])
 def get_my_caregivers(authorization: str = Header(...)) -> Dict[str, Any]:
     """Retrieve all caregivers associated with the authenticated patient."""
@@ -71,3 +80,39 @@ def revoke_caregiver(payload: CaregiverRevokeRequest, authorization: str = Heade
 
     result = auth_service.revoke_caregiver_from_patient(user["id"], payload.caregiver_id)
     return result
+
+
+@router.post("/link-patient-by-email", response_model=Dict[str, Any])
+def link_patient_by_email_endpoint(payload: LinkPatientByEmailRequest, authorization: str = Header(...)) -> Dict[str, Any]:
+    """Caregiver sends a connection request to a registered patient by email."""
+    caregiver = auth_service.require_care_team(authorization)
+    if caregiver.get("role") != "caregiver":
+        raise HTTPException(status_code=403, detail="Only registered caregivers can send patient connection requests.")
+
+    return auth_service.link_patient_by_email(caregiver["id"], payload.email)
+
+
+@router.get("/my-sent-requests", response_model=Dict[str, Any])
+def get_my_sent_requests_endpoint(authorization: str = Header(...)) -> Dict[str, Any]:
+    """Caregiver views pending link requests sent to patients."""
+    caregiver = auth_service.require_care_team(authorization)
+    if caregiver.get("role") != "caregiver":
+        raise HTTPException(status_code=403, detail="Only caregivers can view sent requests.")
+
+    requests = auth_service.get_caregiver_sent_requests(caregiver["id"])
+    return {
+        "caregiver_id": caregiver["id"],
+        "pending_requests": requests,
+        "count": len(requests),
+    }
+
+
+@router.post("/respond-link-request", response_model=Dict[str, Any])
+def respond_link_request_endpoint(payload: RespondLinkRequest, authorization: str = Header(...)) -> Dict[str, Any]:
+    """Patient accepts or declines a caregiver link request."""
+    patient = auth_service.require_user(authorization)
+    if patient.get("role") != "patient":
+        raise HTTPException(status_code=403, detail="Only patients can respond to caregiver link requests.")
+
+    return auth_service.respond_to_patient_link_request(patient["id"], payload.relationship_id, payload.action)
+

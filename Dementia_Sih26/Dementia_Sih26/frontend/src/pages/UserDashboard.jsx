@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn, Badge, MiniChart } from "../components/RiskDashboard";
-import { getUser, getMyResults, getDoctors } from "../services/api";
+import { getUser, getMyResults, getDoctors, getMyCaregivers, respondToCaregiverRequest } from "../services/api";
 import { useAssessment } from "../context/AssessmentContext";
 import { submitAnalysis } from "../services/api";
 import { useI18n } from "../i18n/LanguageContext";
@@ -362,6 +362,37 @@ export default function UserDashboard({ setPage }) {
   const [results,  setResults]  = useState([]);
   const [loading,  setLoading]  = useState(true);
   const [doctorInfo, setDoctorInfo] = useState({ doctor: null, pending_doctor: null });
+  const [caregiverRequests, setCaregiverRequests] = useState([]);
+  const [caregiverActionLoading, setCaregiverActionLoading] = useState(null);
+  const [caregiverSuccessMsg, setCaregiverSuccessMsg] = useState(null);
+
+  function loadCaregiverRequests() {
+    getMyCaregivers()
+      .then(res => {
+        // API returns { caregivers: [...] } or a bare array depending on route
+        const list = Array.isArray(res) ? res : (Array.isArray(res?.caregivers) ? res.caregivers : []);
+        setCaregiverRequests(list);
+      })
+      .catch(() => setCaregiverRequests([]));
+  }
+
+  async function handleRespondCaregiver(requestId, action) {
+    // Backend expects "accept" or "decline" (NOT "approve")
+    const backendAction = action === "approve" ? "accept" : action;
+    setCaregiverActionLoading(requestId);
+    setCaregiverSuccessMsg(null);
+    try {
+      const res = await respondToCaregiverRequest(requestId, backendAction);
+      loadCaregiverRequests();
+      if (backendAction === "accept") {
+        setCaregiverSuccessMsg(res?.message || "✓ Caregiver connected successfully!");
+      }
+    } catch (err) {
+      alert(err.message || "Failed to respond to request");
+    } finally {
+      setCaregiverActionLoading(null);
+    }
+  }
 
   const { completedCount } = useAssessment();
 
@@ -413,6 +444,8 @@ export default function UserDashboard({ setPage }) {
     apiFetch("/auth/doctors/my-doctor")
       .then(d => setDoctorInfo(d))
       .catch(() => {});
+
+    loadCaregiverRequests();
   }, []);
 
   const last    = results.length > 0 ? results[results.length - 1] : null;
@@ -476,6 +509,103 @@ export default function UserDashboard({ setPage }) {
           >
             <AssessmentPanel setPage={setPage} />
           </CollapsibleSection>
+
+          {/* ── Collapsible: My Caregiver Connections ── */}
+          {(() => {
+            const pendingCaregivers = caregiverRequests.filter(r => r.status === "pending_patient_approval");
+            const connectedCaregivers = caregiverRequests.filter(r => r.status === "connected" && r.access_granted !== false);
+            const requestBadge = pendingCaregivers.length > 0 ? pendingCaregivers.length : null;
+            return (
+              <CollapsibleSection
+                title="Connection Requests"
+                icon="🔔"
+                badge={requestBadge}
+                badgeColor={requestBadge ? "#EF4444" : LIME}
+                defaultOpen={pendingCaregivers.length > 0}
+                accentColor="#2A8F8A"
+              >
+                {/* Success message */}
+                {caregiverSuccessMsg && (
+                  <div style={{ background: "#ECFDF5", border: "1.5px solid #10B981", borderRadius: 12, padding: "12px 16px", color: "#065F46", fontSize: 14, fontWeight: 700, marginBottom: 16, display: "flex", alignItems: "center", gap: 8 }}>
+                    <span style={{ fontSize: 18 }}>✓</span>
+                    <span>{caregiverSuccessMsg}</span>
+                  </div>
+                )}
+
+                {/* Pending caregiver requests */}
+                {pendingCaregivers.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <div style={{ fontSize: 11, fontWeight: 800, textTransform: "uppercase", color: "#2A8F8A", letterSpacing: 0.8, marginBottom: 12 }}>🔔 Caregiver Requests</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                      {pendingCaregivers.map(req => (
+                        <div key={req.id} style={{ background: "#FFFFFF", border: "2px solid #2A8F8A", borderRadius: 16, padding: "20px 22px", boxShadow: "0 4px 16px rgba(42,143,138,0.10)" }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 16 }}>
+                            <div style={{ width: 48, height: 48, borderRadius: 14, background: "rgba(42,143,138,0.12)", color: "#2A8F8A", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 24, flexShrink: 0, fontWeight: 800 }}>
+                              {(req.caregiver_name?.[0] || "C").toUpperCase()}
+                            </div>
+                            <div style={{ flex: 1 }}>
+                              <div style={{ fontSize: 18, fontWeight: 800, color: "#1C2F3A", lineHeight: 1.2 }}>{req.caregiver_name || "Caregiver"}</div>
+                              <div style={{ fontSize: 13, color: "#5C7382", marginTop: 3 }}>Caregiver · {req.caregiver_email || ""}</div>
+                            </div>
+                            <span style={{ background: "rgba(245,158,11,0.12)", color: "#D97706", border: "1px solid rgba(245,158,11,0.3)", borderRadius: 20, padding: "4px 12px", fontSize: 11, fontWeight: 700, flexShrink: 0 }}>⏳ Pending</span>
+                          </div>
+                          <p style={{ fontSize: 14, color: "#5C7382", marginBottom: 18, lineHeight: 1.6 }}>
+                            <strong style={{ color: "#1C2F3A" }}>{req.caregiver_name || "This caregiver"}</strong> would like to connect with you to help manage your care and cognitive activities.
+                          </p>
+                          <div style={{ display: "flex", gap: 12 }}>
+                            <button
+                              onClick={() => handleRespondCaregiver(req.id, "decline")}
+                              disabled={caregiverActionLoading === req.id}
+                              style={{ flex: 1, padding: "13px 20px", borderRadius: 12, border: "1.5px solid #CBD5E1", background: "#F8FAFC", fontSize: 15, fontWeight: 700, color: "#64748B", cursor: "pointer", fontFamily: "'DM Sans',sans-serif", transition: "all 0.15s" }}
+                            >
+                              ✕ Decline
+                            </button>
+                            <button
+                              onClick={() => handleRespondCaregiver(req.id, "accept")}
+                              disabled={caregiverActionLoading === req.id}
+                              style={{ flex: 2, padding: "13px 20px", borderRadius: 12, border: "none", background: "#2A8F8A", fontSize: 15, fontWeight: 800, color: "#FFFFFF", cursor: "pointer", fontFamily: "'DM Sans',sans-serif", boxShadow: "0 4px 14px rgba(42,143,138,0.30)", transition: "all 0.15s" }}
+                            >
+                              {caregiverActionLoading === req.id ? "Connecting…" : "✓ Accept"}
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Connected caregivers */}
+                {connectedCaregivers.length > 0 && (
+                  <div style={{ marginBottom: pendingCaregivers.length === 0 ? 0 : 8 }}>
+                    <div style={{ fontSize: 11, fontWeight: 800, textTransform: "uppercase", color: "#2A8F8A", letterSpacing: 0.8, marginBottom: 12 }}>✓ Connected Caregivers</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                      {connectedCaregivers.map(cg => (
+                        <div key={cg.id} style={{ display: "flex", alignItems: "center", gap: 14, padding: "14px 18px", borderRadius: 14, background: "rgba(42,143,138,0.05)", border: "1.5px solid rgba(42,143,138,0.20)" }}>
+                          <div style={{ width: 44, height: 44, borderRadius: "50%", background: "rgba(42,143,138,0.15)", color: "#2A8F8A", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 800, flexShrink: 0 }}>
+                            {(cg.caregiver_name?.[0] || "C").toUpperCase()}
+                          </div>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontWeight: 700, color: "#1C2F3A", fontSize: 15 }}>{cg.caregiver_name || "Caregiver"}</div>
+                            <div style={{ fontSize: 12, color: "#5C7382", marginTop: 2 }}>{cg.caregiver_email || ""}</div>
+                          </div>
+                          <span style={{ background: "rgba(42,143,138,0.10)", color: "#2A8F8A", border: "1px solid rgba(42,143,138,0.25)", borderRadius: 20, padding: "5px 14px", fontSize: 12, fontWeight: 700, flexShrink: 0 }}>✓ Connected</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Empty state */}
+                {pendingCaregivers.length === 0 && connectedCaregivers.length === 0 && (
+                  <div style={{ textAlign: "center", padding: "24px 0", color: "#5C7382" }}>
+                    <div style={{ fontSize: 32, marginBottom: 10 }}>✅</div>
+                    <div style={{ fontWeight: 700, fontSize: 16, color: "#1C2F3A", marginBottom: 6 }}>You're all caught up</div>
+                    <div style={{ fontSize: 13 }}>No pending caregiver requests at this time.</div>
+                  </div>
+                )}
+              </CollapsibleSection>
+            );
+          })()}
 
           {/* ── Collapsible: My Doctor ── */}
           <CollapsibleSection

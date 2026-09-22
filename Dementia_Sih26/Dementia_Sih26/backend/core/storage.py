@@ -99,3 +99,6 @@ caregiver_alerts_store = JsonStore(settings.data_dir / "caregiver_alerts.json", 
 
 # ── Patient-Caregiver Relationship store ──────────────────────────────────────
 patient_caregivers_store = JsonStore(settings.data_dir / "patient_caregivers.json", list)
+
+# ── Doctor-Caregiver Relationship store ───────────────────────────────────────
+doctor_caregivers_store = JsonStore(settings.data_dir / "doctor_caregivers.json", list)

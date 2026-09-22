@@ -17,6 +17,7 @@ from routers import (
     demo_api,
     rhythm_api,
     caregiver_api,
+    doctor_caregiver_api,
 )
 from utils.logger import log_error, log_info
 
@@ -63,6 +64,7 @@ app.include_router(dashboard_api.router, prefix="/api")
 app.include_router(demo_api.router, prefix="/api")
 app.include_router(rhythm_api.router, prefix="/api")
 app.include_router(caregiver_api.router, prefix="/api")
+app.include_router(doctor_caregiver_api.router, prefix="/api")
 
 
 

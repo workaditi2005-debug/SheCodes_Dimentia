@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { injectStyles } from "./utils/theme";
 import { Shell } from "./components/RiskDashboard";
 import { AssessmentProvider } from "./context/AssessmentContext";
-import { getUser, isLoggedIn, logout } from "./services/api";
+import { getUser, isLoggedIn, logout, getMyActivityLevel } from "./services/api";
 import OfflineStatusIndicator from "./components/common/OfflineStatusIndicator";
 import { LanguageProvider } from "./i18n/LanguageContext";
 import LanguageSelector from "./components/common/LanguageSelector";
@@ -33,7 +33,7 @@ import ReactionTest from "./components/ReactionTest";
 import StroopTest from "./components/StroopTest";
 import TapTest from "./components/TapTest";
 
-import CognitiveGamesHub from "./pages/CognitiveGamesHub";
+import CognitiveGamesHub, { LEVEL_DEFINITIONS } from "./pages/CognitiveGamesHub";
 import MemoryMatchGame from "./components/games/MemoryMatchGame";
 import SequenceRecallGame from "./components/games/SequenceRecallGame";
 import ObjectRecognitionGame from "./components/games/ObjectRecognitionGame";
@@ -42,6 +42,16 @@ import DailyRoutineGame from "./components/games/DailyRoutineGame";
 import RhythmRecall from "./components/games/RhythmRecall";
 import VoiceOfVillageGame from "./components/games/VoiceOfVillageGame";
 import NeuroBot from "./components/NeuroBot";
+
+const GAME_PAGE_TO_ID = {
+  "game-match": "memory_match",
+  "game-sequence": "sequence_recall",
+  "game-object": "object_recognition",
+  "game-pattern": "pattern_completion",
+  "game-routine": "daily_routine",
+  "game-rhythm-recall": "rhythm_recall",
+  "game-village": "voice_village",
+};
 
 injectStyles();
 
@@ -65,11 +75,37 @@ export default function App() {
   const [patient, setPatient] = useState(null);
   const [currentUser, setCurrentUser] = useState(init.user);
   const [demoActive, setDemoActive] = useState(false);
+  // Live activity level — fetched fresh from API so game guard is never stale
+  const [liveActivityLevel, setLiveActivityLevel] = useState(
+    init.user?.activity_level ? Number(init.user.activity_level) : null
+  );
 
   // Profile setup — shown once after first registration for patients
   const [showProfile, setShowProfile] = useState(false);
   const [pendingUser, setPendingUser] = useState(null);
   const [pendingRole, setPendingRole] = useState(null);
+
+  // Refresh live activity level whenever page changes to a game page or the games hub
+  // This ensures that even if a caregiver assigns a level after login, it is picked up.
+  useEffect(() => {
+    if (role === "user" && isLoggedIn()) {
+      getMyActivityLevel()
+        .then(data => {
+          if (data?.activity_level) {
+            setLiveActivityLevel(Number(data.activity_level));
+            // Also update sessionStorage so getUser() stays fresh
+            try {
+              const stored = getUser();
+              if (stored) {
+                sessionStorage.setItem("neuroaid_user", JSON.stringify({ ...stored, activity_level: data.activity_level }));
+              }
+            } catch (_) {}
+          }
+        })
+        .catch(() => {});
+    }
+  // Re-run when the page changes so navigating to games always has fresh data
+  }, [role, page]);
 
   async function handleLogout() {
     await logout();
@@ -152,9 +188,22 @@ export default function App() {
   const caregiverPages = { "caregiver-dashboard": <CareTeamDashboard />, "messages": <MessagesPage /> };
 
   const isDoctor = role === "doctor";
+  let resolvedUserPage = userPages[page] ?? userPages["dashboard"];
+  if (role === "user" && page.startsWith("game-")) {
+    const gameId = GAME_PAGE_TO_ID[page];
+    // Use liveActivityLevel (fresh from API) — NOT stale currentUser.activity_level from session
+    const effectiveLevel = liveActivityLevel || currentUser?.activity_level;
+    const allowedGameIds = effectiveLevel && LEVEL_DEFINITIONS[effectiveLevel]
+      ? LEVEL_DEFINITIONS[effectiveLevel].gameIds
+      : [];
+    if (!gameId || !allowedGameIds.includes(gameId)) {
+      resolvedUserPage = <CognitiveGamesHub setPage={setPage} />;
+    }
+  }
+
   const content = role === "caregiver" ? (caregiverPages[page] ?? caregiverPages["caregiver-dashboard"]) : isDoctor
     ? (doctorPages[page] ?? doctorPages["doctor-dashboard"])
-    : (userPages[page] ?? userPages["dashboard"]);
+    : resolvedUserPage;
 
   return (
     <LanguageProvider>

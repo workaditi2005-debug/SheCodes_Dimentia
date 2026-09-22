@@ -24,7 +24,7 @@ from core.security import (
     verify_password,
 )
 from core.settings import settings
-from core.storage import patient_caregivers_store, results_store, sessions_store, users_store
+from core.storage import patient_caregivers_store, doctor_caregivers_store, results_store, sessions_store, users_store
 from services.audit_service import record
 
 EMAIL_RE = re.compile(r"^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$")
@@ -558,6 +558,173 @@ def revoke_caregiver_from_patient(patient_id: str, caregiver_id: str) -> Dict[st
     return {"message": "Caregiver access revoked successfully."}
 
 
+def link_patient_by_email(caregiver_id: str, patient_email: str) -> Dict[str, Any]:
+    """
+    Caregiver initiates a connection request to a registered patient by email.
+    Creates a pending connection request requiring patient approval.
+    """
+    users = get_users()
+    caregiver = users.get(caregiver_id)
+    if not caregiver or caregiver.get("role") != "caregiver":
+        raise HTTPException(status_code=403, detail="Only registered caregivers can send patient link requests.")
+
+    clean_email = patient_email.strip().lower()
+    matched_patient = None
+    matched_patient_id = None
+    for uid, u in users.items():
+        u_email = u.get("email", "").strip().lower()
+        u_aliases = [a.strip().lower() for a in u.get("aliases", [])]
+        if u_email == clean_email or clean_email in u_aliases:
+            matched_patient = u
+            matched_patient_id = uid
+            break
+
+    if not matched_patient:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No registered patient found with email '{patient_email}'. Please verify the email address.",
+        )
+
+    if matched_patient.get("role") != "patient":
+        raise HTTPException(
+            status_code=400,
+            detail=f"The account with email '{patient_email}' is registered as a {matched_patient.get('role')}, not a patient.",
+        )
+
+    if matched_patient_id == caregiver_id:
+        raise HTTPException(status_code=400, detail="Cannot link your own caregiver account as a patient.")
+
+    records = patient_caregivers_store.read()
+    if not isinstance(records, list):
+        records = []
+
+    now = utcnow_iso()
+    existing_idx = None
+    for idx, r in enumerate(records):
+        if r.get("caregiver_id") == caregiver_id and r.get("patient_id") == matched_patient_id:
+            existing_idx = idx
+            break
+
+    if existing_idx is not None:
+        existing = records[existing_idx]
+        if existing.get("status") == "connected" and existing.get("access_granted", True):
+            return {
+                "status": "already_connected",
+                "message": f"{matched_patient.get('full_name')} is already linked to your caregiver account.",
+                "relationship": existing,
+            }
+        elif existing.get("status") == "pending_patient_approval":
+            return {
+                "status": "already_pending",
+                "message": f"A connection request is already pending approval from {matched_patient.get('full_name')}.",
+                "relationship": existing,
+            }
+        else:
+            records[existing_idx]["status"] = "pending_patient_approval"
+            records[existing_idx]["access_granted"] = False
+            records[existing_idx]["updated_at"] = now
+            relationship = records[existing_idx]
+    else:
+        relationship = {
+            "id": f"rel-{uuid.uuid4()}",
+            "patient_id": matched_patient_id,
+            "patient_name": matched_patient.get("full_name"),
+            "patient_email": matched_patient.get("email"),
+            "caregiver_id": caregiver_id,
+            "caregiver_name": caregiver.get("full_name"),
+            "caregiver_email": caregiver.get("email"),
+            "status": "pending_patient_approval",
+            "access_granted": False,
+            "created_at": now,
+            "updated_at": now,
+        }
+        records.append(relationship)
+
+    patient_caregivers_store.write(records)
+    record(
+        event="care_team.link_requested_by_email",
+        actor_id=caregiver_id,
+        actor_role="caregiver",
+        subject_id=matched_patient_id,
+        outcome="success",
+        metadata={"patient_email": clean_email},
+    )
+    return {
+        "status": "pending",
+        "message": f"Connection request sent to {matched_patient.get('full_name')} ({clean_email}).",
+        "relationship": relationship,
+    }
+
+
+def respond_to_patient_link_request(patient_id: str, relationship_id: str, action: str) -> Dict[str, Any]:
+    """
+    Patient accepts or declines a caregiver link request.
+    Upon acceptance, updates relationship to 'connected' and grants care-team sharing consent.
+    """
+    records = patient_caregivers_store.read()
+    if not isinstance(records, list):
+        records = []
+
+    clean_action = action.strip().lower()
+    if clean_action not in {"accept", "decline"}:
+        raise HTTPException(status_code=400, detail="Action must be 'accept' or 'decline'.")
+
+    now = utcnow_iso()
+    found_idx = None
+    for idx, r in enumerate(records):
+        if r.get("id") == relationship_id and r.get("patient_id") == patient_id:
+            found_idx = idx
+            break
+
+    if found_idx is None:
+        raise HTTPException(status_code=404, detail="Connection request not found.")
+
+    if clean_action == "accept":
+        records[found_idx]["status"] = "connected"
+        records[found_idx]["access_granted"] = True
+        records[found_idx]["updated_at"] = now
+
+        # Ensure patient consent has share_with_care_team enabled
+        from core.storage import consent_store
+        consents = consent_store.read()
+        if not isinstance(consents, dict):
+            consents = {}
+        patient_consent = consents.get(patient_id, {})
+        patient_consent["share_with_care_team"] = True
+        patient_consent["updated_at"] = now
+        consents[patient_id] = patient_consent
+        consent_store.write(consents)
+
+        msg = f"Connected with caregiver {records[found_idx].get('caregiver_name')}."
+    else:
+        records[found_idx]["status"] = "declined"
+        records[found_idx]["access_granted"] = False
+        records[found_idx]["updated_at"] = now
+        msg = "Caregiver connection request declined."
+
+    patient_caregivers_store.write(records)
+    record(
+        event=f"care_team.link_{clean_action}ed",
+        actor_id=patient_id,
+        actor_role="patient",
+        subject_id=records[found_idx].get("caregiver_id"),
+        outcome="success",
+        metadata={"relationship_id": relationship_id, "action": clean_action},
+    )
+    return {"status": "success", "message": msg, "relationship": records[found_idx]}
+
+
+def get_caregiver_sent_requests(caregiver_id: str) -> List[Dict[str, Any]]:
+    """Return all pending connection requests sent by this caregiver."""
+    records = patient_caregivers_store.read()
+    if not isinstance(records, list):
+        return []
+    return [
+        r for r in records
+        if r.get("caregiver_id") == caregiver_id and r.get("status") == "pending_patient_approval"
+    ]
+
+
 def list_patients_for_caregiver(caregiver_id: str) -> List[Dict[str, Any]]:
     """
     Return list of patients authorized for this caregiver.
@@ -748,3 +915,181 @@ def get_my_doctor_payload(patient_id: str) -> Dict[str, Any]:
 def get_pending_requests(doctor_id: str) -> List[Dict[str, Any]]:
     users = get_users()
     return users.get(doctor_id, {}).get("pending_requests", [])
+
+
+# ── Doctor ↔ Caregiver Connection Functions ───────────────────────────────────
+
+def link_caregiver_by_email(doctor_id: str, caregiver_email: str) -> Dict[str, Any]:
+    """
+    Doctor initiates a connection request to a registered caregiver by email.
+    Creates a pending connection request requiring caregiver approval.
+    """
+    users = get_users()
+    doctor = users.get(doctor_id)
+    if not doctor or doctor.get("role") != "doctor":
+        raise HTTPException(status_code=403, detail="Only registered doctors can send caregiver connection requests.")
+
+    clean_email = caregiver_email.strip().lower()
+    matched_caregiver = None
+    matched_caregiver_id = None
+    for uid, u in users.items():
+        u_email = u.get("email", "").strip().lower()
+        u_aliases = [a.strip().lower() for a in u.get("aliases", [])]
+        if u_email == clean_email or clean_email in u_aliases:
+            matched_caregiver = u
+            matched_caregiver_id = uid
+            break
+
+    if not matched_caregiver:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No registered caregiver found with email '{caregiver_email}'. Please verify the email address.",
+        )
+
+    if matched_caregiver.get("role") != "caregiver":
+        raise HTTPException(
+            status_code=400,
+            detail=f"The account with email '{caregiver_email}' is registered as a {matched_caregiver.get('role')}, not a caregiver.",
+        )
+
+    if matched_caregiver_id == doctor_id:
+        raise HTTPException(status_code=400, detail="Cannot link your own account.")
+
+    records = doctor_caregivers_store.read()
+    if not isinstance(records, list):
+        records = []
+
+    now = utcnow_iso()
+    existing_idx = None
+    for idx, r in enumerate(records):
+        if r.get("doctor_id") == doctor_id and r.get("caregiver_id") == matched_caregiver_id:
+            existing_idx = idx
+            break
+
+    if existing_idx is not None:
+        existing = records[existing_idx]
+        if existing.get("status") == "connected":
+            return {
+                "status": "already_connected",
+                "message": f"{matched_caregiver.get('full_name')} is already connected to your account.",
+                "relationship": existing,
+            }
+        elif existing.get("status") == "pending_caregiver_approval":
+            return {
+                "status": "already_pending",
+                "message": f"A connection request is already pending from {matched_caregiver.get('full_name')}.",
+                "relationship": existing,
+            }
+        else:
+            records[existing_idx]["status"] = "pending_caregiver_approval"
+            records[existing_idx]["updated_at"] = now
+            relationship = records[existing_idx]
+    else:
+        relationship = {
+            "id": f"dc-rel-{uuid.uuid4()}",
+            "doctor_id": doctor_id,
+            "doctor_name": doctor.get("full_name"),
+            "doctor_email": doctor.get("email"),
+            "caregiver_id": matched_caregiver_id,
+            "caregiver_name": matched_caregiver.get("full_name"),
+            "caregiver_email": matched_caregiver.get("email"),
+            "status": "pending_caregiver_approval",
+            "created_at": now,
+            "updated_at": now,
+        }
+        records.append(relationship)
+
+    doctor_caregivers_store.write(records)
+    record(
+        event="care_team.doctor_caregiver_link_requested",
+        actor_id=doctor_id,
+        actor_role="doctor",
+        subject_id=matched_caregiver_id,
+        outcome="success",
+        metadata={"caregiver_email": clean_email},
+    )
+    return {
+        "status": "pending",
+        "message": f"Connection request sent to {matched_caregiver.get('full_name')} ({clean_email}).",
+        "relationship": relationship,
+    }
+
+
+def get_doctor_sent_caregiver_requests(doctor_id: str) -> List[Dict[str, Any]]:
+    """Return all pending connection requests sent by this doctor to caregivers."""
+    records = doctor_caregivers_store.read()
+    if not isinstance(records, list):
+        return []
+    return [r for r in records if r.get("doctor_id") == doctor_id and r.get("status") == "pending_caregiver_approval"]
+
+
+def get_caregiver_doctor_requests(caregiver_id: str) -> List[Dict[str, Any]]:
+    """Return all pending doctor connection requests received by this caregiver."""
+    records = doctor_caregivers_store.read()
+    if not isinstance(records, list):
+        return []
+    return [r for r in records if r.get("caregiver_id") == caregiver_id and r.get("status") == "pending_caregiver_approval"]
+
+
+def respond_to_doctor_link_request(caregiver_id: str, relationship_id: str, action: str) -> Dict[str, Any]:
+    """
+    Caregiver accepts or declines a doctor connection request.
+    """
+    records = doctor_caregivers_store.read()
+    if not isinstance(records, list):
+        records = []
+
+    clean_action = action.strip().lower()
+    if clean_action not in {"accept", "decline"}:
+        raise HTTPException(status_code=400, detail="Action must be 'accept' or 'decline'.")
+
+    now = utcnow_iso()
+    found_idx = None
+    for idx, r in enumerate(records):
+        if r.get("id") == relationship_id and r.get("caregiver_id") == caregiver_id:
+            found_idx = idx
+            break
+
+    if found_idx is None:
+        raise HTTPException(status_code=404, detail="Connection request not found.")
+
+    if clean_action == "accept":
+        records[found_idx]["status"] = "connected"
+        records[found_idx]["updated_at"] = now
+        msg = f"Connected with Dr. {records[found_idx].get('doctor_name')}."
+    else:
+        records[found_idx]["status"] = "declined"
+        records[found_idx]["updated_at"] = now
+        msg = "Doctor connection request declined."
+
+    doctor_caregivers_store.write(records)
+    record(
+        event=f"care_team.doctor_caregiver_link_{clean_action}ed",
+        actor_id=caregiver_id,
+        actor_role="caregiver",
+        subject_id=records[found_idx].get("doctor_id"),
+        outcome="success",
+        metadata={"relationship_id": relationship_id, "action": clean_action},
+    )
+    return {"status": "success", "message": msg, "relationship": records[found_idx]}
+
+
+def get_doctor_caregivers(doctor_id: str) -> List[Dict[str, Any]]:
+    """Return all connected caregivers for a doctor with patient count enrichment."""
+    records = doctor_caregivers_store.read()
+    if not isinstance(records, list):
+        return []
+
+    users = get_users()
+    result = []
+    for r in records:
+        if r.get("doctor_id") != doctor_id:
+            continue
+        caregiver_id = r.get("caregiver_id")
+        caregiver_user = users.get(caregiver_id, {})
+        # Enrich with connected patient count
+        patient_rels = get_patient_caregiver_relationships(caregiver_id=caregiver_id, active_only=True)
+        enriched = {**r, "patient_count": len(patient_rels), "connected_patients": [pr.get("patient_name") for pr in patient_rels]}
+        result.append(enriched)
+    return result
+

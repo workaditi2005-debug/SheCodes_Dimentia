@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dc-rel-ccfcfb5a-1502-491c-be98-82174b728ded",
+    "doctor_id": "894b08a7-118c-474b-9c1a-ca92c455fab6",
+    "doctor_name": "tani",
+    "doctor_email": "duttatanisha0890@gmail.com",
+    "caregiver_id": "7fcb3059-be2f-4c12-810c-703e057ef083",
+    "caregiver_name": "tan",
+    "caregiver_email": "tanishad006@gmail.com",
+    "status": "connected",
+    "created_at": "2026-09-22T20:31:00+00:00",
+    "updated_at": "2026-09-22T20:32:11+00:00"
+  }
+]

@@ -314,6 +314,67 @@ class TestPatientCaregiverWorkflow(unittest.TestCase):
             res = self.client.get(f"/api/dashboard/patient/{pid}", headers=doc_headers)
             self.assertEqual(res.status_code, 200, f"Doctor should access persona {persona_key}")
 
+    def test_scenario_k_caregiver_links_patient_by_email_and_patient_accepts(self):
+        """Scenario K: Caregiver initiates link by patient email; patient accepts -> active link established."""
+        cg1_headers = {"Authorization": f"Bearer {self.caregiver_1_token}"}
+        p1_headers = {"Authorization": f"Bearer {self.patient_1_token}"}
+
+        # 1. Non-existent email -> 404
+        bad_res = self.client.post(
+            "/api/caregivers/link-patient-by-email",
+            headers=cg1_headers,
+            json={"email": "nonexistent.user.12345@example.com"},
+        )
+        self.assertEqual(bad_res.status_code, 404)
+
+        # 2. Valid patient email -> 200 (pending)
+        link_res = self.client.post(
+            "/api/caregivers/link-patient-by-email",
+            headers=cg1_headers,
+            json={"email": "patient1@testwf.local"},
+        )
+        self.assertEqual(link_res.status_code, 200)
+        self.assertEqual(link_res.json()["status"], "pending")
+        rel_id = link_res.json()["relationship"]["id"]
+
+        # 3. Before patient approval, caregiver dashboard does not yet show patient
+        dash_pre = self.client.get("/api/dashboard/patients", headers=cg1_headers)
+        p_ids = [p["id"] for p in dash_pre.json()["patients"]]
+        self.assertNotIn(self.patient_1_id, p_ids)
+
+        # 4. Caregiver can check sent requests
+        sent_res = self.client.get("/api/caregivers/my-sent-requests", headers=cg1_headers)
+        self.assertEqual(sent_res.status_code, 200)
+        self.assertGreaterEqual(sent_res.json()["count"], 1)
+
+        # 5. Patient checks my-caregivers and sees pending request
+        my_cg_res = self.client.get("/api/caregivers/my-caregivers", headers=p1_headers)
+        self.assertEqual(my_cg_res.status_code, 200)
+        pending_rels = [r for r in my_cg_res.json()["caregivers"] if r.get("id") == rel_id]
+        self.assertEqual(len(pending_rels), 1)
+        self.assertEqual(pending_rels[0]["status"], "pending_patient_approval")
+
+        # 6. Patient accepts the request
+        accept_res = self.client.post(
+            "/api/caregivers/respond-link-request",
+            headers=p1_headers,
+            json={"relationship_id": rel_id, "action": "accept"},
+        )
+        self.assertEqual(accept_res.status_code, 200)
+        self.assertEqual(accept_res.json()["relationship"]["status"], "connected")
+
+        # 7. Caregiver now sees patient in dashboard
+        dash_post = self.client.get("/api/dashboard/patients", headers=cg1_headers)
+        self.assertEqual(dash_post.status_code, 200)
+        post_p_ids = [p["id"] for p in dash_post.json()["patients"]]
+        self.assertIn(self.patient_1_id, post_p_ids)
+
+        # 8. Detail call succeeds
+        detail_res = self.client.get(f"/api/dashboard/patient/{self.patient_1_id}", headers=cg1_headers)
+        self.assertEqual(detail_res.status_code, 200)
+        self.assertEqual(detail_res.json()["patient_name"], "Test Patient One")
+
 
 if __name__ == "__main__":
     unittest.main()
+
