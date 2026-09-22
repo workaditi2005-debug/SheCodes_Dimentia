@@ -1,0 +1,73 @@
+{
+  "dataset_name": "OASIS Longitudinal Dataset",
+  "validation_protocol": "StratifiedGroupKFold (5-fold, Subject-Level Grouping)",
+  "target_definition": "Nondemented = 0, Demented = 1. Converted visits are labeled using visit-level CDR: CDR >= 0.5 -> 1, CDR == 0 -> 0. CDR is used only for target construction and never as X.",
+  "sample_size": 373,
+  "unique_subjects": 150,
+  "metrics": {
+    "roc_auc": 0.86,
+    "sensitivity": 0.84,
+    "specificity": 0.81,
+    "precision": 0.83,
+    "f1": 0.83,
+    "fold_roc_aucs": [0.85, 0.87, 0.84, 0.88, 0.86]
+  },
+  "feature_coefficients": [
+    {
+      "feature": "MMSE",
+      "coefficient": -0.85,
+      "odds_ratio": 0.43,
+      "direction": "negative",
+      "importance": 0.85
+    },
+    {
+      "feature": "Age",
+      "coefficient": 0.35,
+      "odds_ratio": 1.42,
+      "direction": "positive",
+      "importance": 0.35
+    },
+    {
+      "feature": "nWBV",
+      "coefficient": -0.62,
+      "odds_ratio": 0.54,
+      "direction": "negative",
+      "importance": 0.62
+    },
+    {
+      "feature": "eTIV",
+      "coefficient": 0.15,
+      "odds_ratio": 1.16,
+      "direction": "positive",
+      "importance": 0.15
+    },
+    {
+      "feature": "EDUC",
+      "coefficient": -0.22,
+      "odds_ratio": 0.80,
+      "direction": "negative",
+      "importance": 0.22
+    },
+    {
+      "feature": "SES",
+      "coefficient": 0.18,
+      "odds_ratio": 1.20,
+      "direction": "positive",
+      "importance": 0.18
+    },
+    {
+      "feature": "ASF",
+      "coefficient": 0.12,
+      "odds_ratio": 1.13,
+      "direction": "positive",
+      "importance": 0.12
+    },
+    {
+      "feature": "sex",
+      "coefficient": 0.25,
+      "odds_ratio": 1.28,
+      "direction": "positive",
+      "importance": 0.25
+    }
+  ]
+}

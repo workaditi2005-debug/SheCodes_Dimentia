@@ -176,7 +176,7 @@ export function MiniChart({ data, color = LIME, height = 60 }) {
         return i === data.length - 1 ? (
           <g key={i}>
             <circle cx={x} cy={y} r={7} fill={color} opacity="0.22" />
-            <circle cx={x} cy={y} r={4} fill={color} stroke="rgba(8,8,8,0.9)" strokeWidth={2} />
+            <circle cx={x} cy={y} r={4} fill={color} stroke="#FFFFFF" strokeWidth={2} />
           </g>
         ) : null;
       })}

@@ -187,9 +187,9 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
                 aria-label={`Select ${track.title} for memory connection`}
                 style={{
                   padding: "20px 24px",
-                  borderRadius: 16,
-                  background: "rgba(244,114,182,0.08)",
-                  border: `2px solid ${PINK}44`,
+                  borderRadius: 18,
+                  background: "#FFFFFF",
+                  border: "1.5px solid rgba(28,58,68,0.12)",
                   color: "#1C2F3A",
                   fontWeight: 800,
                   fontSize: "clamp(16px, 2.5vw, 19px)",
@@ -198,17 +198,18 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
                   transition: "all 0.15s ease",
                   display: "flex",
                   alignItems: "center",
-                  gap: 14,
+                  gap: 16,
+                  boxShadow: "0 4px 14px rgba(28,47,58,0.04)",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = `${PINK}22`; e.currentTarget.style.borderColor = PINK; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(244,114,182,0.08)"; e.currentTarget.style.borderColor = `${PINK}44`; }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#FDF2F8"; e.currentTarget.style.borderColor = PINK; e.currentTarget.style.transform = "scale(1.01)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "#FFFFFF"; e.currentTarget.style.borderColor = "rgba(28,58,68,0.12)"; e.currentTarget.style.transform = "none"; }}
                 onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${PINK}`; e.currentTarget.style.outlineOffset = "3px"; }}
                 onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
               >
-                <span style={{ fontSize: 28 }}>🎵</span>
+                <span style={{ fontSize: 32 }}>🎵</span>
                 <div>
-                  <div>{track.title}</div>
-                  <div style={{ fontSize: 13, fontWeight: 500, color: "#9ca3af", marginTop: 2 }}>
+                  <div style={{ color: "#1C2F3A", fontSize: 18, fontWeight: 800 }}>{track.title}</div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: "#5C7382", marginTop: 2 }}>
                     {track.artist} • {track.region}
                   </div>
                 </div>
@@ -304,12 +305,12 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
             style={{
               width: "100%",
               maxWidth: 480,
-              background: "rgba(14,16,14,0.96)",
-              border: `2px solid ${PINK}`,
+              background: "#FFFFFF",
+              border: "1.5px solid rgba(28,58,68,0.12)",
               borderRadius: 24,
               padding: "36px 28px",
               textAlign: "center",
-              boxShadow: `0 20px 60px rgba(0,0,0,0.8), 0 0 40px ${PINK}33`,
+              boxShadow: "0 24px 60px rgba(28,47,58,0.18)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -320,7 +321,7 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
             <h3 style={{ fontSize: "clamp(22px, 4vw, 28px)", fontWeight: 900, color: "#1C2F3A", margin: 0 }}>
               {t("rrThankYouSharing", "Thank you for sharing!")}
             </h3>
-            <p style={{ fontSize: "clamp(15px, 2.5vw, 18px)", color: "#1C2F3A", lineHeight: 1.6, margin: 0 }}>
+            <p style={{ fontSize: "clamp(15px, 2.5vw, 18px)", color: "#3D5563", lineHeight: 1.6, margin: 0 }}>
               {t("rrMusicMemoryQuote", "That's wonderful. Music can bring back special feelings and memories.")}
             </p>
 
@@ -331,13 +332,13 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
                 style={{
                   padding: "18px 24px",
                   borderRadius: 16,
-                  background: PINK,
+                  background: "#2A8F8A",
                   border: "none",
-                  color: "#F6F3ED",
+                  color: "#FFFFFF",
                   fontWeight: 900,
                   fontSize: "clamp(16px, 2.5vw, 19px)",
                   cursor: "pointer",
-                  boxShadow: `0 8px 24px ${PINK}44`,
+                  boxShadow: "0 8px 24px rgba(42,143,138,0.25)",
                   width: "100%",
                   transition: "transform 0.15s ease",
                 }}
@@ -353,13 +354,14 @@ export default function MemoryConnection({ tracks, onComplete, onBack }) {
                 style={{
                   padding: "16px 24px",
                   borderRadius: 16,
-                  background: "rgba(28,58,68,0.09)",
-                  border: "1px solid rgba(28,58,68,0.20)",
+                  background: "#FFFFFF",
+                  border: "1.5px solid rgba(28,58,68,0.14)",
                   color: "#1C2F3A",
                   fontWeight: 800,
                   fontSize: "clamp(15px, 2.5vw, 18px)",
                   cursor: "pointer",
                   width: "100%",
+                  boxShadow: "0 2px 8px rgba(28,47,58,0.04)",
                 }}
               >
                 🏠 {t("rrBackToMenu", "Go Back to Menu")}
@@ -381,8 +383,8 @@ function EmojiButton({ emoji, label, selected, onClick, color, ariaLabel }) {
       style={{
         padding: "20px 12px",
         borderRadius: 18,
-        background: selected ? `${color}33` : "rgba(255,255,255,0.04)",
-        border: `2px solid ${selected ? color : "rgba(28,58,68,0.15)"}`,
+        background: selected ? "rgba(217,70,239,0.12)" : "#FFFFFF",
+        border: `2px solid ${selected ? "#D946EF" : "rgba(28,58,68,0.12)"}`,
         color: "#1C2F3A",
         cursor: "pointer",
         display: "flex",
@@ -390,12 +392,12 @@ function EmojiButton({ emoji, label, selected, onClick, color, ariaLabel }) {
         alignItems: "center",
         gap: 8,
         transition: "all 0.15s ease",
-        transform: selected ? "scale(1.06)" : "none",
-        boxShadow: selected ? `0 0 20px ${color}44` : "none",
+        transform: selected ? "scale(1.04)" : "none",
+        boxShadow: selected ? "0 8px 20px rgba(217,70,239,0.2)" : "0 4px 14px rgba(28,47,58,0.04)",
       }}
-      onMouseEnter={(e) => { if (!selected) { e.currentTarget.style.background = `${color}18`; e.currentTarget.style.borderColor = `${color}66`; } }}
-      onMouseLeave={(e) => { if (!selected) { e.currentTarget.style.background = "#FFFFFF"; e.currentTarget.style.borderColor = "rgba(28,58,68,0.15)"; } }}
-      onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${color}`; e.currentTarget.style.outlineOffset = "3px"; }}
+      onMouseEnter={(e) => { if (!selected) { e.currentTarget.style.background = "#FDF2F8"; e.currentTarget.style.borderColor = "#D946EF"; } }}
+      onMouseLeave={(e) => { if (!selected) { e.currentTarget.style.background = "#FFFFFF"; e.currentTarget.style.borderColor = "rgba(28,58,68,0.12)"; } }}
+      onFocus={(e) => { e.currentTarget.style.outline = "3px solid #D946EF"; e.currentTarget.style.outlineOffset = "3px"; }}
       onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
     >
       <span style={{ fontSize: 40 }} aria-hidden="true">{emoji}</span>
@@ -412,6 +414,6 @@ function BackButton({ onBack, t }) {
   );
 }
 
-const backBtnStyle = { display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 14, background: "rgba(28,58,68,0.09)", border: "1px solid rgba(28,58,68,0.15)", color: "#1C2F3A", fontWeight: 700, fontSize: 15, cursor: "pointer", marginBottom: 24 };
+const backBtnStyle = { display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 20px", borderRadius: 14, background: "#FFFFFF", border: "1.5px solid rgba(28,58,68,0.14)", color: "#1C2F3A", fontWeight: 700, fontSize: 15, cursor: "pointer", marginBottom: 24, boxShadow: "0 2px 8px rgba(28,47,58,0.04)" };
 const headingStyle = { fontFamily: "'DM Sans', sans-serif", fontWeight: 900, fontSize: "clamp(22px, 4vw, 30px)", color: "#1C2F3A", margin: 0 };
-const subtextStyle = { color: "#d1d5db", fontSize: "clamp(15px, 2vw, 18px)", lineHeight: 1.6, margin: 0 };
+const subtextStyle = { color: "#5C7382", fontSize: "clamp(15px, 2vw, 18px)", lineHeight: 1.6, margin: 0 };

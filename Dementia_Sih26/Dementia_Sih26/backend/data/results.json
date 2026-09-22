@@ -8496,5 +8496,183 @@
       },
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     }
+  ],
+  "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372": [
+    {
+      "timestamp": "2026-09-22T18:01:46+00:00",
+      "createdAt": "2026-09-22T18:01:46+00:00",
+      "speech_score": 37.5,
+      "memory_score": 49.25,
+      "reaction_score": 0.0,
+      "executive_score": 0.0,
+      "motor_score": 40.0,
+      "alzheimers_risk": null,
+      "dementia_risk": null,
+      "parkinsons_risk": null,
+      "composite_risk_score": 71.85,
+      "hybrid_risk": null,
+      "confidence": 1.0,
+      "risk_levels": {
+        "alzheimers": "N/A",
+        "dementia": "N/A",
+        "parkinsons": "N/A"
+      },
+      "attention_variability_index": 0.4858,
+      "feature_vector": {
+        "wpm": 120.0,
+        "speed_deviation": 0.0,
+        "speech_variability": 0.0,
+        "pause_ratio": 0.91,
+        "speech_start_delay": 4.7,
+        "immediate_recall_accuracy": 60.0,
+        "delayed_recall_accuracy": 55.0,
+        "intrusion_count": 3.0,
+        "recall_latency": 2.56,
+        "order_match_ratio": 0.6,
+        "mean_rt": 1482.67,
+        "std_rt": 720.25,
+        "min_rt": 718.0,
+        "reaction_drift": -1056.0,
+        "miss_count": 1.0,
+        "stroop_error_rate": 0.5,
+        "stroop_rt": 1707.0,
+        "tap_interval_std": 191.8
+      },
+      "feature_provenance": {
+        "wpm": "defaulted",
+        "speed_deviation": "measured",
+        "speech_variability": "measured",
+        "pause_ratio": "measured",
+        "speech_start_delay": "measured",
+        "immediate_recall_accuracy": "measured",
+        "delayed_recall_accuracy": "measured",
+        "intrusion_count": "measured",
+        "recall_latency": "measured",
+        "order_match_ratio": "measured",
+        "mean_rt": "measured",
+        "std_rt": "measured",
+        "min_rt": "measured",
+        "reaction_drift": "measured",
+        "miss_count": "measured",
+        "stroop_error_rate": "measured",
+        "stroop_rt": "measured",
+        "tap_interval_std": "measured"
+      },
+      "provenance_summary": {
+        "measured_count": 17,
+        "derived_count": 0,
+        "defaulted_count": 1
+      },
+      "ml_analysis": {
+        "behavioral_deviation": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "defaulted",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
+        },
+        "clinical_reference": {
+          "status": "insufficient_input",
+          "model": "OASIS_LogisticRegression",
+          "probability": null,
+          "risk_band": "unavailable",
+          "missing_features": [
+            "Age",
+            "EDUC",
+            "SES",
+            "MMSE",
+            "eTIV",
+            "nWBV",
+            "ASF",
+            "sex"
+          ],
+          "provided_features": [],
+          "explanations": [],
+          "message": "Missing all required OASIS clinical features.",
+          "research_disclaimer": "Research reference only. Not a medical diagnosis."
+        },
+        "overall_attention": {
+          "available": false,
+          "label": null,
+          "method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": {
+            "behavioral_deviation_score": null,
+            "clinical_reference_probability": null
+          },
+          "disclaimer": "Both behavioral history and clinical reference inputs are incomplete."
+        },
+        "behavioral": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "defaulted",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
+        },
+        "combined_indicator": {
+          "available": false,
+          "value": null,
+          "label": null,
+          "fusion_method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": null
+        }
+      },
+      "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
+    }
   ]
 }

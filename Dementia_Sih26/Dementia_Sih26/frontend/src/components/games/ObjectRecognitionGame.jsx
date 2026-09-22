@@ -205,7 +205,7 @@ export default function ObjectRecognitionGame({ setPage }) {
     >
       <div style={{ width: "100%", maxWidth: 540, margin: "0 auto", textAlign: "center" }}>
         {/* Round Progress Tracker */}
-        <div style={{ marginBottom: 18, color: "#9ca3af", fontSize: 13, fontWeight: 700 }}>
+        <div style={{ marginBottom: 18, color: "#5C7382", fontSize: 14, fontWeight: 700 }}>
           Item {currentRound + 1} of {totalRounds}
         </div>
 
@@ -215,14 +215,14 @@ export default function ObjectRecognitionGame({ setPage }) {
             width: 140,
             height: 140,
             borderRadius: 28,
-            background: "radial-gradient(circle, rgba(245,158,11,0.2) 0%, rgba(20,20,20,0.9) 80%)",
-            border: "2px solid rgba(245,158,11,0.4)",
+            background: "#FFFFFF",
+            border: "2px solid rgba(245,158,11,0.35)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             fontSize: 76,
             margin: "0 auto 24px",
-            boxShadow: "0 12px 36px rgba(0,0,0,0.6), 0 0 24px rgba(245,158,11,0.25)",
+            boxShadow: "0 8px 24px rgba(28,47,58,0.06), 0 0 20px rgba(245,158,11,0.12)",
           }}
         >
           {question.image}
@@ -231,10 +231,10 @@ export default function ObjectRecognitionGame({ setPage }) {
         {/* Question Text */}
         <h3
           style={{
-            fontSize: 20,
+            fontSize: 22,
             color: "#1C2F3A",
             fontWeight: 800,
-            marginBottom: 10,
+            marginBottom: 12,
           }}
         >
           {question.question[lang] || question.question.en}
@@ -244,14 +244,15 @@ export default function ObjectRecognitionGame({ setPage }) {
         {showHint && (
           <div
             style={{
-              fontSize: 14,
-              color: "#fbbf24",
-              background: "rgba(245,158,11,0.12)",
-              border: "1px solid rgba(245,158,11,0.25)",
+              fontSize: 15,
+              color: "#92400E",
+              background: "#FEF3C7",
+              border: "1px solid #FCD34D",
               borderRadius: 12,
-              padding: "8px 14px",
+              padding: "10px 18px",
               marginBottom: 18,
               display: "inline-block",
+              fontWeight: 600,
             }}
           >
             💡 Hint: {question.hint[lang] || question.hint.en}
@@ -263,7 +264,7 @@ export default function ObjectRecognitionGame({ setPage }) {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 12,
+            gap: 14,
             marginTop: 16,
           }}
         >
@@ -279,32 +280,34 @@ export default function ObjectRecognitionGame({ setPage }) {
                 onClick={() => handleOptionSelect(opt, idx)}
                 disabled={feedbackState !== null}
                 style={{
-                  padding: "16px 20px",
+                  padding: "18px 24px",
                   borderRadius: 16,
                   border: isCorrect
-                    ? "2px solid #10b981"
+                    ? "2px solid #0F6B45"
                     : isWrong
-                    ? "2px solid #ef4444"
-                    : "1px solid #E2EBEC",
+                    ? "2px solid #991B1B"
+                    : "1.5px solid rgba(28,58,68,0.12)",
                   background: isCorrect
-                    ? "rgba(16,185,129,0.22)"
+                    ? "#DCFCE7"
                     : isWrong
-                    ? "rgba(239,68,68,0.22)"
-                    : "#F4F8F8",
-                  color: isCorrect ? "#10b981" : isWrong ? "#ef4444" : "#f3f4f6",
-                  fontSize: 18,
+                    ? "#FEE2E2"
+                    : "#FFFFFF",
+                  color: isCorrect ? "#0F6B45" : isWrong ? "#991B1B" : "#1C2F3A",
+                  fontSize: 19,
                   fontWeight: 700,
                   cursor: feedbackState === null ? "pointer" : "default",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  transition: "all 0.2s ease",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+                  transition: "all 0.15s ease",
+                  boxShadow: isCorrect || isWrong
+                    ? "none"
+                    : "0 4px 14px rgba(28,47,58,0.04)",
                 }}
               >
                 <span>{optionText}</span>
-                {isCorrect && <span style={{ fontSize: 20 }}>✓</span>}
-                {isWrong && <span style={{ fontSize: 20 }}>✗</span>}
+                {isCorrect && <span style={{ fontSize: 22, fontWeight: 900 }}>✓</span>}
+                {isWrong && <span style={{ fontSize: 22, fontWeight: 900 }}>✗</span>}
               </button>
             );
           })}

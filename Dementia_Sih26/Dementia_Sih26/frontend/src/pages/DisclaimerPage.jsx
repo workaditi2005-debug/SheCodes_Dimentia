@@ -57,16 +57,17 @@ export default function DisclaimerPage({ setView, onAccept }) {
 
         {/* Warning box */}
         <div style={{
-          background: "rgba(245,158,11,0.06)", border: "1px solid rgba(245,158,11,0.25)",
-          borderRadius: 14, padding: "20px 24px", marginBottom: 28,
+          background: "#FEF2F2", border: "1.5px solid #FCA5A5",
+          borderRadius: 16, padding: "20px 24px", marginBottom: 28,
+          boxShadow: "0 4px 14px rgba(220,38,38,0.06)",
         }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-            <span style={{ fontSize: 18 }}>⚠️</span>
-            <span style={{ fontWeight: 700, color: "#f59e0b", fontSize: 14 }}>Important Notice</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+            <span style={{ fontSize: 20, color: "#DC2626" }}>⚠️</span>
+            <span style={{ fontWeight: 800, color: "#991B1B", fontSize: 15, letterSpacing: 0.5, textTransform: "uppercase" }}>Important Notice</span>
           </div>
-          <p style={{ color: T.creamDim, fontSize: 13, lineHeight: 1.75, margin: 0 }}>
-            NeuroAid is a <strong style={{ color: T.cream }}>behavioral screening tool</strong>, not a medical diagnostic device. It uses
-            cognitive performance metrics to estimate risk patterns. Results are <strong style={{ color: T.cream }}>not a diagnosis</strong> and
+          <p style={{ color: "#7F1D1D", fontSize: 13.5, lineHeight: 1.75, margin: 0, fontWeight: 500 }}>
+            NeuroAid is a <strong style={{ color: "#450A0A" }}>behavioral screening tool</strong>, not a medical diagnostic device. It uses
+            cognitive performance metrics to estimate risk patterns. Results are <strong style={{ color: "#450A0A" }}>not a diagnosis</strong> and
             should never replace professional medical evaluation. Always consult a qualified neurologist
             or physician for clinical assessment.
           </p>

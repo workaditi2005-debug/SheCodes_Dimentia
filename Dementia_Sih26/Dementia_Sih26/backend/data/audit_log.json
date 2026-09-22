@@ -20254,5 +20254,473 @@
     "metadata": {
       "record_count": 7
     }
+  },
+  {
+    "id": "85986099-87ed-4b55-9d25-40cce1ab3fcf",
+    "timestamp": "2026-09-22T17:54:51+00:00",
+    "event": "auth.login.failure",
+    "actor_id": "mary765@gmail.com",
+    "actor_role": "guest",
+    "subject_id": null,
+    "outcome": "failed",
+    "client_ip": null,
+    "metadata": {
+      "reason": "user_not_found"
+    }
+  },
+  {
+    "id": "7e0688af-da75-4b32-898e-e4242ca4f208",
+    "timestamp": "2026-09-22T17:55:39+00:00",
+    "event": "auth.register",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "role": "patient"
+    }
+  },
+  {
+    "id": "ffbf2bc1-de58-4f7a-b82f-a5c8440a526b",
+    "timestamp": "2026-09-22T17:56:13+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 0
+    }
+  },
+  {
+    "id": "9e4ccf87-ef1e-4fa3-b73d-fd77caf35ad7",
+    "timestamp": "2026-09-22T17:56:13+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 0
+    }
+  },
+  {
+    "id": "33603c22-2d8d-40ad-bfdd-e86570c9e2bb",
+    "timestamp": "2026-09-22T17:58:50+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 0
+    }
+  },
+  {
+    "id": "eeb0463a-8e03-44b4-9921-1fcbed8f718f",
+    "timestamp": "2026-09-22T17:58:50+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 0
+    }
+  },
+  {
+    "id": "cfac119a-18fc-45df-8716-f1d833e98104",
+    "timestamp": "2026-09-22T18:04:22+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "10aca3fb-9d85-4773-8d4f-6ca762334372",
+    "timestamp": "2026-09-22T18:04:22+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "8a0d9b86-ba77-4968-8dff-45f55087bbca",
+    "timestamp": "2026-09-22T18:16:18+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "f975b363-0242-409f-9ec4-0a9dc086544c",
+    "timestamp": "2026-09-22T18:16:18+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "0ae349b8-86f9-430b-94af-6ae55c6a2753",
+    "timestamp": "2026-09-22T18:17:03+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "7a59c647-207d-4a23-bac6-86f21a86d677",
+    "timestamp": "2026-09-22T18:17:03+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "17e418b0-ee2c-4ebc-8fea-cb9286c4b56c",
+    "timestamp": "2026-09-22T18:17:32+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "375ca50f-b168-4ae1-8090-e36ad67dfd51",
+    "timestamp": "2026-09-22T18:17:32+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "6f670f85-7fb8-46d0-b9a5-cd5f67d997cf",
+    "timestamp": "2026-09-22T18:17:32+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "c8598719-01e0-4bdf-bdee-afad85607139",
+    "timestamp": "2026-09-22T18:17:33+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "492ee986-ccf2-450b-9347-4ef1ce8b0bab",
+    "timestamp": "2026-09-22T18:17:37+00:00",
+    "event": "phi.reminders.updated",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "reminder_id": "0f54aa1b-f200-4322-bc28-f81a80ba0e38"
+    }
+  },
+  {
+    "id": "d26cb888-8c8f-4762-871f-9148001ad1a0",
+    "timestamp": "2026-09-22T18:17:38+00:00",
+    "event": "phi.reminders.updated",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "reminder_id": "98d93609-9de2-4aea-90d4-943c6a173b2d"
+    }
+  },
+  {
+    "id": "385df93a-ae44-4ab3-ac3a-fa4570a8ed9f",
+    "timestamp": "2026-09-22T18:19:09+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "784d6a35-2d12-4372-904c-e2aa5c5cdfc9",
+    "timestamp": "2026-09-22T18:19:09+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "1a69957d-2693-4d61-873c-2cfea16415df",
+    "timestamp": "2026-09-22T18:19:51+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "6d80cc92-ef96-4638-921d-736dc03e25df",
+    "timestamp": "2026-09-22T18:19:52+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "665ad0ed-ecb7-4cf3-8196-cfcf209212e3",
+    "timestamp": "2026-09-22T18:19:52+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "ccd662c3-93b8-49c1-bb1d-376360158627",
+    "timestamp": "2026-09-22T18:19:52+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "4c3452c6-4378-4c53-b0f4-f8fe92f85a2c",
+    "timestamp": "2026-09-22T18:19:58+00:00",
+    "event": "phi.reminders.completed",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "reminder_id": "0f54aa1b-f200-4322-bc28-f81a80ba0e38"
+    }
+  },
+  {
+    "id": "eb6e82df-08b3-4e85-8c72-15a84d5555e7",
+    "timestamp": "2026-09-22T18:19:59+00:00",
+    "event": "phi.reminders.completed",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "reminder_id": "98d93609-9de2-4aea-90d4-943c6a173b2d"
+    }
+  },
+  {
+    "id": "f584c2d8-0647-427f-8224-1159133e4b8c",
+    "timestamp": "2026-09-22T18:20:10+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "8ee780dc-c80b-4c6a-8295-95db9b4c84aa",
+    "timestamp": "2026-09-22T18:20:10+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "c67753ad-63a6-4868-ace7-2010041fb24a",
+    "timestamp": "2026-09-22T18:23:41+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "7ee0b1cb-3249-4951-b369-c2503b3cbcd5",
+    "timestamp": "2026-09-22T18:23:42+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "af713376-bc9e-4194-97c9-0886f773a7dd",
+    "timestamp": "2026-09-22T18:23:42+00:00",
+    "event": "phi.memory_bank.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "5ede87b7-488a-431e-b534-81fc61bcceaa",
+    "timestamp": "2026-09-22T18:23:42+00:00",
+    "event": "phi.reminders.read",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "count": 5
+    }
+  },
+  {
+    "id": "26f213d5-0dea-4792-ad58-d4544b33440b",
+    "timestamp": "2026-09-22T18:23:47+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "5a4c064e-519a-4447-b3e9-7cd6dafbb4d2",
+    "timestamp": "2026-09-22T18:23:47+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "8040d6a5-bde5-4740-a90d-8d49d87ea84f",
+    "timestamp": "2026-09-22T18:24:15+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
+  },
+  {
+    "id": "a490753c-9989-4809-bf22-1d99bedc75bf",
+    "timestamp": "2026-09-22T18:24:15+00:00",
+    "event": "phi.read_self",
+    "actor_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "actor_role": "patient",
+    "subject_id": "9a3d7e4f-c8f9-4dd6-9400-10a746fd8372",
+    "outcome": "success",
+    "client_ip": null,
+    "metadata": {
+      "record_count": 1
+    }
   }
 ]

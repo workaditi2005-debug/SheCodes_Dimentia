@@ -239,13 +239,13 @@ export default function SequenceRecallGame({ setPage }) {
               display: "inline-flex",
               alignItems: "center",
               gap: 8,
-              padding: "6px 18px",
+              padding: "8px 20px",
               borderRadius: 99,
-              background: phase === "watch" ? "rgba(245,158,11,0.15)" : "rgba(96,165,250,0.15)",
-              border: `1px solid ${phase === "watch" ? "#f59e0b" : "#60a5fa"}`,
-              color: phase === "watch" ? "#f59e0b" : "#60a5fa",
+              background: phase === "watch" ? "rgba(245,158,11,0.12)" : "rgba(42,143,138,0.12)",
+              border: `1.5px solid ${phase === "watch" ? "#d97706" : "#2A8F8A"}`,
+              color: phase === "watch" ? "#b45309" : "#1B6360",
               fontWeight: 800,
-              fontSize: 14,
+              fontSize: 15,
             }}
           >
             {phase === "watch" ? "👀 WATCH CAREFULLY" : "👉 YOUR TURN TO TAP"}
@@ -272,32 +272,30 @@ export default function SequenceRecallGame({ setPage }) {
                 style={{
                   aspectRatio: "1 / 1",
                   borderRadius: 24,
-                  border: isLit ? `4px solid #fff` : `2px solid ${btn.color}55`,
-                  background: isLit
-                    ? btn.color
-                    : `linear-gradient(135deg, ${btn.color}22 0%, rgba(20,20,20,0.9) 100%)`,
+                  border: isLit ? `3px solid ${btn.color}` : `2px solid rgba(28,58,68,0.14)`,
+                  background: isLit ? btn.color : "#FFFFFF",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
                   cursor: phase === "input" ? "pointer" : "default",
                   boxShadow: isLit
-                    ? `0 0 36px ${btn.color}, inset 0 0 20px #fff`
-                    : "0 8px 24px rgba(0,0,0,0.5)",
-                  transform: isLit ? "scale(1.05)" : "scale(1)",
+                    ? `0 12px 30px ${btn.color}55`
+                    : "0 8px 20px rgba(28,47,58,0.06)",
+                  transform: isLit ? "scale(1.04)" : "scale(1)",
                   transition: "all 0.15s ease",
                   padding: 16,
                 }}
               >
-                <span style={{ fontSize: 52, marginBottom: 8, filter: isLit ? "drop-shadow(0 0 10px #fff)" : "none" }}>
+                <span style={{ fontSize: 54, marginBottom: 8, filter: isLit ? "drop-shadow(0 2px 8px rgba(0,0,0,0.2))" : "none" }}>
                   {btn.icon}
                 </span>
                 <span
                   style={{
-                    fontSize: 16,
+                    fontSize: 18,
                     fontWeight: 800,
-                    color: isLit ? "#fff" : "#e5e7eb",
-                    letterSpacing: 0.5,
+                    color: isLit ? "#FFFFFF" : "#1C2F3A",
+                    letterSpacing: 0.3,
                   }}
                 >
                   {btn.name}

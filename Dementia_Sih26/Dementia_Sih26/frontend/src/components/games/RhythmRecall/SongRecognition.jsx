@@ -246,8 +246,8 @@ export default function SongRecognition({ tracks, totalRounds = 5, onComplete, o
               marginTop: 20,
               padding: "12px 24px",
               borderRadius: 16,
-              background: "rgba(52,211,153,0.15)",
-              border: `1px solid ${TEAL}44`,
+              background: "#E7F4F3",
+              border: "1.5px solid #2A8F8A",
               color: "#1C2F3A",
               fontWeight: 800,
               fontSize: 18,
@@ -258,12 +258,12 @@ export default function SongRecognition({ tracks, totalRounds = 5, onComplete, o
           >
             <span style={{ fontSize: 22 }}>🎵</span>
             <span>Listening…</span>
-            <span style={{ color: TEAL, fontFamily: "monospace", fontSize: 20 }}>
+            <span style={{ color: "#2A8F8A", fontFamily: "monospace", fontSize: 20, fontWeight: 900 }}>
               00:{listenSeconds < 10 ? `0${listenSeconds}` : "10"}
             </span>
           </div>
 
-          <p style={{ color: "#9ca3af", fontSize: 14, marginTop: 8 }}>
+          <p style={{ color: "#5C7382", fontSize: 15, marginTop: 8 }}>
             Listen for at least 10 seconds. Options will appear automatically.
           </p>
         </PhaseCard>
@@ -285,8 +285,8 @@ export default function SongRecognition({ tracks, totalRounds = 5, onComplete, o
                 style={{
                   padding: "22px 28px",
                   borderRadius: 18,
-                  background: "rgba(52,211,153,0.10)",
-                  border: `2px solid ${TEAL}55`,
+                  background: "#FFFFFF",
+                  border: "2px solid rgba(28,58,68,0.12)",
                   color: "#1C2F3A",
                   fontWeight: 800,
                   fontSize: "clamp(17px, 2.5vw, 21px)",
@@ -294,23 +294,24 @@ export default function SongRecognition({ tracks, totalRounds = 5, onComplete, o
                   textAlign: "left",
                   lineHeight: 1.4,
                   transition: "all 0.15s ease",
+                  boxShadow: "0 4px 14px rgba(28,47,58,0.04)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = `${TEAL}22`;
-                  e.currentTarget.style.borderColor = TEAL;
+                  e.currentTarget.style.background = "#E7F4F3";
+                  e.currentTarget.style.borderColor = "#2A8F8A";
                   e.currentTarget.style.transform = "scale(1.02)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "rgba(52,211,153,0.10)";
-                  e.currentTarget.style.borderColor = `${TEAL}55`;
+                  e.currentTarget.style.background = "#FFFFFF";
+                  e.currentTarget.style.borderColor = "rgba(28,58,68,0.12)";
                   e.currentTarget.style.transform = "none";
                 }}
-                onFocus={(e) => { e.currentTarget.style.outline = `3px solid ${TEAL}`; e.currentTarget.style.outlineOffset = "3px"; }}
+                onFocus={(e) => { e.currentTarget.style.outline = "3px solid #2A8F8A"; e.currentTarget.style.outlineOffset = "3px"; }}
                 onBlur={(e) => { e.currentTarget.style.outline = "none"; }}
               >
                 🎵 {option.title}
                 {option.artist && (
-                  <span style={{ display: "block", fontSize: 14, fontWeight: 500, color: "#9ca3af", marginTop: 4 }}>
+                  <span style={{ display: "block", fontSize: 15, fontWeight: 600, color: "#5C7382", marginTop: 4 }}>
                     {option.artist}
                   </span>
                 )}
@@ -351,8 +352,7 @@ function PhaseCard({ children }) {
   return (
     <div
       style={{
-        background: "rgba(10,12,10,0.92)",
-        backdropFilter: "blur(24px)",
+        background: "#FFFFFF",
         border: "1px solid rgba(28,58,68,0.12)",
         borderRadius: 24,
         padding: "36px 28px",
@@ -363,6 +363,7 @@ function PhaseCard({ children }) {
         gap: 16,
         minHeight: 340,
         justifyContent: "center",
+        boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
       }}
     >
       {children}
@@ -436,13 +437,14 @@ function BackButton({ onBack, t }) {
         gap: 8,
         padding: "12px 20px",
         borderRadius: 14,
-        background: "rgba(28,58,68,0.09)",
-        border: "1px solid rgba(28,58,68,0.15)",
+        background: "#FFFFFF",
+        border: "1.5px solid rgba(28,58,68,0.14)",
         color: "#1C2F3A",
         fontWeight: 700,
         fontSize: 15,
         cursor: "pointer",
         marginBottom: 24,
+        boxShadow: "0 2px 8px rgba(28,47,58,0.04)",
       }}
     >
       ← {t("rrBackToMenu", "Back to Music Menu")}
@@ -455,8 +457,8 @@ function EmptyState({ message, onBack }) {
   return (
     <div style={{ textAlign: "center", padding: 48 }}>
       <div style={{ fontSize: 48, marginBottom: 16 }}>🎵</div>
-      <p style={{ color: "#9ca3af", fontSize: 18, marginBottom: 24 }}>{message}</p>
-      <BigButton onClick={onBack} color={TEAL} ariaLabel="Go back">
+      <p style={{ color: "#5C7382", fontSize: 18, marginBottom: 24 }}>{message}</p>
+      <BigButton onClick={onBack} color="#2A8F8A" ariaLabel="Go back">
         ← {t("rrBackToMenu", "Back to Music Menu")}
       </BigButton>
     </div>
@@ -472,7 +474,7 @@ const headingStyle = {
 };
 
 const subtextStyle = {
-  color: "#d1d5db",
+  color: "#5C7382",
   fontSize: "clamp(15px, 2vw, 18px)",
   lineHeight: 1.6,
   margin: 0,

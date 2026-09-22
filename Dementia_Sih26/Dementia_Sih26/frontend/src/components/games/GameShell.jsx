@@ -39,14 +39,14 @@ export default function GameShell({
   };
 
   return (
-    <div style={{ maxWidth: 900, margin: "0 auto", paddingBottom: 40 }}>
+    <div style={{ maxWidth: 920, margin: "0 auto", paddingBottom: 44, fontFamily: "'DM Sans', sans-serif" }}>
       {/* ── Top Navigation Bar ── */}
       <div
         style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          marginBottom: 20,
+          marginBottom: 18,
         }}
       >
         <button
@@ -60,13 +60,14 @@ export default function GameShell({
             gap: 8,
             padding: "10px 18px",
             borderRadius: 14,
-            background: "rgba(28,58,68,0.09)",
+            background: "#FFFFFF",
             border: "1px solid rgba(28,58,68,0.15)",
             color: "#1C2F3A",
-            fontWeight: 700,
+            fontWeight: 800,
             fontSize: 14,
             cursor: "pointer",
             transition: "all 0.15s ease",
+            boxShadow: "0 2px 8px rgba(28,47,58,0.04)",
           }}
         >
           ← Exit to Games
@@ -78,13 +79,13 @@ export default function GameShell({
             display: "inline-flex",
             alignItems: "center",
             gap: 6,
-            padding: "6px 14px",
+            padding: "6px 16px",
             borderRadius: 99,
             background: `${accentColor}18`,
             border: `1px solid ${accentColor}44`,
             color: accentColor,
             fontSize: 12,
-            fontWeight: 700,
+            fontWeight: 800,
             letterSpacing: 0.5,
           }}
         >
@@ -102,11 +103,12 @@ export default function GameShell({
             width: 42,
             height: 42,
             borderRadius: 12,
-            background: "rgba(28,58,68,0.09)",
+            background: "#FFFFFF",
             border: "1px solid rgba(28,58,68,0.15)",
             color: "#1C2F3A",
             fontSize: 18,
             cursor: "pointer",
+            boxShadow: "0 2px 8px rgba(28,47,58,0.04)",
           }}
         >
           {muted ? "🔇" : "🔊"}
@@ -117,12 +119,11 @@ export default function GameShell({
       <div
         style={{
           background: "#FFFFFF",
-          backdropFilter: "blur(20px)",
-          border: "1px solid rgba(28,58,68,0.11)",
+          border: "1px solid rgba(28,58,68,0.12)",
           borderRadius: 22,
           padding: "20px 24px",
           marginBottom: 16,
-          boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+          boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
         }}
       >
         <div
@@ -132,7 +133,7 @@ export default function GameShell({
             alignItems: "center",
             flexWrap: "wrap",
             gap: 16,
-            marginBottom: 12,
+            marginBottom: 14,
           }}
         >
           <div>
@@ -155,10 +156,10 @@ export default function GameShell({
             <div
               style={{
                 display: "inline-flex",
-                background: "rgba(0,0,0,0.5)",
+                background: "#F0F5F5",
                 padding: 4,
                 borderRadius: 14,
-                border: "1px solid rgba(28,58,68,0.11)",
+                border: "1px solid rgba(28,58,68,0.12)",
                 gap: 4,
                 flexWrap: "wrap",
               }}
@@ -179,12 +180,12 @@ export default function GameShell({
                       onDifficultyChange(lvl);
                     }}
                     style={{
-                      padding: "6px 12px",
+                      padding: "6px 14px",
                       borderRadius: 10,
                       border: "none",
                       background: isActive ? accentColor : "transparent",
-                      color: isActive ? "#F6F3ED" : "#9ca3af",
-                      fontWeight: isActive ? 800 : 600,
+                      color: isActive ? "#FFFFFF" : "#3D5563",
+                      fontWeight: isActive ? 800 : 700,
                       fontSize: 12,
                       cursor: "pointer",
                       transition: "all 0.15s ease",
@@ -194,7 +195,7 @@ export default function GameShell({
                     }}
                   >
                     <span>Lvl {lvl}</span>
-                    <span style={{ fontSize: 10, opacity: isActive ? 0.9 : 0.6 }}>({label})</span>
+                    <span style={{ fontSize: 10, opacity: isActive ? 0.95 : 0.7 }}>({label})</span>
                   </button>
                 );
               })}
@@ -211,8 +212,8 @@ export default function GameShell({
             borderTop: "1px solid rgba(28,58,68,0.09)",
             paddingTop: 12,
             fontSize: 14,
-            color: "#9ca3af",
-            fontWeight: 600,
+            color: "#5C7382",
+            fontWeight: 700,
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -230,7 +231,7 @@ export default function GameShell({
           {mistakesCount > 0 && (
             <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
               <span>⚠️ Retries:</span>
-              <span style={{ color: "#f87171", fontWeight: 800 }}>
+              <span style={{ color: "#C45C5C", fontWeight: 800 }}>
                 {mistakesCount}
               </span>
             </div>
@@ -245,7 +246,7 @@ export default function GameShell({
               style={{
                 background: "none",
                 border: "none",
-                color: "#9ca3af",
+                color: "#5C7382",
                 cursor: "pointer",
                 fontSize: 13,
                 fontWeight: 700,
@@ -262,11 +263,11 @@ export default function GameShell({
       {instructionText && (
         <div
           style={{
-            background: "rgba(42,143,138,0.06)",
+            background: "rgba(42,143,138,0.08)",
             border: `1px solid ${LIME}33`,
             borderRadius: 16,
             padding: "14px 20px",
-            marginBottom: 20,
+            marginBottom: 18,
             display: "flex",
             alignItems: "center",
             gap: 12,
@@ -276,9 +277,9 @@ export default function GameShell({
           <p
             style={{
               color: "#1C2F3A",
-              fontSize: 14,
+              fontSize: 15,
               lineHeight: 1.5,
-              fontWeight: 500,
+              fontWeight: 600,
               margin: 0,
             }}
           >
@@ -293,13 +294,13 @@ export default function GameShell({
               style={{
                 marginLeft: "auto",
                 flexShrink: 0,
-                padding: "6px 14px",
-                borderRadius: 10,
-                background: `${LIME}22`,
-                border: `1px solid ${LIME}55`,
+                padding: "8px 16px",
+                borderRadius: 12,
+                background: `${LIME}18`,
+                border: `1px solid ${LIME}44`,
                 color: LIME,
                 fontWeight: 800,
-                fontSize: 12,
+                fontSize: 13,
                 cursor: "pointer",
               }}
             >
@@ -309,23 +310,35 @@ export default function GameShell({
         </div>
       )}
 
-      {/* ── Main Game Board Viewport ── */}
+      {/* ── Main Game Board Viewport (Light Healthcare Container) ── */}
       <div
         style={{
-          background: "rgba(10,12,10,0.92)",
-          backdropFilter: "blur(24px)",
+          background: "#FFFFFF",
           border: "1px solid rgba(28,58,68,0.12)",
           borderRadius: 24,
-          padding: "28px 20px",
-          minHeight: 380,
-          boxShadow: "0 12px 40px rgba(0,0,0,0.6)",
+          padding: "32px 24px",
+          minHeight: 400,
+          boxShadow: "0 8px 24px rgba(28,47,58,0.06)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        {children}
+        {/* Subtle top shine */}
+        <div style={{ position: "absolute", top: 0, left: "10%", right: "10%", height: 1, background: "linear-gradient(90deg, transparent, #DCE7E8, transparent)", pointerEvents: "none" }} />
+        {/* Soft bottom right glow */}
+        <div style={{
+          position: "absolute", bottom: 0, right: 0,
+          width: "60%", height: "50%",
+          background: `radial-gradient(ellipse 80% 80% at 90% 110%, ${LIME}14 0%, transparent 70%)`,
+          pointerEvents: "none",
+        }} />
+        <div style={{ width: "100%", position: "relative", zIndex: 1 }}>
+          {children}
+        </div>
       </div>
 
       {/* ── Completion Reward Modal ── */}
