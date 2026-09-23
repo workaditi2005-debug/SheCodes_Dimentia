@@ -12,10 +12,13 @@ def _parse_bool(value: str, default: bool) -> bool:
 
 
 def _parse_origins(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
-    if not value:
-        return default
-    origins = tuple(item.strip() for item in value.split(",") if item.strip() and item.strip() != "*")
-    return origins or default
+    origins = list(default)
+    if value:
+        for item in value.split(","):
+            s = item.strip()
+            if s and s != "*" and s not in origins:
+                origins.append(s)
+    return tuple(origins)
 
 
 @dataclass(frozen=True)

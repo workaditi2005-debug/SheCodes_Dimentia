@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn, MiniChart } from "../components/RiskDashboard";
-import { getPatients, getUser, connectCaregiverByEmail, getDoctorCaregivers } from "../services/api";
+import { getPatients, getUser, connectCaregiverByEmail, getDoctorCaregivers, getPendingRequests, approvePatient } from "../services/api";
 
 const LIME = "#2A8F8A";
 
@@ -38,9 +38,9 @@ export default function DoctorHome({ setPage, setSelectedPatient }) {
     try {
       const [list, pendingData] = await Promise.all([
         getPatients(),
-        fetch("/api/auth/doctors/pending-requests", {
-          headers: { Authorization: `Bearer ${sessionStorage.getItem("neuroaid_token")}` }
-        }).then(r => r.ok ? r.json() : { pending_requests: [] }),
+        getPendingRequests()
+          .then(reqs => ({ pending_requests: reqs || [] }))
+          .catch(() => ({ pending_requests: [] })),
       ]);
       setPatients(list || []);
       setPendingRequests(pendingData.pending_requests || []);
@@ -62,12 +62,7 @@ export default function DoctorHome({ setPage, setSelectedPatient }) {
     setActionLoading(patientId + action);
     setActionMsg(null);
     try {
-      const res = await fetch("/api/auth/doctors/approve", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${sessionStorage.getItem("neuroaid_token")}` },
-        body: JSON.stringify({ patient_id: patientId, action }),
-      });
-      const data = await res.json();
+      const data = await approvePatient(patientId, action);
       setActionMsg(data.message);
       await loadData();
     } catch (e) {

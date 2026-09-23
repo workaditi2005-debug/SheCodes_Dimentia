@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { T } from "../utils/theme";
-import { getToken } from "../services/api";
+import { getToken, BASE } from "../services/api";
 
 const LIME = "#2A8F8A";
 
 async function api(method, path, body) {
   const token = getToken();
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${BASE}${path}`, {
     method,
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
     body: body ? JSON.stringify(body) : undefined,

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn, Badge } from "./RiskDashboard";
 import { useAssessment } from "../context/AssessmentContext";
-import { getToken } from "../services/api";
+import { getToken, BASE } from "../services/api";
 
 // ── 8 built-in word pools (10 targets + 6 distractors each) ─────────────────
 const BUILTIN_POOLS = [
@@ -48,7 +48,7 @@ export default function MemoryTest({ setPage }) {
       try {
         const token = getToken();
         if (token) {
-          const res = await fetch("/api/content", { headers: { Authorization: `Bearer ${token}` } });
+          const res = await fetch(`${BASE}/content`, { headers: { Authorization: `Bearer ${token}` } });
           if (res.ok) {
             const data = await res.json();
             customPools = (data.word_sets || []).map(ws => ({

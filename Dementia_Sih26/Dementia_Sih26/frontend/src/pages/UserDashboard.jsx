@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn, Badge, MiniChart } from "../components/RiskDashboard";
-import { getUser, getMyResults, getDoctors, getMyCaregivers, respondToCaregiverRequest } from "../services/api";
+import { getUser, getMyResults, getDoctors, getMyCaregivers, respondToCaregiverRequest, BASE } from "../services/api";
 import { useAssessment } from "../context/AssessmentContext";
 import { submitAnalysis } from "../services/api";
 import { useI18n } from "../i18n/LanguageContext";
@@ -26,7 +26,7 @@ function greeting() {
 
 async function apiFetch(path, method = "GET", body = null) {
   const token = sessionStorage.getItem("neuroaid_token");
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${BASE}${path}`, {
     method,
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
     body: body ? JSON.stringify(body) : undefined,

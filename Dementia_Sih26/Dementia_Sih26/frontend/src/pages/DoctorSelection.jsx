@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { DarkCard, Btn } from "../components/RiskDashboard";
-import { getDoctors } from "../services/api";
+import { getDoctors, getMyDoctor, enrollWithDoctor, BASE } from "../services/api";
 
 const LIME = "#2A8F8A";
 const T_RED = "#e84040";
@@ -11,7 +11,7 @@ const T_CREAMFAINT = "#5C7382";
 
 async function apiFetch(path, method = "GET", body = null) {
   const token = sessionStorage.getItem("neuroaid_token");
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${BASE}${path}`, {
     method,
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
     body: body ? JSON.stringify(body) : undefined,
@@ -34,10 +34,10 @@ export default function DoctorSelection({ setPage }) {
 
   async function loadData() {
     try {
-      const [list, myData] = await Promise.all([getDoctors(), apiFetch("/auth/doctors/my-doctor")]);
+      const [list, myData] = await Promise.all([getDoctors(), getMyDoctor()]);
       setDoctors(list || []);
-      setMyDoctor(myData.doctor || null);
-      setPendingDoc(myData.pending_doctor || null);
+      setMyDoctor(myData?.doctor || null);
+      setPendingDoc(myData?.pending_doctor || null);
     } catch (e) {
       // silently handle
     } finally {
@@ -50,7 +50,7 @@ export default function DoctorSelection({ setPage }) {
   async function handleEnroll(doctorId) {
     setEnrolling(doctorId); setError(null); setSuccess(null);
     try {
-      await apiFetch("/auth/doctors/enroll", "POST", { doctor_id: doctorId });
+      await enrollWithDoctor(doctorId);
       setSuccess("Enrollment request sent! Your doctor will review and approve shortly.");
       await loadData();
     } catch (e) {

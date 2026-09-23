@@ -33,6 +33,11 @@ export function onSyncStatus(listener) {
   return () => listeners.delete(listener);
 }
 
+const getBase = () => {
+  const envUrl = typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_API_URL;
+  return envUrl ? `${envUrl.replace(/\/+$/, "")}/api` : "/api";
+};
+
 export async function syncNow() {
   if (syncing || !getIsOnline()) return announce();
   const token = sessionStorage.getItem("neuroaid_token");
@@ -42,7 +47,7 @@ export async function syncNow() {
   syncing = true;
   await announce();
   try {
-    const response = await fetch("/api/sync/batch", {
+    const response = await fetch(`${getBase()}/sync/batch`, {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body: JSON.stringify({ actions: actions.map(({ id, type, payload, createdAt }) => ({ id, type, payload, created_at: createdAt })) }),

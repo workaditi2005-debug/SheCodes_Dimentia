@@ -22,6 +22,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn } from "./RiskDashboard";
 import { useAssessment } from "../context/AssessmentContext";
+import { BASE } from "../services/api";
 
 // ── Passages ─────────────────────────────────────────────────────────────────
 const BUILTIN_PASSAGES = [
@@ -37,7 +38,7 @@ async function loadPassages() {
   try {
     const token = sessionStorage.getItem("neuroaid_token");
     if (token) {
-      const res = await fetch("/api/content", { headers: { Authorization: `Bearer ${token}` } });
+      const res = await fetch(`${BASE}/content`, { headers: { Authorization: `Bearer ${token}` } });
       if (res.ok) {
         const data = await res.json();
         const custom = (data.passages || []).map(p => p.text);

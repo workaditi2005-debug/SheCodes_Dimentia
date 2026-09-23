@@ -6,7 +6,7 @@
 import { useState } from "react";
 import { T } from "../utils/theme";
 import { DarkCard, Btn, Stars } from "../components/RiskDashboard";
-import { getToken, getUser } from "../services/api";
+import { getToken, getUser, BASE } from "../services/api";
 
 const STEP_COUNT = 4;
 
@@ -15,7 +15,7 @@ async function saveFullProfile(profileData) {
   if (!token) return;
   try {
     // Save basic fields
-    await fetch("/api/auth/me", {
+    await fetch(`${BASE}/auth/me`, {
       method: "PUT",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body: JSON.stringify({
@@ -26,7 +26,7 @@ async function saveFullProfile(profileData) {
       }),
     });
     // Save extended clinical profile
-    const res = await fetch("/api/auth/profile-extended", {
+    const res = await fetch(`${BASE}/auth/profile-extended`, {
       method: "PUT",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body: JSON.stringify(profileData),
