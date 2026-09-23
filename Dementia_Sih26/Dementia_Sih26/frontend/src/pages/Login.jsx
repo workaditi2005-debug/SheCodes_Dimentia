@@ -170,11 +170,7 @@ export default function LoginPage({ setView, setRole, setCurrentUser, onAuthSucc
 
           {/* Role hint */}
           <div style={{ background: "#FFFFFF", borderRadius: 10, padding: "9px 14px", marginBottom: 20, fontSize: 12, color: T.creamFaint, border: "1px solid rgba(28,58,68,0.10)", textAlign: "center" }}>
-            {mode === "doctor"
-              ? "🩺 Doctor accounts supervise patients and view neural pattern analytics"
-              : mode === "caregiver"
-              ? "👥 Caregiver accounts support patients, monitor daily activity, and manage care routines"
-              : "👤 Patient accounts take cognitive assessments and track progress"}
+            {mode === "doctor" ? "🩺 Doctor accounts supervise patients and view neural pattern analytics" : "👤 Patient accounts take cognitive assessments and track progress"}
           </div>
 
           {/* Login / Register tabs */}
@@ -299,7 +295,7 @@ export default function LoginPage({ setView, setRole, setCurrentUser, onAuthSucc
               <Btn onClick={handleSubmit} disabled={loading} style={{ width: "100%", justifyContent: "center", marginTop: 2, opacity: loading ? 0.7 : 1 }}>
                 {loading ? "Please wait…"
                   : isDoctorRegister && step === 1 ? "Next: Clinic Info →"
-                  : tab === "login" ? `Sign In as ${mode === "doctor" ? "Doctor" : mode === "caregiver" ? "Caregiver" : "Patient"} →`
+                  : tab === "login" ? `Sign In as ${mode === "doctor" ? "Doctor" : "Patient"} →`
                   : "Create Account →"}
               </Btn>
             )}
