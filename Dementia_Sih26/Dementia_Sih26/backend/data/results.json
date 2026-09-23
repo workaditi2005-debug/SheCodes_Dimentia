@@ -1657,8 +1657,8 @@
   ],
   "sih-demo-patient-a": [
     {
-      "timestamp": "2026-08-25T20:58:08.070445+00:00",
-      "createdAt": "2026-08-25T20:58:08.070445+00:00",
+      "timestamp": "2026-08-26T02:24:41.970170+00:00",
+      "createdAt": "2026-08-26T02:24:41.970170+00:00",
       "speech_score": 91.17,
       "memory_score": 88.1,
       "reaction_score": 85.25,
@@ -1834,8 +1834,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-01T20:58:08.070445+00:00",
-      "createdAt": "2026-09-01T20:58:08.070445+00:00",
+      "timestamp": "2026-09-02T02:24:41.970170+00:00",
+      "createdAt": "2026-09-02T02:24:41.970170+00:00",
       "speech_score": 91.92,
       "memory_score": 85.6,
       "reaction_score": 84.77,
@@ -2011,8 +2011,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-08T20:58:08.070445+00:00",
-      "createdAt": "2026-09-08T20:58:08.070445+00:00",
+      "timestamp": "2026-09-09T02:24:41.970170+00:00",
+      "createdAt": "2026-09-09T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 85.06,
@@ -2188,8 +2188,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-15T20:58:08.070445+00:00",
-      "createdAt": "2026-09-15T20:58:08.070445+00:00",
+      "timestamp": "2026-09-16T02:24:41.970170+00:00",
+      "createdAt": "2026-09-16T02:24:41.970170+00:00",
       "speech_score": 90.79,
       "memory_score": 88.1,
       "reaction_score": 84.87,
@@ -2675,8 +2675,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-22T20:58:08.070445+00:00",
-      "createdAt": "2026-09-22T20:58:08.070445+00:00",
+      "timestamp": "2026-09-23T02:24:41.970170+00:00",
+      "createdAt": "2026-09-23T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 84.96,
@@ -3164,8 +3164,8 @@
   ],
   "sih-demo-patient-b": [
     {
-      "timestamp": "2026-08-25T20:58:08.070445+00:00",
-      "createdAt": "2026-08-25T20:58:08.070445+00:00",
+      "timestamp": "2026-08-26T02:24:41.970170+00:00",
+      "createdAt": "2026-08-26T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 88.8,
       "reaction_score": 85.31,
@@ -3341,8 +3341,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-01T20:58:08.070445+00:00",
-      "createdAt": "2026-09-01T20:58:08.070445+00:00",
+      "timestamp": "2026-09-02T02:24:41.970170+00:00",
+      "createdAt": "2026-09-02T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 85.4,
       "reaction_score": 85.31,
@@ -3518,8 +3518,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-08T20:58:08.070445+00:00",
-      "createdAt": "2026-09-08T20:58:08.070445+00:00",
+      "timestamp": "2026-09-09T02:24:41.970170+00:00",
+      "createdAt": "2026-09-09T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 87.1,
       "reaction_score": 85.31,
@@ -3695,8 +3695,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-15T20:58:08.070445+00:00",
-      "createdAt": "2026-09-15T20:58:08.070445+00:00",
+      "timestamp": "2026-09-16T02:24:41.970170+00:00",
+      "createdAt": "2026-09-16T02:24:41.970170+00:00",
       "speech_score": 90.17,
       "memory_score": 0.0,
       "reaction_score": 85.07,
@@ -4182,8 +4182,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-22T20:58:08.070445+00:00",
-      "createdAt": "2026-09-22T20:58:08.070445+00:00",
+      "timestamp": "2026-09-23T02:24:41.970170+00:00",
+      "createdAt": "2026-09-23T02:24:41.970170+00:00",
       "speech_score": 88.96,
       "memory_score": 0.0,
       "reaction_score": 85.37,
@@ -4671,8 +4671,8 @@
   ],
   "sih-demo-patient-c": [
     {
-      "timestamp": "2026-08-25T20:58:08.070445+00:00",
-      "createdAt": "2026-08-25T20:58:08.070445+00:00",
+      "timestamp": "2026-08-26T02:24:41.970170+00:00",
+      "createdAt": "2026-08-26T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 85.67,
@@ -4848,8 +4848,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-01T20:58:08.070445+00:00",
-      "createdAt": "2026-09-01T20:58:08.070445+00:00",
+      "timestamp": "2026-09-02T02:24:41.970170+00:00",
+      "createdAt": "2026-09-02T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 85.22,
@@ -5025,8 +5025,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-08T20:58:08.070445+00:00",
-      "createdAt": "2026-09-08T20:58:08.070445+00:00",
+      "timestamp": "2026-09-09T02:24:41.970170+00:00",
+      "createdAt": "2026-09-09T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 85.99,
@@ -5202,8 +5202,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-15T20:58:08.070445+00:00",
-      "createdAt": "2026-09-15T20:58:08.070445+00:00",
+      "timestamp": "2026-09-16T02:24:41.970170+00:00",
+      "createdAt": "2026-09-16T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 86.6,
       "reaction_score": 5.71,
@@ -5689,8 +5689,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-22T20:58:08.070445+00:00",
-      "createdAt": "2026-09-22T20:58:08.070445+00:00",
+      "timestamp": "2026-09-23T02:24:41.970170+00:00",
+      "createdAt": "2026-09-23T02:24:41.970170+00:00",
       "speech_score": 91.17,
       "memory_score": 84.9,
       "reaction_score": 0.0,
@@ -6178,8 +6178,8 @@
   ],
   "sih-demo-patient-d": [
     {
-      "timestamp": "2026-08-25T20:58:08.070445+00:00",
-      "createdAt": "2026-08-25T20:58:08.070445+00:00",
+      "timestamp": "2026-08-26T02:24:41.970170+00:00",
+      "createdAt": "2026-08-26T02:24:41.970170+00:00",
       "speech_score": 91.54,
       "memory_score": 88.1,
       "reaction_score": 85.45,
@@ -6355,8 +6355,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-01T20:58:08.070445+00:00",
-      "createdAt": "2026-09-01T20:58:08.070445+00:00",
+      "timestamp": "2026-09-02T02:24:41.970170+00:00",
+      "createdAt": "2026-09-02T02:24:41.970170+00:00",
       "speech_score": 89.92,
       "memory_score": 86.1,
       "reaction_score": 84.88,
@@ -6532,8 +6532,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-08T20:58:08.070445+00:00",
-      "createdAt": "2026-09-08T20:58:08.070445+00:00",
+      "timestamp": "2026-09-09T02:24:41.970170+00:00",
+      "createdAt": "2026-09-09T02:24:41.970170+00:00",
       "speech_score": 91.92,
       "memory_score": 87.1,
       "reaction_score": 85.26,
@@ -6709,8 +6709,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-15T20:58:08.070445+00:00",
-      "createdAt": "2026-09-15T20:58:08.070445+00:00",
+      "timestamp": "2026-09-16T02:24:41.970170+00:00",
+      "createdAt": "2026-09-16T02:24:41.970170+00:00",
       "speech_score": 18.1,
       "memory_score": 13.25,
       "reaction_score": 21.72,
@@ -7196,8 +7196,8 @@
       "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
     },
     {
-      "timestamp": "2026-09-22T20:58:08.070445+00:00",
-      "createdAt": "2026-09-22T20:58:08.070445+00:00",
+      "timestamp": "2026-09-23T02:24:41.970170+00:00",
+      "createdAt": "2026-09-23T02:24:41.970170+00:00",
       "speech_score": 0.0,
       "memory_score": 0.0,
       "reaction_score": 0.0,
@@ -7685,8 +7685,8 @@
   ],
   "sih-demo-patient-e": [
     {
-      "timestamp": "2026-09-22T20:58:08.070445+00:00",
-      "createdAt": "2026-09-22T20:58:08.070445+00:00",
+      "timestamp": "2026-09-23T02:24:41.970170+00:00",
+      "createdAt": "2026-09-23T02:24:41.970170+00:00",
       "speech_score": 88.83,
       "memory_score": 85.4,
       "reaction_score": 84.86,
@@ -8530,6 +8530,362 @@
             "tap_interval_std": "measured"
           },
           "message": "Establishing baseline requires at least 3 completed sessions (1 available). No anomaly evaluation performed."
+        },
+        "combined_indicator": {
+          "available": false,
+          "value": null,
+          "label": null,
+          "fusion_method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": null
+        }
+      },
+      "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
+    }
+  ],
+  "4a228030-d028-466d-b818-715e4e88745f": [
+    {
+      "timestamp": "2026-09-23T02:12:21+00:00",
+      "createdAt": "2026-09-23T02:12:21+00:00",
+      "speech_score": 0.0,
+      "memory_score": 3.61,
+      "reaction_score": 0.0,
+      "executive_score": 10.0,
+      "motor_score": 40.0,
+      "alzheimers_risk": null,
+      "dementia_risk": null,
+      "parkinsons_risk": null,
+      "composite_risk_score": 93.42,
+      "hybrid_risk": null,
+      "confidence": 1.0,
+      "risk_levels": {
+        "alzheimers": "N/A",
+        "dementia": "N/A",
+        "parkinsons": "N/A"
+      },
+      "attention_variability_index": 0.4518,
+      "feature_vector": {
+        "wpm": 69.0,
+        "speed_deviation": 0.0,
+        "speech_variability": 0.0,
+        "pause_ratio": 0.862,
+        "speech_start_delay": 1.08,
+        "immediate_recall_accuracy": 10.0,
+        "delayed_recall_accuracy": 5.0,
+        "intrusion_count": 1.0,
+        "recall_latency": 5.47,
+        "order_match_ratio": 1.0,
+        "mean_rt": 914.8,
+        "std_rt": 413.29,
+        "min_rt": 291.0,
+        "reaction_drift": 424.67,
+        "miss_count": 2.0,
+        "stroop_error_rate": 0.25,
+        "stroop_rt": 1749.0,
+        "tap_interval_std": 1180.22
+      },
+      "feature_provenance": {
+        "wpm": "measured",
+        "speed_deviation": "measured",
+        "speech_variability": "measured",
+        "pause_ratio": "measured",
+        "speech_start_delay": "measured",
+        "immediate_recall_accuracy": "measured",
+        "delayed_recall_accuracy": "measured",
+        "intrusion_count": "measured",
+        "recall_latency": "measured",
+        "order_match_ratio": "measured",
+        "mean_rt": "measured",
+        "std_rt": "measured",
+        "min_rt": "measured",
+        "reaction_drift": "measured",
+        "miss_count": "measured",
+        "stroop_error_rate": "measured",
+        "stroop_rt": "measured",
+        "tap_interval_std": "measured"
+      },
+      "provenance_summary": {
+        "measured_count": 18,
+        "derived_count": 0,
+        "defaulted_count": 0
+      },
+      "ml_analysis": {
+        "behavioral_deviation": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "measured",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
+        },
+        "clinical_reference": {
+          "status": "insufficient_input",
+          "model": "OASIS_LogisticRegression",
+          "probability": null,
+          "risk_band": "unavailable",
+          "missing_features": [
+            "Age",
+            "EDUC",
+            "SES",
+            "MMSE",
+            "eTIV",
+            "nWBV",
+            "ASF",
+            "sex"
+          ],
+          "provided_features": [],
+          "explanations": [],
+          "message": "Missing all required OASIS clinical features.",
+          "research_disclaimer": "Research reference only. Not a medical diagnosis."
+        },
+        "overall_attention": {
+          "available": false,
+          "label": null,
+          "method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": {
+            "behavioral_deviation_score": null,
+            "clinical_reference_probability": null
+          },
+          "disclaimer": "Both behavioral history and clinical reference inputs are incomplete."
+        },
+        "behavioral": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "measured",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
+        },
+        "combined_indicator": {
+          "available": false,
+          "value": null,
+          "label": null,
+          "fusion_method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": null
+        }
+      },
+      "disclaimer": "\u26a0\ufe0f This is NOT a diagnosis. This tool identifies cognitive risk indicators only. Always consult a qualified neurologist or physician for clinical evaluation."
+    }
+  ],
+  "de4177ff-1b2e-4efa-8486-d113fe6c1b50": [
+    {
+      "timestamp": "2026-09-23T02:13:40+00:00",
+      "createdAt": "2026-09-23T02:13:40+00:00",
+      "speech_score": 0.0,
+      "memory_score": 3.61,
+      "reaction_score": 0.0,
+      "executive_score": 10.0,
+      "motor_score": 40.0,
+      "alzheimers_risk": null,
+      "dementia_risk": null,
+      "parkinsons_risk": null,
+      "composite_risk_score": 93.42,
+      "hybrid_risk": null,
+      "confidence": 1.0,
+      "risk_levels": {
+        "alzheimers": "N/A",
+        "dementia": "N/A",
+        "parkinsons": "N/A"
+      },
+      "attention_variability_index": 0.4518,
+      "feature_vector": {
+        "wpm": 69.0,
+        "speed_deviation": 0.0,
+        "speech_variability": 0.0,
+        "pause_ratio": 0.862,
+        "speech_start_delay": 1.08,
+        "immediate_recall_accuracy": 10.0,
+        "delayed_recall_accuracy": 5.0,
+        "intrusion_count": 1.0,
+        "recall_latency": 5.47,
+        "order_match_ratio": 1.0,
+        "mean_rt": 914.8,
+        "std_rt": 413.29,
+        "min_rt": 291.0,
+        "reaction_drift": 424.67,
+        "miss_count": 2.0,
+        "stroop_error_rate": 0.25,
+        "stroop_rt": 1749.0,
+        "tap_interval_std": 1180.22
+      },
+      "feature_provenance": {
+        "wpm": "measured",
+        "speed_deviation": "measured",
+        "speech_variability": "measured",
+        "pause_ratio": "measured",
+        "speech_start_delay": "measured",
+        "immediate_recall_accuracy": "measured",
+        "delayed_recall_accuracy": "measured",
+        "intrusion_count": "measured",
+        "recall_latency": "measured",
+        "order_match_ratio": "measured",
+        "mean_rt": "measured",
+        "std_rt": "measured",
+        "min_rt": "measured",
+        "reaction_drift": "measured",
+        "miss_count": "measured",
+        "stroop_error_rate": "measured",
+        "stroop_rt": "measured",
+        "tap_interval_std": "measured"
+      },
+      "provenance_summary": {
+        "measured_count": 18,
+        "derived_count": 0,
+        "defaulted_count": 0
+      },
+      "ml_analysis": {
+        "behavioral_deviation": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "measured",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
+        },
+        "clinical_reference": {
+          "status": "insufficient_input",
+          "model": "OASIS_LogisticRegression",
+          "probability": null,
+          "risk_band": "unavailable",
+          "missing_features": [
+            "Age",
+            "EDUC",
+            "SES",
+            "MMSE",
+            "eTIV",
+            "nWBV",
+            "ASF",
+            "sex"
+          ],
+          "provided_features": [],
+          "explanations": [],
+          "message": "Missing all required OASIS clinical features.",
+          "research_disclaimer": "Research reference only. Not a medical diagnosis."
+        },
+        "overall_attention": {
+          "available": false,
+          "label": null,
+          "method": "None (Insufficient data across both modalities)",
+          "heuristic_multimodal_attention_score": null,
+          "components": {
+            "behavioral_deviation_score": null,
+            "clinical_reference_probability": null
+          },
+          "disclaimer": "Both behavioral history and clinical reference inputs are incomplete."
+        },
+        "behavioral": {
+          "status": "insufficient_history",
+          "anomaly_detected": false,
+          "severity": "none",
+          "anomaly_score": null,
+          "raw_decision_score": null,
+          "session_count": 0,
+          "min_history_required": 3,
+          "top_deviating_features": [],
+          "baseline_comparison": {},
+          "terminology": "Cognitive Performance Deviation",
+          "score_description": null,
+          "feature_provenance": {
+            "wpm": "measured",
+            "speed_deviation": "measured",
+            "speech_variability": "measured",
+            "pause_ratio": "measured",
+            "speech_start_delay": "measured",
+            "immediate_recall_accuracy": "measured",
+            "delayed_recall_accuracy": "measured",
+            "intrusion_count": "measured",
+            "recall_latency": "measured",
+            "order_match_ratio": "measured",
+            "mean_rt": "measured",
+            "std_rt": "measured",
+            "min_rt": "measured",
+            "reaction_drift": "measured",
+            "miss_count": "measured",
+            "stroop_error_rate": "measured",
+            "stroop_rt": "measured",
+            "tap_interval_std": "measured"
+          },
+          "message": "Establishing baseline requires at least 3 completed sessions (0 available). No anomaly evaluation performed."
         },
         "combined_indicator": {
           "available": false,

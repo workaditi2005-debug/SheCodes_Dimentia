@@ -10,6 +10,47 @@ const LIME = "#2A8F8A";
 const GRN  = "#2F9E7A";
 const AMB  = "#C4842A";
 
+const REMINDER_KEY_MAP = {
+  "morning blood pressure pill": { title: "reminder_bp_title", desc: "reminder_bp_desc" },
+  "mid-morning water intake": { title: "reminder_water_title", desc: "reminder_water_desc" },
+  "dr. baruah neurology consultation": { title: "reminder_doctor_title", desc: "reminder_doctor_desc" },
+  "brain games & cognitive training": { title: "reminder_games_title", desc: "reminder_games_desc" },
+  "evening memory support pill": { title: "reminder_evening_title", desc: "reminder_evening_desc" },
+};
+
+function getLocalizedReminder(reminder, t) {
+  if (!reminder) return { title: "", description: "" };
+  const rawTitle = (reminder.title || "").trim();
+  const lower = rawTitle.toLowerCase();
+  
+  let match = REMINDER_KEY_MAP[lower];
+  if (!match) {
+    if (lower.includes("blood pressure") || lower.includes("bp") || lower.includes("amlodipine")) {
+      match = REMINDER_KEY_MAP["morning blood pressure pill"];
+    } else if (lower.includes("water") || lower.includes("hydration")) {
+      match = REMINDER_KEY_MAP["mid-morning water intake"];
+    } else if (lower.includes("baruah") || lower.includes("neurology") || lower.includes("consultation")) {
+      match = REMINDER_KEY_MAP["dr. baruah neurology consultation"];
+    } else if (lower.includes("brain games") || lower.includes("cognitive training")) {
+      match = REMINDER_KEY_MAP["brain games & cognitive training"];
+    } else if (lower.includes("memory support") || lower.includes("donepezil") || lower.includes("evening")) {
+      match = REMINDER_KEY_MAP["evening memory support pill"];
+    }
+  }
+
+  if (match) {
+    return {
+      title: t(match.title, reminder.title),
+      description: reminder.description ? t(match.desc, reminder.description) : "",
+    };
+  }
+
+  return {
+    title: reminder.title,
+    description: reminder.description || "",
+  };
+}
+
 export default function DailyCare() {
   const { t, language } = useI18n();
   const [reminders, setReminders] = useState([]);
@@ -106,7 +147,14 @@ export default function DailyCare() {
   // ── Voice: Proactive reminder summary on mount ──────────────────────
   const langCode = (language || "en-IN").split("-")[0].toLowerCase();
   const pending = reminders.filter(r => r.status !== "completed");
-  const careAnnouncement = langCode === "hi"
+  const careAnnouncement = langCode === "as"
+    ? [
+        "আপোনাৰ দৈনিক যত্ন খোলা হৈছে।",
+        pending.length > 0
+          ? `আজি আপোনাৰ ${pending.length}টা সোঁৱৰণী বাকী আছে। প্ৰথমটো সম্পূৰ্ণ কৰিবলৈ "সম্পূৰ্ণ কৰা হ’ল" কওক।`
+          : "আজিৰ সকলো কাম সম্পূৰ্ণ হ’ল। বৰ ভাল কথা!",
+      ]
+    : langCode === "hi"
     ? [
         "आपकी दैनंदिन देखभाल खुल गई है।",
         pending.length > 0
@@ -129,7 +177,14 @@ export default function DailyCare() {
 
   useVoicePageAnnouncer(null, careAnnouncement);
 
-  const todayDateString = new Date().toLocaleDateString("en-US", {
+  const dateLocaleMap = {
+    "as-IN": "as-IN",
+    "hi-IN": "hi-IN",
+    "bn-IN": "bn-IN",
+    "mni-IN": "mni-IN",
+  };
+  const activeDateLocale = dateLocaleMap[language] || "en-US";
+  const todayDateString = new Date().toLocaleDateString(activeDateLocale, {
     weekday: "long",
     month: "long",
     day: "numeric",
@@ -149,14 +204,14 @@ export default function DailyCare() {
               {t("dailyCare", "Daily Care Center")}
             </h1>
             <p style={{ color: "#5C7382", fontSize: 16, margin: 0, maxWidth: 640, lineHeight: 1.5 }}>
-              Today is <strong>{todayDateString}</strong>. Reminders and familiar memory items stay readily accessible.
+              {t("todayIs", "Today is")} <strong>{todayDateString}</strong>. {t("dailyCareDesc", "Reminders and familiar memory items stay readily accessible.")}
             </p>
           </div>
           {reminders.length > 0 && (
             <div style={{ background: "#FFFFFF", padding: "10px 18px", borderRadius: 16, border: "1px solid rgba(28,58,68,0.12)", boxShadow: "0 4px 14px rgba(28,47,58,0.05)" }}>
               <span style={{ fontSize: 13, color: "#5C7382", fontWeight: 600 }}>Daily Progress: </span>
               <strong style={{ fontSize: 16, color: completedCount === reminders.length ? GRN : LIME }}>
-                {completedCount} / {reminders.length} Done
+                {completedCount} / {reminders.length} {t("doneCountLabel", "Done")}
               </strong>
             </div>
           )}
@@ -215,28 +270,30 @@ export default function DailyCare() {
               <span>⏰</span> {t("reminders", "Today's Routine & Medications")}
             </h2>
             <p style={{ color: "#5C7382", fontSize: 14, margin: "4px 0 0" }}>
-              Tap any item to check it off. Voice commands like <em>"Mark done"</em> are also supported.
+              {t("dailyCareSub", "Tap any item to check it off. Voice commands like \"Mark done\" are also supported.")}
             </p>
           </div>
           <span style={{ fontSize: 12, fontWeight: 700, color: LIME, background: `${LIME}14`, padding: "4px 12px", borderRadius: 20, border: `1px solid ${LIME}30` }}>
-            {pendingReminders.length} Pending
+            {pendingReminders.length} {t("pending", "Pending")}
           </span>
         </div>
 
         {reminders.length === 0 ? (
           <DarkCard style={{ padding: "40px 24px", textAlign: "center" }} hover={false}>
             <div style={{ fontSize: 40, marginBottom: 12 }}>💊</div>
-            <h3 style={{ fontWeight: 800, fontSize: 18, color: "#1C2F3A", marginBottom: 6 }}>No Reminders Scheduled</h3>
-            <p style={{ color: "#5C7382", fontSize: 14, margin: 0 }}>You have no routine tasks or medicines recorded right now.</p>
+            <h3 style={{ fontWeight: 800, fontSize: 18, color: "#1C2F3A", marginBottom: 6 }}>{t("noRemindersTitle", "No Reminders Scheduled")}</h3>
+            <p style={{ color: "#5C7382", fontSize: 14, margin: 0 }}>{t("noRemindersDesc", "You have no routine tasks or medicines recorded right now.")}</p>
           </DarkCard>
         ) : (
           <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
             {reminders.map(r => {
               const isDone = r.status === "completed";
+              const loc = getLocalizedReminder(r, t);
               const isMed = r.title.toLowerCase().includes("donepezil") ||
                             r.title.toLowerCase().includes("medicine") ||
                             r.title.toLowerCase().includes("tablet") ||
-                            r.title.toLowerCase().includes("dose");
+                            r.title.toLowerCase().includes("dose") ||
+                            r.title.toLowerCase().includes("pill");
 
               return (
                 <div
@@ -284,11 +341,11 @@ export default function DailyCare() {
                           fontWeight: 800,
                           letterSpacing: 0.5,
                         }}>
-                          {r.scheduled_time || "Scheduled"}
+                          {r.scheduled_time || t("scheduled", "Scheduled")}
                         </span>
                         {isDone && (
                           <span style={{ fontSize: 12, color: GRN, fontWeight: 700 }}>
-                            ✓ Done
+                            ✓ {t("done", "Done")}
                           </span>
                         )}
                       </div>
@@ -300,12 +357,12 @@ export default function DailyCare() {
                         textDecoration: isDone ? "line-through" : "none",
                         lineHeight: 1.3,
                       }}>
-                        {r.title}
+                        {loc.title}
                       </div>
 
-                      {r.description && (
+                      {loc.description && (
                         <div style={{ color: "#5C7382", fontSize: 14, marginTop: 4, lineHeight: 1.4 }}>
-                          {r.description}
+                          {loc.description}
                         </div>
                       )}
                     </div>
@@ -314,8 +371,8 @@ export default function DailyCare() {
                   {/* Large Action Toggle Button */}
                   <div style={{ flexShrink: 0 }}>
                     <button
-                      onClick={() => handleToggle(r.id, r.title, r.status)}
-                      title={isDone ? "Click to unmark as pending" : "Click to mark as complete"}
+                      onClick={() => handleToggle(r.id, loc.title, r.status)}
+                      title={isDone ? t("completedUndo", "Completed (Undo)") : t("markDone", "Mark Done")}
                       style={{
                         padding: "12px 22px",
                         borderRadius: 14,
@@ -353,7 +410,7 @@ export default function DailyCare() {
                       }}
                     >
                       <span>{isDone ? "✓" : "○"}</span>
-                      <span>{isDone ? "Completed (Undo)" : "Mark Done"}</span>
+                      <span>{isDone ? t("completedUndo", "Completed (Undo)") : t("markDone", "Mark Done")}</span>
                     </button>
                   </div>
                 </div>

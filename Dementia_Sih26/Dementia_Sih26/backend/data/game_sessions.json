@@ -5071,6 +5071,57 @@
     "timestamp": "2026-09-22T19:30:33+00:00"
   },
   {
+    "session_id": "7fd05830-c8bd-43b2-8e3d-dfee8b6d1ebe",
+    "client_action_id": "aa4cca04-1c7a-4700-9007-b5f2951694f5",
+    "user_id": "62016f45-d650-4f1e-b21a-065d81d92127",
+    "game_id": "sequence_recall",
+    "game_title": "Sequence Recall",
+    "cognitive_domain": "WORKING_MEMORY",
+    "domain_label": "Working Memory & Concentration",
+    "difficulty_level": 1,
+    "score": 100.0,
+    "stars": 3,
+    "stars_label": "3/3 Stars",
+    "performance_level": "Excellent",
+    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
+    "duration_seconds": 9.0,
+    "moves_count": 3,
+    "mistakes_count": 0,
+    "completed": true,
+    "language": "en",
+    "telemetry": {
+      "action_latencies": [
+        1.465,
+        1.142,
+        1.259
+      ]
+    },
+    "adaptive_difficulty": {
+      "previous_level": 1,
+      "new_level": 2,
+      "reason": [
+        "accuracy above target",
+        "stable response time",
+        "high completion consistency"
+      ],
+      "adjustment": "increase",
+      "metrics_summary": {
+        "accuracy": 1.0,
+        "response_time": 1.29,
+        "benchmark_response_time": 3.5,
+        "error_rate": 0.0,
+        "completion_rate": 1.0,
+        "fatigue_detected": false,
+        "session_quality": 1.0,
+        "latency_drift": 0.0,
+        "recent_trend": "insufficient_data",
+        "past_sessions_count": 1
+      },
+      "clinical_rationale": "Demonstrated strong mastery with 100% accuracy and low error rate (0%). Ready for level 2 stimulation."
+    },
+    "timestamp": "2026-09-23T01:34:11+00:00"
+  },
+  {
     "session_id": "sess-sih-001",
     "user_id": "sih-demo-patient-001",
     "game_id": "memory_match",
@@ -5087,7 +5138,7 @@
     "moves_count": 8,
     "mistakes_count": 1,
     "completed": true,
-    "timestamp": "2026-09-15T20:58:08.066548+00:00"
+    "timestamp": "2026-09-16T02:24:41.875641+00:00"
   },
   {
     "session_id": "sess-sih-002",
@@ -5106,7 +5157,7 @@
     "moves_count": 9,
     "mistakes_count": 1,
     "completed": true,
-    "timestamp": "2026-09-16T20:58:08.066548+00:00"
+    "timestamp": "2026-09-17T02:24:41.875641+00:00"
   },
   {
     "session_id": "sess-sih-003",
@@ -5125,7 +5176,7 @@
     "moves_count": 10,
     "mistakes_count": 2,
     "completed": true,
-    "timestamp": "2026-09-17T20:58:08.066548+00:00"
+    "timestamp": "2026-09-18T02:24:41.875641+00:00"
   },
   {
     "session_id": "sess-sih-004",
@@ -5144,7 +5195,7 @@
     "moves_count": 16,
     "mistakes_count": 5,
     "completed": true,
-    "timestamp": "2026-09-20T20:58:08.066548+00:00"
+    "timestamp": "2026-09-21T02:24:41.875641+00:00"
   },
   {
     "session_id": "sess-sih-005",
@@ -5163,7 +5214,7 @@
     "moves_count": 18,
     "mistakes_count": 6,
     "completed": true,
-    "timestamp": "2026-09-21T20:58:08.066548+00:00"
+    "timestamp": "2026-09-22T02:24:41.875641+00:00"
   },
   {
     "session_id": "sess-sih-006",
@@ -5182,7 +5233,7 @@
     "moves_count": 20,
     "mistakes_count": 7,
     "completed": true,
-    "timestamp": "2026-09-22T20:58:07+00:00"
+    "timestamp": "2026-09-23T02:24:40+00:00"
   },
   {
     "session_id": "sess-sih-007",
@@ -5201,56 +5252,6 @@
     "moves_count": 12,
     "mistakes_count": 3,
     "completed": true,
-    "timestamp": "2026-09-17T18:58:08.066548+00:00"
-  },
-  {
-    "session_id": "7155c7a8-4f83-4c66-875a-9da6a5b9d7dc",
-    "client_action_id": null,
-    "user_id": "sih-demo-patient-001",
-    "game_id": "memory_match",
-    "game_title": "Memory Match",
-    "cognitive_domain": "VISUOSPATIAL_MEMORY",
-    "domain_label": "Visuospatial & Memory",
-    "difficulty_level": 1,
-    "score": 85.0,
-    "stars": 3,
-    "stars_label": "3/3 Stars",
-    "performance_level": "Excellent",
-    "feedback_message": "Outstanding! Your cognitive focus and memory were sharp today!",
-    "duration_seconds": 45.0,
-    "moves_count": 8,
-    "mistakes_count": 1,
-    "completed": true,
-    "language": "en",
-    "telemetry": {
-      "action_latencies": [
-        1.2,
-        1.5,
-        1.3
-      ]
-    },
-    "adaptive_difficulty": {
-      "previous_level": 1,
-      "new_level": 1,
-      "reason": [
-        "performance in optimal therapeutic zone",
-        "stable response time"
-      ],
-      "adjustment": "maintain",
-      "metrics_summary": {
-        "accuracy": 0.88,
-        "response_time": 1.4,
-        "benchmark_response_time": 3.5,
-        "error_rate": 0.12,
-        "completion_rate": 1.0,
-        "fatigue_detected": false,
-        "session_quality": 0.9,
-        "latency_drift": 0.0,
-        "recent_trend": "declining",
-        "past_sessions_count": 5
-      },
-      "clinical_rationale": "Steady progress at Level 1. Continuing consolidation of skills."
-    },
-    "timestamp": "2026-09-22T20:58:08+00:00"
+    "timestamp": "2026-09-18T00:24:41.875641+00:00"
   }
 ]

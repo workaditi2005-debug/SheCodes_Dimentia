@@ -1,0 +1,17 @@
+{
+  "git.enabled": true,
+  "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+  "git.scanRepositories": true,
+  "git.repositoryScanMaxDepth": 1,
+  "git.autoRepositoryDetection": true,
+  "git.autorefresh": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/backend/venv/**": true,
+    "**/dist/**": true,
+    "**/.pytest_cache/**": true,
+    "**/__pycache__/**": true
+  }
+}

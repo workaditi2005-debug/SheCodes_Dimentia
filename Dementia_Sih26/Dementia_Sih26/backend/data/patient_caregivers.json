@@ -8,8 +8,8 @@
     "caregiver_email": "sreejeta.sen@sihdemo.local",
     "status": "connected",
     "access_granted": true,
-    "created_at": "2026-09-22T20:58:08+00:00",
-    "updated_at": "2026-09-22T20:58:08+00:00"
+    "created_at": "2026-09-23T02:24:41+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00"
   },
   {
     "id": "rel-demo-cg-sih-demo-patient-a",
@@ -20,8 +20,8 @@
     "caregiver_email": "sreejeta.sen@sihdemo.local",
     "status": "connected",
     "access_granted": true,
-    "created_at": "2026-09-22T20:58:08+00:00",
-    "updated_at": "2026-09-22T20:58:08+00:00"
+    "created_at": "2026-09-23T02:24:41+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00"
   },
   {
     "id": "rel-demo-cg-sih-demo-patient-b",
@@ -32,8 +32,8 @@
     "caregiver_email": "sreejeta.sen@sihdemo.local",
     "status": "connected",
     "access_granted": true,
-    "created_at": "2026-09-22T20:58:08+00:00",
-    "updated_at": "2026-09-22T20:58:08+00:00"
+    "created_at": "2026-09-23T02:24:41+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00"
   },
   {
     "id": "rel-demo-cg-sih-demo-patient-d",
@@ -44,20 +44,7 @@
     "caregiver_email": "sreejeta.sen@sihdemo.local",
     "status": "connected",
     "access_granted": true,
-    "created_at": "2026-09-22T20:58:08+00:00",
-    "updated_at": "2026-09-22T20:58:08+00:00"
-  },
-  {
-    "id": "rel-2fad5b60-5218-4fe0-9a26-c4d7cc0490c6",
-    "patient_id": "2008ef2b-db5f-44a3-8b1a-762f2cb32ec4",
-    "patient_name": "tan",
-    "patient_email": "tanishaduttapersonal@gmail.com",
-    "caregiver_id": "7fcb3059-be2f-4c12-810c-703e057ef083",
-    "caregiver_name": "tan",
-    "caregiver_email": "tanishad006@gmail.com",
-    "status": "connected",
-    "access_granted": true,
-    "created_at": "2026-09-22T21:01:24+00:00",
-    "updated_at": "2026-09-22T21:01:37+00:00"
+    "created_at": "2026-09-23T02:24:41+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00"
   }
 ]

@@ -1,0 +1,31 @@
+# Dependencies
+**/node_modules/
+node_modules/
+
+# Python virtual environment and cache
+**/venv/
+venv/
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing and builds
+**/.pytest_cache/
+.pytest_cache/
+**/dist/
+dist/
+**/.vite/
+.vite/
+
+# Temporary data files
+**/backend/data/tmp*
+
+# Environment files
+.env
+.env.*
+*.env
+
+# OS / Editor files
+.DS_Store
+Thumbs.db

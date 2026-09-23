@@ -34,6 +34,6 @@ API_PORT = int(os.getenv("API_PORT", "8000"))
 DEBUG    = os.getenv("DEBUG", "true").lower() == "true"
 
 # ── CORS ──────────────────────────────────────────────────────────────────────
-_raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173")
+_raw_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://localhost:5174,http://localhost:3000,http://127.0.0.1:5173,http://127.0.0.1:5174")
 ALLOWED_ORIGINS = [o.strip() for o in _raw_origins.split(",") if o.strip() and o.strip() != "*"] or ["http://localhost:5173"]
 

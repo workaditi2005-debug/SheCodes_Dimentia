@@ -4,7 +4,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:07+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-002": {
@@ -12,7 +12,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:07+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-a": {
@@ -20,7 +20,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:08+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-b": {
@@ -28,7 +28,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:08+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-c": {
@@ -36,7 +36,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:08+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-d": {
@@ -44,7 +44,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:08+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "sih-demo-patient-e": {
@@ -52,7 +52,7 @@
     "share_memory_bank": true,
     "share_reminders": true,
     "allow_research_deidentified": true,
-    "updated_at": "2026-09-22T20:58:08+00:00",
+    "updated_at": "2026-09-23T02:24:41+00:00",
     "policy_version": "2026-v2-sih-demo"
   },
   "test_wf_patient_001": {
@@ -77,5 +77,9 @@
   "2008ef2b-db5f-44a3-8b1a-762f2cb32ec4": {
     "share_with_care_team": true,
     "updated_at": "2026-09-22T21:01:37+00:00"
+  },
+  "62016f45-d650-4f1e-b21a-065d81d92127": {
+    "share_with_care_team": true,
+    "updated_at": "2026-09-23T00:08:27+00:00"
   }
 }

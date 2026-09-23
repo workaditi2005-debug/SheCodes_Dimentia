@@ -350,6 +350,76 @@
     "updated_at": "2026-09-22T20:16:19+00:00"
   },
   {
+    "id": "2ba36efe-680a-43e0-b42f-313e4ded2d66",
+    "user_id": "4a228030-d028-466d-b818-715e4e88745f",
+    "category": "person",
+    "name": "Aarav (Grandson)",
+    "relationship_or_context": "Grandson, lives in Guwahati and loves cricket",
+    "photo_url": null,
+    "image_emoji": "\ud83d\udc66",
+    "notes": "Always visits on Sunday afternoons. Loves grandma's homemade pitha.",
+    "audio_cue": null,
+    "added_by": "caregiver",
+    "created_at": "2026-09-23T02:12:31+00:00",
+    "updated_at": "2026-09-23T02:12:31+00:00"
+  },
+  {
+    "id": "825c8f06-04a1-486b-846e-a816e69e8658",
+    "user_id": "4a228030-d028-466d-b818-715e4e88745f",
+    "category": "person",
+    "name": "Maya (Daughter)",
+    "relationship_or_context": "Daughter, calls every evening at 7:00 PM",
+    "photo_url": null,
+    "image_emoji": "\ud83d\udc69",
+    "notes": "School teacher. Reminds to drink water after dinner.",
+    "audio_cue": null,
+    "added_by": "caregiver",
+    "created_at": "2026-09-23T02:12:31+00:00",
+    "updated_at": "2026-09-23T02:12:31+00:00"
+  },
+  {
+    "id": "1809ce71-05f9-4870-8176-8857df676f8d",
+    "user_id": "4a228030-d028-466d-b818-715e4e88745f",
+    "category": "place",
+    "name": "Guwahati Home Garden",
+    "relationship_or_context": "Our courtyard garden with marigolds and basil",
+    "photo_url": null,
+    "image_emoji": "\ud83c\udfe1",
+    "notes": "Where morning chai is enjoyed every sunny day.",
+    "audio_cue": null,
+    "added_by": "caregiver",
+    "created_at": "2026-09-23T02:12:31+00:00",
+    "updated_at": "2026-09-23T02:12:31+00:00"
+  },
+  {
+    "id": "616ced63-4bec-488c-a141-a618c0823d0d",
+    "user_id": "4a228030-d028-466d-b818-715e4e88745f",
+    "category": "object",
+    "name": "Traditional Bell Metal Tea Mug",
+    "relationship_or_context": "Sarthebari brass cup gifted on 50th wedding anniversary",
+    "photo_url": null,
+    "image_emoji": "\u2615",
+    "notes": "Keeps Assam tea wonderfully warm.",
+    "audio_cue": null,
+    "added_by": "caregiver",
+    "created_at": "2026-09-23T02:12:31+00:00",
+    "updated_at": "2026-09-23T02:12:31+00:00"
+  },
+  {
+    "id": "b4afa750-5914-4520-b188-c4da260f5186",
+    "user_id": "4a228030-d028-466d-b818-715e4e88745f",
+    "category": "routine",
+    "name": "Morning Garden Walk",
+    "relationship_or_context": "Daily 15-minute gentle stroll around the courtyard",
+    "photo_url": null,
+    "image_emoji": "\ud83c\udf3f",
+    "notes": "Done right after morning tea.",
+    "audio_cue": null,
+    "added_by": "caregiver",
+    "created_at": "2026-09-23T02:12:31+00:00",
+    "updated_at": "2026-09-23T02:12:31+00:00"
+  },
+  {
     "id": "mem-sih-001",
     "user_id": "sih-demo-patient-001",
     "category": "person",
@@ -360,8 +430,8 @@
     "notes": "Always visits on Sunday afternoons. Loves grandma's homemade pitha.",
     "audio_cue": null,
     "added_by": "caregiver",
-    "created_at": "2026-09-22T20:58:07+00:00",
-    "updated_at": "2026-09-22T20:58:07+00:00"
+    "created_at": "2026-09-23T02:24:40+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00"
   },
   {
     "id": "mem-sih-002",
@@ -374,8 +444,8 @@
     "notes": "Civil engineer in Tezpur. Always asks about medicine routine.",
     "audio_cue": null,
     "added_by": "caregiver",
-    "created_at": "2026-09-22T20:58:07+00:00",
-    "updated_at": "2026-09-22T20:58:07+00:00"
+    "created_at": "2026-09-23T02:24:40+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00"
   },
   {
     "id": "mem-sih-003",
@@ -388,8 +458,8 @@
     "notes": "Visited every Bihu festival with family.",
     "audio_cue": null,
     "added_by": "patient",
-    "created_at": "2026-09-22T20:58:07+00:00",
-    "updated_at": "2026-09-22T20:58:07+00:00"
+    "created_at": "2026-09-23T02:24:40+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00"
   },
   {
     "id": "mem-sih-004",
@@ -402,7 +472,7 @@
     "notes": "Kept in the study room showcase.",
     "audio_cue": null,
     "added_by": "patient",
-    "created_at": "2026-09-22T20:58:07+00:00",
-    "updated_at": "2026-09-22T20:58:07+00:00"
+    "created_at": "2026-09-23T02:24:40+00:00",
+    "updated_at": "2026-09-23T02:24:40+00:00"
   }
 ]
