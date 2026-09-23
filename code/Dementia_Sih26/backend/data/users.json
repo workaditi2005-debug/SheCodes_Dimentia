@@ -313,9 +313,8 @@
     "phone": null,
     "license_number": null,
     "created_at": "2026-09-22T19:17:16+00:00",
-    "last_login": "2026-09-22T20:28:37+00:00",
-    "assigned_doctor_id": "894b08a7-118c-474b-9c1a-ca92c455fab6",
-    "pending_doctor_id": "sih-demo-doctor-001",
+    "last_login": "2026-09-23T16:54:26+00:00",
+    "assigned_doctor_id": "7c16b652-632b-4dfb-a1c9-ba0905863984",
     "activity_level": 1,
     "activity_level_updated_at": "2026-09-22T21:03:25+00:00",
     "activity_level_updated_by": "7fcb3059-be2f-4c12-810c-703e057ef083"
@@ -331,7 +330,7 @@
     "phone": null,
     "license_number": null,
     "created_at": "2026-09-22T19:34:47+00:00",
-    "last_login": "2026-09-22T20:28:54+00:00",
+    "last_login": "2026-09-23T16:58:58+00:00",
     "specialization": "Caregiver",
     "hospital": null,
     "location": null,
@@ -429,5 +428,30 @@
       "test_wf_patient_001",
       "test_wf_patient_002"
     ]
+  },
+  "7c16b652-632b-4dfb-a1c9-ba0905863984": {
+    "id": "7c16b652-632b-4dfb-a1c9-ba0905863984",
+    "full_name": "tan",
+    "email": "tanishad006@gmail.com",
+    "password_hash": "pbkdf2_sha256$390000$cf4e2b4d08664decafc00d82dd72cf3f$6603215408aee57ecd4719fa6807a55b0258fa21413019c6bf8b6941016f3e1d",
+    "role": "doctor",
+    "age": null,
+    "gender": null,
+    "phone": null,
+    "license_number": "75476576",
+    "created_at": "2026-09-23T16:56:01+00:00",
+    "last_login": "2026-09-23T16:56:01+00:00",
+    "specialization": "Psychiatry",
+    "hospital": "apollo",
+    "location": null,
+    "years_experience": null,
+    "consultation_mode": "Both",
+    "bio": null,
+    "max_patients": 10,
+    "current_patients": 1,
+    "patient_list": [
+      "2008ef2b-db5f-44a3-8b1a-762f2cb32ec4"
+    ],
+    "pending_requests": []
   }
 }
